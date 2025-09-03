@@ -1,0 +1,199 @@
+{
+  "Surface": {
+    "Neutral": {
+      "page": "#f9fafa",
+      "card": "#f1f2f2",
+      "elevated": "#e8eaea",
+      "focus": "#dddfdf",
+      "disabled": "#d2d4d4",
+      "hover": "#f9fafa",
+      "inverse": "#252626",
+      "inverse-hover": "#3e4040",
+      "inverse-focus": "#5e6060",
+      "ghost": "#f9fafa",
+      "disabled-opacity": "#f9fafa"
+    },
+    "Primary": {
+      "default": "#f0f081",
+      "hover": "#f5f5ab",
+      "disabled": "#fcfce6"
+    },
+    "Success": {
+      "default": "#85edb0",
+      "disabled": "#e7fbef",
+      "hover": "#6fc593"
+    },
+    "Warning": {
+      "default": "#ffa970",
+      "disabled": "#ffeee2",
+      "hover": "#d48d5d"
+    },
+    "Error": {
+      "default": "#ff879f",
+      "disabled": "#ffe7ec",
+      "hover": "#e57a8f"
+    },
+    "Tertiary": {
+      "default": "#83e9f2",
+      "disabled": "#e6fbfc",
+      "hover": "#6dc2ca"
+    },
+    "Secondary": {
+      "default": "#f0aaf0",
+      "hover": "#c88ec8",
+      "disabled": "#fceefc"
+    },
+    "Info": {
+      "default": "#3a84f2",
+      "hover": "#306eca",
+      "disabled": "#d8e6fc"
+    }
+  },
+  "Text": {
+    "Neutral": {
+      "display": "#0c0d0d",
+      "heading": "#252626",
+      "title": "#3e4040",
+      "disabled": "#bbbfbf",
+      "inverse": "#f9fafa",
+      "subtle-inverse": "#f1f2f2",
+      "body": "#3e4040"
+    },
+    "Primary": {
+      "default": "#f0f081",
+      "disabled": "#f5f5ab",
+      "hover": "#d6d673"
+    },
+    "Success": {
+      "default": "#85edb0",
+      "disabled": "#c2f6d7",
+      "hover": "#6fc593",
+      "on-disabled": "#599e75"
+    },
+    "Warning": {
+      "default": "#ffa970",
+      "disabled": "#ffd4b7",
+      "hover": "#d48d5d",
+      "on-disabled": "#aa714b"
+    },
+    "Error": {
+      "default": "#ff879f",
+      "disabled": "#ffc3cf",
+      "hover": "#e57a8f"
+    },
+    "Tertiary": {
+      "default": "#83e9f2",
+      "disabled": "#c1f4f8",
+      "hover": "#6dc2ca",
+      "on-disabled": "#579ba1"
+    },
+    "Secondary": {
+      "default": "#f0aaf0",
+      "hover": "#c88ec8",
+      "disabled": "#f5c6f5"
+    },
+    "Info": {
+      "default": "#3a84f2",
+      "hover": "#306eca",
+      "disabled": "#9cc1f8",
+      "on-disabled": "#2758a1"
+    }
+  },
+  "Icon": {
+    "Neutral": {
+      "display": "#0c0d0d",
+      "heading": "#252626",
+      "title": "#3e4040",
+      "disabled": "#bbbfbf",
+      "display-inverse": "#f9fafa",
+      "body": "#5e6060",
+      "heading-inverse": "#f1f2f2",
+      "title-inverse": "#e8eaea"
+    },
+    "Primary": {
+      "default": "#f0f081",
+      "disabled": "#f5f5ab",
+      "hover": "#d6d673"
+    },
+    "Success": {
+      "default": "#85edb0",
+      "disabled": "#aef3ca",
+      "hover": "#6fc593"
+    },
+    "Warning": {
+      "default": "#ffa970",
+      "disabled": "#ffc6a0",
+      "hover": "#d48d5d"
+    },
+    "Error": {
+      "default": "#ff879f",
+      "disabeld": "#ffc3cf",
+      "hover": "#e57a8f"
+    },
+    "Tertiary": {
+      "default": "#83e9f2",
+      "disabled": "#c1f4f8",
+      "hover": "#6dc2ca"
+    },
+    "focus": "#3a84f2",
+    "Secondary": {
+      "default": "#f0aaf0",
+      "hover": "#c88ec8",
+      "disabled": "#f5c6f5"
+    },
+    "Info": {
+      "default": "#3a84f2",
+      "hover": "#306eca",
+      "disabled": "#9cc1f8"
+    }
+  },
+  "Border": {
+    "Neutral": {
+      "default": "#dddfdf",
+      "subtle": "#d2d4d4",
+      "dark": "#252626",
+      "dark-subtle": "#3e4040",
+      "disabled": "#bbbfbf",
+      "dark-muted": "#5e6060",
+      "muted": "#c6caca",
+      "inverse": "#f9fafa",
+      "inverse-subtle": "#f1f2f2"
+    },
+    "Primary": {
+      "default": "#f0f081",
+      "disabled": "#f7f7c0",
+      "hover": "#d6d673"
+    },
+    "Success": {
+      "default": "#85edb0",
+      "disabled": "#c2f6d7",
+      "hover": "#6fc593"
+    },
+    "Warning": {
+      "default": "#ffa970",
+      "disabled": "#ffd4b7",
+      "hover": "#d48d5d"
+    },
+    "Error": {
+      "default": "#ff879f",
+      "disabled": "#ffc3cf",
+      "hover": "#e57a8f"
+    },
+    "Tertiary": {
+      "default": "#83e9f2",
+      "disabled": "#c1f4f8",
+      "hover": "#6dc2ca"
+    },
+    "Focus Ring": "#3a84f2",
+    "Secondary": {
+      "default": "#f0aaf0",
+      "disabled": "#f7d4f7",
+      "hover": "#c88ec8"
+    },
+    "Info": {
+      "default": "#3a84f2",
+      "disabled": "#9cc1f8",
+      "hover": "#306eca"
+    }
+  }
+}

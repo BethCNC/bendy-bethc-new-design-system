@@ -1,0 +1,22 @@
+{
+  "Button": {
+    "H-Padding": "16",
+    "V-Padding": "10",
+    "Spacing": "12",
+    "Radius": "6",
+    "Icon Size": "28",
+    "Icon Border Width": "2",
+    "Full Padding": "10"
+  },
+  "Chip": {
+    "H-Padding": "12",
+    "V-Padding": "6",
+    "Full Padding": "10",
+    "Spacing": "8",
+    "Radius": "9999",
+    "Icon Size": "16",
+    "Icon Border Width": "1",
+    "Border Width": "1",
+    "Focus border width": "2"
+  }
+}

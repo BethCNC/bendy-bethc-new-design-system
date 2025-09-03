@@ -1,0 +1,526 @@
+/*text style*/ 
+.display-display {
+    font-size: var(--font-mobile-display-display);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-display-display);
+  }
+  .heading-h1 {
+    font-size: var(--font-mobile-heading-H1);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H1);
+  }
+  .heading-h2 {
+    font-size: var(--font-mobile-heading-H2);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H2);
+  }
+  .heading-h3 {
+    font-size: var(--font-mobile-heading-H3);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H3);
+  }
+  .heading-h4 {
+    font-size: var(--font-mobile-heading-H4);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H4);
+  }
+  .heading-h5 {
+    font-size: var(--font-mobile-heading-H5);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H5);
+  }
+  .heading-h6 {
+    font-size: var(--font-mobile-heading-H6);
+    font-family: Behind The Nineties;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-heading-H6);
+  }
+  .title-title-xl-regular {
+    font-size: var(--font-mobile-title-xl);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xl);
+  }
+  .title-title-xl-medium {
+    font-size: var(--font-mobile-title-xl);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xl);
+  }
+  .title-title-xl-semibold {
+    font-size: var(--font-mobile-title-xl);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xl);
+  }
+  .title-title-lg-regular {
+    font-size: var(--font-mobile-title-lg);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-lg);
+  }
+  .title-title-lg-medium {
+    font-size: var(--font-mobile-title-lg);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-lg);
+  }
+  .title-title-lg-semibold {
+    font-size: var(--font-mobile-title-lg);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-lg);
+  }
+  .title-title-md-regular {
+    font-size: var(--font-mobile-title-md);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-base);
+  }
+  .title-title-md-medium {
+    font-size: var(--font-mobile-title-md);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-base);
+  }
+  .title-title-md-semibold {
+    font-size: var(--font-mobile-title-md);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-base);
+  }
+  .title-title-sm-regular {
+    font-size: var(--font-mobile-title-sm);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-sm);
+  }
+  .title-title-sm-medium {
+    font-size: var(--font-mobile-title-sm);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-sm);
+  }
+  .title-title-sm-semibold {
+    font-size: var(--font-mobile-title-sm);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-sm);
+  }
+  .title-title-xs-regular {
+    font-size: var(--font-mobile-title-xs);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xs);
+  }
+  .title-title-xs-medium {
+    font-size: var(--font-mobile-title-xs);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xs);
+  }
+  .title-title-xs-semibold {
+    font-size: var(--font-mobile-title-xs);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-title-xs);
+  }
+  .body-body-lg-regular {
+    font-size: var(--font-mobile-body-lg);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-lg);
+  }
+  .body-body-lg-medium {
+    font-size: var(--font-mobile-body-lg);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-lg);
+  }
+  .body-body-lg-semibold {
+    font-size: var(--font-mobile-body-lg);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-lg);
+  }
+  .body-body-lg-bold {
+    font-size: var(--font-mobile-body-lg);
+    font-family: Overused Grotesk;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-lg);
+  }
+  .body-body-md-regular {
+    font-size: var(--font-mobile-body-md);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-md);
+  }
+  .body-body-md-medium {
+    font-size: var(--font-mobile-body-md);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-md);
+  }
+  .body-body-md-semibold {
+    font-size: var(--font-mobile-body-md);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-md);
+  }
+  .body-body-sm-regular {
+    font-size: var(--font-mobile-body-sm);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-sm);
+  }
+  .body-body-sm-medium {
+    font-size: var(--font-mobile-body-sm);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-sm);
+  }
+  .body-body-sm-semibold {
+    font-size: var(--font-mobile-body-sm);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-sm);
+  }
+  .body-body-xs-regular {
+    font-size: var(--font-mobile-body-xs);
+    font-family: Overused Grotesk;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-xs);
+  }
+  .body-body-xs-medium {
+    font-size: var(--font-mobile-body-xs);
+    font-family: Overused Grotesk;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-xs);
+  }
+  .body-body-xs-semibold {
+    font-size: var(--font-mobile-body-xs);
+    font-family: Overused Grotesk;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: var(--line-height-mobile-body-xs);
+  }
+  
+  /* === TABLET RESPONSIVE (810px+) === */
+  @media (min-width: 810px) {
+    .display-display {
+      font-size: var(--font-tablet-display-display);
+      line-height: var(--line-height-tablet-display-display);
+    }
+    .heading-h1 {
+      font-size: var(--font-tablet-heading-H1);
+      line-height: var(--line-height-tablet-heading-H1);
+    }
+    .heading-h2 {
+      font-size: var(--font-tablet-heading-H2);
+      line-height: var(--line-height-tablet-heading-H2);
+    }
+    .heading-h3 {
+      font-size: var(--font-tablet-heading-H3);
+      line-height: var(--line-height-tablet-heading-H3);
+    }
+    .heading-h4 {
+      font-size: var(--font-tablet-heading-H4);
+      line-height: var(--line-height-tablet-heading-H4);
+    }
+    .heading-h5 {
+      font-size: var(--font-tablet-heading-H5);
+      line-height: var(--line-height-tablet-heading-H5);
+    }
+    .heading-h6 {
+      font-size: var(--font-tablet-heading-H6);
+      line-height: var(--line-height-tablet-heading-H6);
+    }
+    .title-title-xl-regular,
+    .title-title-xl-medium,
+    .title-title-xl-semibold {
+      font-size: var(--font-tablet-title-xl);
+      line-height: var(--line-height-tablet-title-xl);
+    }
+    .title-title-lg-regular,
+    .title-title-lg-medium,
+    .title-title-lg-semibold {
+      font-size: var(--font-tablet-title-lg);
+      line-height: var(--line-height-tablet-title-lg);
+    }
+    .title-title-md-regular,
+    .title-title-md-medium,
+    .title-title-md-semibold {
+      font-size: var(--font-tablet-title-md);
+      line-height: var(--line-height-tablet-title-base);
+    }
+    .title-title-sm-regular,
+    .title-title-sm-medium,
+    .title-title-sm-semibold {
+      font-size: var(--font-tablet-title-sm);
+      line-height: var(--line-height-tablet-title-sm);
+    }
+    .title-title-xs-regular,
+    .title-title-xs-medium,
+    .title-title-xs-semibold {
+      font-size: var(--font-tablet-title-xs);
+      line-height: var(--line-height-tablet-title-xs);
+    }
+    .body-body-lg-regular,
+    .body-body-lg-medium,
+    .body-body-lg-semibold,
+    .body-body-lg-bold {
+      font-size: var(--font-tablet-body-lg);
+      line-height: var(--line-height-tablet-body-lg);
+    }
+    .body-body-md-regular,
+    .body-body-md-medium,
+    .body-body-md-semibold {
+      font-size: var(--font-tablet-body-md);
+      line-height: var(--line-height-tablet-body-md);
+    }
+    .body-body-sm-regular,
+    .body-body-sm-medium,
+    .body-body-sm-semibold {
+      font-size: var(--font-tablet-body-sm);
+      line-height: var(--line-height-tablet-body-sm);
+    }
+    .body-body-xs-regular,
+    .body-body-xs-medium,
+    .body-body-xs-semibold {
+      font-size: var(--font-tablet-body-xs);
+      line-height: var(--line-height-tablet-body-xs);
+    }
+  }
+  
+  /* === DESKTOP RESPONSIVE (1440px+) === */
+  @media (min-width: 1440px) {
+    .display-display {
+      font-size: var(--font-desktop-display-display);
+      line-height: var(--line-height-desktop-display-display);
+    }
+    .heading-h1 {
+      font-size: var(--font-desktop-heading-H1);
+      line-height: var(--line-height-desktop-heading-H1);
+    }
+    .heading-h2 {
+      font-size: var(--font-desktop-heading-H2);
+      line-height: var(--line-height-desktop-heading-H2);
+    }
+    .heading-h3 {
+      font-size: var(--font-desktop-heading-H3);
+      line-height: var(--line-height-desktop-heading-H3);
+    }
+    .heading-h4 {
+      font-size: var(--font-desktop-heading-H4);
+      line-height: var(--line-height-desktop-heading-H4);
+    }
+    .heading-h5 {
+      font-size: var(--font-desktop-heading-H5);
+      line-height: var(--line-height-desktop-heading-H5);
+    }
+    .heading-h6 {
+      font-size: var(--font-desktop-heading-H6);
+      line-height: var(--line-height-desktop-heading-H6);
+    }
+    .title-title-xl-regular,
+    .title-title-xl-medium,
+    .title-title-xl-semibold {
+      font-size: var(--font-desktop-title-xl);
+      line-height: var(--line-height-desktop-title-xl);
+    }
+    .title-title-lg-regular,
+    .title-title-lg-medium,
+    .title-title-lg-semibold {
+      font-size: var(--font-desktop-title-lg);
+      line-height: var(--line-height-desktop-title-lg);
+    }
+    .title-title-md-regular,
+    .title-title-md-medium,
+    .title-title-md-semibold {
+      font-size: var(--font-desktop-title-md);
+      line-height: var(--line-height-desktop-title-base);
+    }
+    .title-title-sm-regular,
+    .title-title-sm-medium,
+    .title-title-sm-semibold {
+      font-size: var(--font-desktop-title-sm);
+      line-height: var(--line-height-desktop-title-sm);
+    }
+    .title-title-xs-regular,
+    .title-title-xs-medium,
+    .title-title-xs-semibold {
+      font-size: var(--font-desktop-title-xs);
+      line-height: var(--line-height-desktop-title-xs);
+    }
+    .body-body-lg-regular,
+    .body-body-lg-medium,
+    .body-body-lg-semibold,
+    .body-body-lg-bold {
+      font-size: var(--font-desktop-body-lg);
+      line-height: var(--line-height-desktop-body-lg);
+    }
+    .body-body-md-regular,
+    .body-body-md-medium,
+    .body-body-md-semibold {
+      font-size: var(--font-desktop-body-md);
+      line-height: var(--line-height-desktop-body-md);
+    }
+    .body-body-sm-regular,
+    .body-body-sm-medium,
+    .body-body-sm-semibold {
+      font-size: var(--font-desktop-body-sm);
+      line-height: var(--line-height-desktop-body-sm);
+    }
+    .body-body-xs-regular,
+    .body-body-xs-medium,
+    .body-body-xs-semibold {
+      font-size: var(--font-desktop-body-xs);
+      line-height: var(--line-height-desktop-body-xs);
+    }
+  }
+  
+  
+  /*paint style*/ 
+  :root{
+    --black: rgba(12, 12, 12, 1);
+    --white: rgba(248, 249, 249, 1);
+    --glass-effect-glass-fill-texture-0: support only solid color;
+    --glass-effect-glass-fill-texture-1: support only solid color;
+    --glass-effect-glass-stroke: rgba(255, 255, 255, 0.3);
+    --glass-effect-glass-fill: support only solid color;
+    --glass-effect-feature-card-fill-0: support only solid color;
+    --glass-effect-feature-card-fill-1: support only solid color;
+    --glass-effect-glass-stroke2: rgba(255, 255, 255, 0.4);
+    --gradient-image-overlay: support only solid color;
+    --gradient-gallery-photo: support only solid color;
+    --gradient-rainbow: support only solid color;
+    --gray-950: rgba(37, 38, 38, 1);
+    --gray-900: rgba(62, 63, 63, 1);
+    --gray-800: rgba(93, 95, 95, 1);
+    --gray-700: rgba(124, 127, 127, 1);
+    --gray-600: rgba(155, 159, 159, 1);
+    --gray-500: rgba(187, 191, 191, 1);
+    --gray-400: rgba(198, 201, 201, 1);
+    --gray-300: rgba(209, 212, 212, 1);
+    --gray-200: rgba(221, 223, 223, 1);
+    --gray-100: rgba(232, 233, 233, 1);
+    --gray-50: rgba(241, 242, 242, 1);
+    --pink-950: rgba(48, 34, 48, 1);
+    --pink-900: rgba(80, 56, 80, 1);
+    --pink-800: rgba(120, 85, 120, 1);
+    --pink-700: rgba(160, 113, 160, 1);
+    --pink-600: rgba(200, 141, 200, 1);
+    --pink-500: rgba(240, 170, 240, 1);
+    --pink-400: rgba(242, 184, 242, 1);
+    --pink-300: rgba(245, 198, 245, 1);
+    --pink-200: rgba(247, 212, 247, 1);
+    --pink-100: rgba(250, 226, 250, 1);
+    --pink-50: rgba(252, 238, 252, 1);
+    --purple-950: rgba(40, 30, 49, 1);
+    --purple-900: rgba(67, 51, 81, 1);
+    --purple-800: rgba(101, 77, 122, 1);
+    --purple-700: rgba(135, 102, 163, 1);
+    --purple-600: rgba(169, 128, 204, 1);
+    --purple-500: rgba(202, 154, 245, 1);
+    --purple-400: rgba(211, 170, 246, 1);
+    --purple-200: rgba(229, 204, 250, 1);
+    --purple-300: rgba(220, 187, 248, 1);
+    --purple-100: rgba(237, 221, 251, 1);
+    --purple-50: rgba(244, 234, 253, 1);
+    --blue-950: rgba(26, 46, 48, 1);
+    --blue-900: rgba(43, 77, 80, 1);
+    --blue-800: rgba(65, 116, 121, 1);
+    --blue-700: rgba(87, 155, 161, 1);
+    --blue-600: rgba(109, 194, 201, 1);
+    --blue-400: rgba(151, 236, 244, 1);
+    --blue-500: rgba(131, 233, 242, 1);
+    --blue-300: rgba(172, 240, 246, 1);
+    --blue-200: rgba(193, 244, 248, 1);
+    --blue-100: rgba(213, 247, 250, 1);
+    --blue-50: rgba(230, 250, 252, 1);
+    --green-950: rgba(26, 47, 35, 1);
+    --green-900: rgba(44, 79, 58, 1);
+    --green-800: rgba(66, 118, 88, 1);
+    --green-700: rgba(88, 158, 117, 1);
+    --green-600: rgba(110, 197, 146, 1);
+    --green-500: rgba(133, 237, 176, 1);
+    --green-400: rgba(153, 240, 189, 1);
+    --green-300: rgba(173, 243, 202, 1);
+    --green-200: rgba(194, 246, 215, 1);
+    --green-100: rgba(214, 249, 228, 1);
+    --green-50: rgba(230, 251, 239, 1);
+    --yellow-950: rgba(48, 48, 25, 1);
+    --yellow-900: rgba(80, 80, 43, 1);
+    --yellow-800: rgba(120, 120, 64, 1);
+    --yellow-700: rgba(160, 160, 86, 1);
+    --yellow-600: rgba(200, 200, 107, 1);
+    --yellow-500: rgba(240, 240, 129, 1);
+    --yellow-400: rgba(242, 242, 150, 1);
+    --yellow-300: rgba(245, 245, 171, 1);
+    --yellow-200: rgba(247, 247, 192, 1);
+    --yellow-100: rgba(250, 250, 213, 1);
+    --yellow-50: rgba(252, 252, 229, 1);
+    --orange-950: rgba(51, 33, 22, 1);
+    --orange-900: rgba(85, 56, 37, 1);
+    --orange-800: rgba(127, 84, 56, 1);
+    --orange-700: rgba(170, 112, 74, 1);
+    --orange-600: rgba(212, 140, 93, 1);
+    --orange-500: rgba(255, 169, 112, 1);
+    --orange-400: rgba(255, 183, 135, 1);
+    --orange-300: rgba(255, 197, 159, 1);
+    --orange-200: rgba(255, 212, 183, 1);
+    --orange-100: rgba(255, 226, 207, 1);
+    --orange-50: rgba(255, 237, 226, 1);
+    --red-950: rgba(51, 27, 31, 1);
+    --red-900: rgba(85, 45, 53, 1);
+    --red-800: rgba(127, 67, 79, 1);
+    --red-700: rgba(170, 90, 106, 1);
+    --red-600: rgba(212, 112, 132, 1);
+    --red-500: rgba(255, 135, 159, 1);
+    --red-400: rgba(255, 155, 175, 1);
+    --red-300: rgba(255, 175, 191, 1);
+    --red-200: rgba(255, 195, 207, 1);
+    --red-100: rgba(255, 215, 223, 1);
+    --red-50: rgba(255, 231, 235, 1);
+  }
+  

@@ -1,0 +1,89 @@
+{
+  "breakpoint": "1440",
+  "columns": "12",
+  "margins": "96",
+  "gutter": "24",
+  "fontsize": {
+    "body": {
+      "sm": "14",
+      "xs": "12",
+      "md": "16",
+      "lg": "18",
+      "xl": "20"
+    },
+    "title": {
+      "xs": "24",
+      "xl": "60",
+      "md": "36",
+      "lg": "48",
+      "sm": "30"
+    },
+    "heading": {
+      "H6": "30",
+      "H5": "36",
+      "H4": "48",
+      "H3": "60",
+      "H2": "72",
+      "H1": "96"
+    },
+    "display": {
+      "display": "128"
+    }
+  },
+  "font family": {
+    "body": "Overused Grotesk",
+    "title": "Overused Grotesk",
+    "heading": "Behind The Nineties",
+    "display": "Behind The Nineties"
+  },
+  "lineheight": {
+    "body": {
+      "xs": "16",
+      "sm": "20",
+      "md": "24",
+      "lg": "24",
+      "xl": "28"
+    },
+    "title": {
+      "xs": "32",
+      "sm": "40",
+      "base": "48",
+      "lg": "60",
+      "xl": "72"
+    },
+    "heading": {
+      "H6": "40",
+      "H5": "48",
+      "H4": "60",
+      "H3": "72",
+      "H2": "96",
+      "H1": "128"
+    },
+    "display": {
+      "display": "136"
+    }
+  },
+  "spacing": {
+    "sm": "12",
+    "md": "24",
+    "lg": "48",
+    "xl": "64"
+  },
+  "ui": {
+    "menu item": {
+      "h-padding": "16",
+      "v-padding": "8",
+      "spacing": "",
+      "border width": "4"
+    },
+    "menu": {
+      "border width": "4",
+      "menu item": {
+        "h-padding": "8",
+        "v-padding": "12",
+        "spacing": "4",
+        "radius": "8"
+      }
+    }
+  }
+}

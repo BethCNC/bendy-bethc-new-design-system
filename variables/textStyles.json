@@ -1,0 +1,621 @@
+{
+  "fileName": "Bendy_BethC Website",
+  "textStyles": [
+    {
+      "name": "display/display",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 128,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H1",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 96,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H2",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 72,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H3",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 60,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H4",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H5",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 36,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "heading/H6",
+      "fontFamily": "Behind The Nineties",
+      "fontWeight": "Regular",
+      "fontSize": 30,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xl/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 60,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xl/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 60,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xl/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 60,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-lg/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-lg/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-lg/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-md/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 36,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-md/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 36,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-md/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 36,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-sm/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 30,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-sm/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 30,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-sm/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 30,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xs/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xs/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "title/title-xs/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-lg/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-lg/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-lg/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-lg/bold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Bold",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-md/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-md/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-md/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-sm/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-sm/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-sm/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-xs/regular",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-xs/medium",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "Medium",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "body/body-xs/semibold",
+      "fontFamily": "Overused Grotesk",
+      "fontWeight": "SemiBold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Annotations/Marker",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Annotations/Marker small",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Annotations/Space size",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Annotations/Space pill",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Heading/Title",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 64,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Heading/Section",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Heading/Subsection",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 36,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Heading/SubsectionMetadata",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Table/Column header",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Label",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Element",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Element type",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 20,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Attribute property",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Attribute value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Token value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Style value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Variable value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Variable collection value",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Dependency value",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Message",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 12,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "EightShapes Spec/Text/Label metadata",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 18,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    }
+  ]
+}
