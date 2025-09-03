@@ -2,16 +2,14 @@
   "name": "complete-design-system",
   "version": "1.0.0",
   "description": "Complete responsive design system generated from Figma tokens",
-  "main": "css/design-system.css",
+  "main": "src/complete-design-system.css",
   "files": [
+    "src/",
     "css/",
     "js/",
-    "fonts/",
     "docs/",
     "rules/",
-    "globals.css",
-    "tailwind.config.js",
-    "examples.html"
+    "examples/"
   ],
   "keywords": [
     "design-system",

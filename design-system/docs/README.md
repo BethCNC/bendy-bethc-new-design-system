@@ -30,11 +30,11 @@ This design system was generated from your Figma tokens and includes responsive 
 
 ## Files
 
-- `globals.css` - Typography utilities
-- `css/design-system.css` - Color variables
+- `src/globals.css` - Typography utilities
+- `src/complete-design-system.css` - Color variables and complete system
 - `css/responsive.css` - Responsive variables
 - `js/tailwind-plugin.js` - Semantic utilities
-- `tailwind.config.js` - Tailwind configuration
+- `src/tailwind.config.js` - Tailwind configuration
 - `rules/component-rules.md` - Component creation rules
 
 ## Usage
