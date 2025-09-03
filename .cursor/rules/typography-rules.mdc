@@ -1,0 +1,72 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# ✍️ Typography Rules
+
+## Purpose
+Ensure typography is consistent across all components, pages, and breakpoints.
+
+---
+
+## Fonts
+- **Display/Headings** → `Behind The Nineties`, sans-serif
+- **Titles/Body** → `Overused Grotesk`, sans-serif
+
+---
+
+## Token Usage
+1. **Semantic tokens only**
+   - ✅ `--font-size-title-xs`
+   - ❌ `font-size: 20px;`
+
+2. **Responsive scaling**
+   - Mobile → Tablet → Desktop defined in `Responsive-*.json`.
+   - Always use responsive typography tokens (`title-xs-mobile`, etc.).
+
+3. **Line height**
+   - Must come from semantic line-height tokens.
+   - ❌ `line-height: 32px;`
+   - ✅ `line-height: var(--line-height-body-md);`
+
+4. **Weight**
+   - Only use defined semantic weights: Regular, Medium, Semibold, Bold.
+   - No custom numeric weights outside token definitions.
+
+---
+
+## Accessibility
+1. Minimum font size = 16px body text on mobile.
+2. Titles and headings must preserve hierarchy:
+   - `h1` → `heading-h1`
+   - `h2` → `heading-h2`
+   - `h3` → `heading-h3`
+   - etc.
+3. Line height must always be ≥1.4 for body text.
+4. Contrast ratio must meet WCAG 2.1 AA.
+
+---
+
+## Example
+```css
+h2 {
+  font-family: var(--font-overused-grotesk);
+  font-size: var(--font-size-title-lg-mobile);
+  line-height: var(--line-height-title-lg-mobile);
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: var(--font-size-title-lg-tablet);
+    line-height: var(--line-height-title-lg-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: var(--font-size-title-lg-desktop);
+    line-height: var(--line-height-title-lg-desktop);
+  }
+}
