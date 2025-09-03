@@ -14,6 +14,7 @@ This design system was automatically generated from your Figma design tokens.
   - `fonts/` - Font files and typography assets
 
 - **`examples/`** → Demo and test pages
+  - `index.html` - Navigation hub for all examples
   - `test-buttons.html` - Button component test page
   - `test-cards.html` - Card component test page
   - `examples.html` - General examples
