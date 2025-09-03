@@ -1,0 +1,39 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 📱 Responsive Rules
+
+## Purpose
+Keep typography, spacing, and layout consistent across breakpoints.
+
+---
+
+## Rules
+
+1. **Use responsive tokens**
+   - All typography and spacing must use tokens defined in `responsive.json`.
+   - Never hardcode font sizes or spacing for breakpoints.
+
+2. **Mobile-first approach**
+   - Define defaults for mobile.  
+   - Override for tablet and desktop using media queries or responsive tokens.
+
+3. **Example: Typography with tokens**
+   ```css
+   h1 {
+     font-size: var(--font-size-title-xs-mobile);
+   }
+
+   @media (min-width: 768px) {
+     h1 {
+       font-size: var(--font-size-title-xs-tablet);
+     }
+   }
+
+   @media (min-width: 1024px) {
+     h1 {
+       font-size: var(--font-size-title-xs-desktop);
+     }
+   }

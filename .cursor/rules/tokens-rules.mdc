@@ -1,0 +1,25 @@
+---
+alwaysApply: false
+---
+# 🎨 Token Rules
+
+## Purpose
+Ensure that all styling in code is derived from **semantic tokens** generated from Figma.
+
+---
+
+## Rules
+
+1. **Always use semantic tokens**  
+   - ✅ Use: `var(--surface-primary-default)`  
+   - ❌ Avoid: `#0055FF` or `gray-500`
+
+2. **Never use primitives or aliases directly**  
+   - Primitives (`primitives-light.json`, `primitives-dark.json`) are raw values.  
+   - Aliases (`alias.json`) are indirection and should be ignored.  
+   - Code must always reference **semantic tokens** (`mapped.json`).
+
+3. **Components and responsive tokens** must reference semantic tokens, never raw values.
+
+4. **Consistency across breakpoints**  
+   - Typography, spacing, and sizing must use responsive tokens (`responsive.json`).

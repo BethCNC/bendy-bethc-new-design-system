@@ -1,0 +1,31 @@
+---
+alwaysApply: true
+---
+# 🏷️ Naming Rules
+
+## Purpose
+Keep token names, classes, and components consistent and predictable.
+
+---
+
+## Rules
+
+1. **Token naming**
+   - Use kebab-case for CSS variables.
+   - ✅ `--font-size-title-xs`
+   - ❌ `--FontSizeTitleXS`
+
+2. **Component naming**
+   - Use semantic, descriptive names.
+   - ✅ `.button-primary`, `.menu-item`
+   - ❌ `.btn1`, `.red-bg`
+
+3. **Tailwind plugin classes**
+   - Map tokens to utilities when possible.
+   - ✅ `bg-surface-primary-default`
+   - ✅ `px-spacing-md`
+   - ✅ `text-title-xs`
+
+4. **Avoid duplication**
+   - Do not redefine tokens inside components.
+   - Always reference the generated CSS variables.

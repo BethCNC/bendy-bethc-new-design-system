@@ -1,0 +1,28 @@
+---
+alwaysApply: true
+---
+# 🔄 Workflow Rules
+
+## Purpose
+Define the workflow from Figma → Tokens → Style Dictionary → Code.
+
+---
+
+## Rules
+
+1. **Design in Figma**
+   - Designers must apply semantic tokens only.
+
+2. **Export tokens**
+   - Always export `mapped.json`, `components.json`, and `responsive.json`.
+
+3. **Build tokens**
+   - Run `npx style-dictionary build` to regenerate CSS + JSON.
+
+4. **Develop with tokens**
+   - Use only generated variables.
+   - ❌ Hardcoded values
+   - ✅ `var(--token-name)`
+
+5. **Stay in sync**
+   - Every Figma update flows into tokens → build → code.

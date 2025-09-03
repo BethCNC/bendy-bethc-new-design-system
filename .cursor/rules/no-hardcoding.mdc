@@ -1,0 +1,51 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 🚫 No Hardcoding Rule
+
+## Purpose
+Ensure all components are built from tokens, not raw values, to maintain consistency with the design system.
+
+---
+
+## Rule
+
+1. **Never hardcode raw values** (hex codes, px, rem, font names).  
+   - ❌ Wrong: `color: #0C0C0C;`  
+   - ❌ Wrong: `padding: 16px;`  
+   - ❌ Wrong: `border-radius: 8px;`  
+
+2. **Always use semantic tokens** exported from Figma.  
+   - ✅ Correct: `color: var(--text-neutral-body);`  
+   - ✅ Correct: `padding: var(--spacing-md);`  
+   - ✅ Correct: `border-radius: var(--radius-md);`  
+
+3. **Responsive values** must also come from tokens (`responsive.json`).  
+   - ✅ Correct: `font-size: var(--font-size-title-xs-mobile);`  
+
+4. **Components** must be composed entirely of tokens.  
+   - Example (Button):  
+     ```css
+     .button-primary {
+       background: var(--surface-primary-default);
+       color: var(--text-inverse);
+       padding: var(--spacing-sm) var(--spacing-md);
+       border-radius: var(--radius-md);
+       font-size: var(--font-size-body-md);
+     }
+     .button-primary:hover {
+       background: var(--surface-primary-hover);
+     }
+     .button-primary:disabled {
+       background: var(--surface-neutral-disabled);
+       color: var(--text-neutral-disabled);
+     }
+     ```
+
+---
+
+## Summary
+All values must resolve to **design tokens** defined in `mapped.json`, `components.json`, or `responsive.json`.  
+No raw values are permitted in component CSS or JS.

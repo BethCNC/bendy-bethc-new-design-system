@@ -1,0 +1,44 @@
+---
+alwaysApply: false
+---
+# 👁️ Focus Rules
+
+## Purpose
+Ensure accessible and consistent focus styles across all components.
+
+---
+
+## Rules
+
+1. **Focus ring must always use the semantic token**  
+   - ✅ `outline: 2px solid var(--border-focus);`
+
+2. **Thickness**  
+   - Always 2px.  
+   - Use the global `2px` utility class if available (`.border-2`).
+
+3. **Selector**  
+   - Prefer `:focus-visible` over `:focus` for accessibility.  
+   - Example:
+     ```css
+     .button-primary:focus-visible {
+       outline: 2px solid var(--border-focus);
+     }
+     ```
+
+4. **No overrides**  
+   - Never remove or restyle the focus ring locally in components.  
+   - All components must inherit the global focus rule.
+
+5. **Accessibility**  
+   - Focus states must meet WCAG requirements for visibility.  
+   - Must remain visible against any background.
+
+---
+
+## Example (Primary / md)
+```css
+.button-primary-md:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}

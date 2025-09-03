@@ -1,0 +1,23 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 📐 Layout Rules
+
+## Purpose
+Keep spacing and layout consistent across sections and grids.
+
+---
+
+## Rules
+
+1. **Spacing**
+   - Use spacing tokens (`--spacing-sm`, `--spacing-lg`) for padding/margin.
+
+2. **Grid/Gutters**
+   - Gutters and column gaps must be defined by tokens, not arbitrary px.
+
+3. **Consistency**
+   - No ad-hoc margins like `margin: 42px;`.
+   - Always reference spacing tokens.

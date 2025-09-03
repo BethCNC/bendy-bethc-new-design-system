@@ -1,0 +1,160 @@
+---
+alwaysApply: false
+---
+# 🔘 Button Rules
+
+## Purpose
+Ensure consistency, accessibility, and token-based styling across all button components.
+
+---
+
+## Variants
+
+1. **Primary**
+   - Background → `--surface-primary-default`
+   - Text → `--text-on-primary`
+   - Hover → `--surface-primary-hover`
+   - Active → `--surface-primary-pressed`
+   - Disabled → `--surface-neutral-disabled` + `--text-neutral-disabled`
+
+2. **Secondary**
+   - Background → `--surface-secondary-default`
+   - Text → `--text-on-secondary`
+   - Hover → `--surface-secondary-hover`
+   - Active → `--surface-secondary-pressed`
+   - Disabled → muted surface + disabled text tokens
+
+3. **Neutral**
+   - Background → `--surface-neutral-default`
+   - Text → `--text-on-neutral`
+   - Hover → `--surface-neutral-hover`
+   - Active → `--surface-neutral-pressed`
+   - Disabled → muted neutral tokens
+
+4. **Destructive**
+   - Background → `--surface-error-default`
+   - Text → `--text-on-error`
+   - Hover → `--surface-error-hover`
+   - Active → `--surface-error-pressed`
+   - Disabled → muted error tokens
+
+5. **Outline**
+   - Background → transparent
+   - Border → `--border-neutral-default`
+   - Text → `--text-neutral-body`
+   - Hover → border color = hover token
+   - Active → border color = pressed token
+
+6. **Ghost**
+   - Background → subtle surface token
+   - Text → lower-emphasis text token
+   - Hover → elevated background
+   - Active → stronger background
+
+7. **Link**
+   - Text-only, underlined
+   - No background or border
+   - Uses semantic link text tokens
+
+---
+
+## Sizes
+
+- **sm** → padding: 4px 8px, font-size 16px, icon 16px
+- **md** → padding: 8px 12px, font-size 18px, icon 24px
+- **lg** → padding: 10px 16px, font-size 24px, icon 28px
+- **xl** → padding: 12px 20px, font-size 30px, icon 32px
+
+All values must come from **component tokens** in `components.json`.
+
+---
+
+## States
+
+1. **Default**
+   - Background, border, text must come from variant’s semantic tokens.
+
+2. **Hover**
+   - Must use `--surface-[variant]-hover` tokens.
+   - Never darken/lighten colors manually.
+
+3. **Focus (Site-wide Rule)**
+   - Always:  
+     ```css
+     outline: 2px solid var(--border-focus);
+     outline-offset: 2px;
+     ```
+   - Use `:focus-visible` for accessibility.
+   - No overrides allowed.
+
+4. **Active/Pressed**
+   - Use `--surface-[variant]-pressed`.
+
+5. **Disabled**
+   - Background → `--surface-neutral-disabled`
+   - Text → `--text-neutral-disabled`
+   - Must not allow hover/focus styles to apply.
+
+---
+
+## Typography
+
+- Font family → `Overused Grotesk`
+- Font weight → 500 (medium)
+- Line height → from semantic typography tokens
+- Font size → from responsive tokens (`responsive.json`)
+
+---
+
+## Icons
+
+- Lead and trail icons allowed in text buttons.
+- Icon-only buttons:
+  - Same variants + states as text buttons
+  - Icon sizes scale with button size:
+    - sm = 16px, md = 24px, lg = 28px, xl = 32px
+  - Padding must be token-based (`spacing-sm`, `spacing-md`, etc.)
+  - Must include `aria-label` for accessibility.
+
+---
+
+## Accessibility
+
+- Minimum 4.5:1 contrast ratio in default and hover states.
+- Disabled state must look visually distinct and non-interactive.
+- All focus states must remain visible with the semantic focus ring.
+- Icon-only buttons must always have `aria-label` or `title`.
+
+---
+
+## Example (Primary / md)
+
+```css
+.button-primary-md {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-body-md);
+  line-height: var(--line-height-body-md);
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  background: var(--surface-primary-default);
+  color: var(--text-on-primary);
+  border-radius: var(--radius-md);
+}
+
+.button-primary-md:hover {
+  background: var(--surface-primary-hover);
+}
+
+.button-primary-md:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+}
+
+.button-primary-md:active {
+  background: var(--surface-primary-pressed);
+}
+
+.button-primary-md:disabled {
+  background: var(--surface-neutral-disabled);
+  color: var(--text-neutral-disabled);
+}

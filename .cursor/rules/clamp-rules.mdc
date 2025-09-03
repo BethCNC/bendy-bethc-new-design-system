@@ -1,0 +1,38 @@
+---
+alwaysApply: false
+---
+Prefer clamp() when possible
+
+For fluid typography, use clamp() between breakpoints.
+
+
+---
+
+## 📄 `rules/accessibility-rules.md`
+
+```markdown
+# ♿ Accessibility Rules
+
+## Purpose
+Ensure all components are accessible and meet WCAG standards.
+
+---
+
+## Rules
+
+1. **Color contrast**
+   - Minimum 4.5:1 for text and UI components.
+   - Tokens must be chosen to meet contrast requirements.
+
+2. **Focus states**
+   - Do not remove outlines unless replaced with a tokenized focus style.
+   - Use `--border-focus` or equivalent token.
+
+3. **Font sizes**
+   - Scale responsively for readability.
+   - Minimum base font size: 16px on mobile.
+
+4. **Interactive elements**
+   - Buttons, links, menus must have clear focus + hover states from tokens.
+
+---

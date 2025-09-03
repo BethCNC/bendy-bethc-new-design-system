@@ -1,0 +1,115 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 📘 Design System Development Guide (for Cursor AI Agent)
+
+## 1. 🎯 Purpose
+This guide ensures that any component developed from the **Figma Bendy_BethC design file** uses the **new design system** tokens and follows consistent rules.  
+
+The AI agent (Cursor) must **never hardcode raw values** (hex colors, px spacing, etc.), but instead reference semantic tokens defined in `design-system/css/*.css`.
+
+---
+
+## 2. 🔗 Figma Variable → Design System Mapping
+
+### Colors
+
+| Figma Variable ID | Semantic Token        | CSS Variable                   |
+|-------------------|-----------------------|--------------------------------|
+| VariableID:5:2393 | Surface Neutral Subtle | --surface-neutral-subtle: #F1F2F2; |
+| VariableID:5:2400 | Surface Warning Subtle | --surface-warning-subtle: #F0F080; |
+| VariableID:147:52917 | Surface Accent Subtle | --surface-accent-subtle: #F0A8F0; |
+| VariableID:6:152 | Text Neutral Body     | --text-neutral-body: #0C0C0C; |
+| VariableID:6:215 | Border Neutral Default | --border-neutral-default: #252626; |
+
+### Spacing
+
+| Figma Variable ID | Semantic Token | CSS Variable              |
+|-------------------|----------------|---------------------------|
+| VariableID:807:3042 | Spacing MD   | --spacing-md: 16px;     |
+| VariableID:807:3427 | Spacing SM   | --spacing-sm: 8px;      |
+| VariableID:807:3428 | Spacing LG   | --spacing-lg: 24px;     |
+
+### Typography
+
+| Figma Variable ID | Semantic Token         | CSS Variable                            |
+|-------------------|------------------------|-----------------------------------------|
+| VariableID:631:2135 | Font Family Body       | --font-family-body: "Overused Grotesk"; |
+| VariableID:631:2124 | Font Size Title XS     | --font-size-title-xs: 24px;           |
+| VariableID:631:2156 | Line Height Title XS   | --line-height-title-xs: 32px;         |
+| VariableID:631:1911 | Font Weight Medium     | --font-weight-medium: 500;            |
+
+---
+
+## 3. 🛠️ Rules for AI Agent (Cursor)
+
+1. **Token-First Development**
+   - Never hardcode hex colors, px values, or font names.  
+   - Always use CSS variables (semantic tokens).  
+
+   ❌ Wrong:  
+   ```css
+   color: #0C0C0C;
+   padding: 16px 8px;
+   ```
+
+   ✅ Correct:  
+   ```css
+   color: var(--text-neutral-body);
+   padding: var(--spacing-sm) var(--spacing-md);
+   ```
+
+2. **Semantic > Raw**
+   - Use **semantic tokens** instead of raw primitive ones.
+
+3. **Responsive Typography**
+   - Use typography tokens defined in `responsive.css` and `typography-overrides.css`.  
+
+4. **Component States**
+   - Always implement **default, hover, active/selected, disabled** states.
+
+5. **Layout & Spacing**
+   - Use spacing tokens for padding, margin, and gaps.
+
+6. **Borders**
+   - Use tokenized border width and color.
+
+7. **Naming & Utilities**
+   - Use utility classes where available.
+
+---
+
+## 4. 📑 Practical Example
+
+### Menu Item Component
+
+```css
+.menuitem {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--surface-neutral-subtle);
+  border-right: 2px solid var(--border-neutral-default);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-title-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-title-xs);
+  color: var(--text-neutral-body);
+}
+.menuitem:hover {
+  background: var(--surface-warning-subtle);
+}
+.menuitem-selected {
+  background: var(--surface-accent-subtle);
+}
+```
+
+---
+
+## 5. 🚦 Development Workflow
+
+1. Pull Figma component via MCP/REST.  
+2. Identify boundVariables.  
+3. Use mapping table to convert IDs → semantic CSS tokens.  
+4. Apply tokens in component code.  
+5. Verify against Figma spec using demo files.

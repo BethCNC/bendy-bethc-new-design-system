@@ -1,0 +1,35 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 🧩 Component Rules
+
+## Purpose
+Ensure all components are built with tokens and support all interaction states.
+
+---
+
+## Rules
+
+1. **Token-first components**
+   - Every property (color, padding, radius) must come from tokens.
+
+2. **Component states**
+   - Always define: default, hover, active, focus, disabled.
+
+3. **Example: Button**
+   ```css
+   .button-primary {
+     background: var(--surface-primary-default);
+     color: var(--text-inverse);
+     padding: var(--spacing-sm) var(--spacing-md);
+     border-radius: var(--radius-md);
+   }
+   .button-primary:hover {
+     background: var(--surface-primary-hover);
+   }
+   .button-primary:disabled {
+     background: var(--surface-neutral-disabled);
+     color: var(--text-neutral-disabled);
+   }

@@ -60,3 +60,5 @@ assets/videos/optimized/*.mp4
 
 # Specific large folders to ignore
 assets/images/health-image-*.*
+
+# Cursor

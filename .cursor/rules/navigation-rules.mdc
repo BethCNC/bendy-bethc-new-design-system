@@ -1,0 +1,33 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 🧭 Navigation Rules
+
+## Purpose
+Ensure consistency across menu items, nav bars, and other navigation components.
+
+---
+
+## Rules
+
+1. **States**
+   - Default = `surface-neutral-subtle`
+   - Hover = `surface-warning-subtle`
+   - Selected = `surface-accent-subtle`
+
+2. **Borders**
+   - Always use semantic border tokens (`--border-neutral-default`)
+   - Never hardcode stroke widths.
+
+3. **Padding**
+   - Use responsive spacing tokens.
+   - Default: horizontal = `spacing-md`, vertical = `spacing-sm`.
+
+4. **Typography**
+   - Use `title-xs/medium` for menu item labels.
+   - Font size must come from responsive tokens.
+
+5. **Accessibility**
+   - Hover, focus, and selected states must remain visible at 4.5:1 contrast ratio.

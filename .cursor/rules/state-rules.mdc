@@ -1,0 +1,25 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 🎛️ State Rules
+
+## Purpose
+Define consistent interaction states across all components.
+
+---
+
+## Rules
+
+1. **Hover**
+   - Use hover surface tokens (`--surface-[token]-hover`).
+
+2. **Active/Pressed**
+   - Use pressed surface tokens (`--surface-[token]-pressed`).
+
+3. **Disabled**
+   - Use disabled surface + text tokens (`--surface-neutral-disabled`, `--text-neutral-disabled`).
+
+4. **Focus**
+   - Always use `--border-focus` or equivalent focus token.

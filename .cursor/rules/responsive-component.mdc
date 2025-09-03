@@ -1,0 +1,72 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 📱 Responsive + Component Rules
+
+## Purpose
+Ensure that all responsive behavior and component sizing comes directly from tokens.
+
+---
+
+## Responsive Rules
+
+1. **Breakpoints**
+   - Mobile → from `Responsive-mobile.json`
+   - Tablet → from `Responsive-tablet.json`
+   - Desktop → from `Responsive-desktop.json`
+   - Breakpoints must never be hardcoded in px, only tokenized.
+
+2. **Grid System**
+   - Mobile: 4 columns
+   - Tablet: 8 columns
+   - Desktop: 12 columns
+   - Gutters and margins come from responsive tokens.
+
+3. **Typography**
+   - Font sizes and line heights must map to responsive tokens.
+   - Example:  
+     - Mobile → `--font-size-title-xs-mobile`
+     - Tablet → `--font-size-title-xs-tablet`
+     - Desktop → `--font-size-title-xs-desktop`
+
+4. **Spacing**
+   - Use responsive spacing tokens for padding/margins.
+   - Example: `--spacing-sm`, `--spacing-md`, `--spacing-lg`.
+
+---
+
+## Component Rules
+
+1. **Button Sizing**
+   - SM → from `Components-SM.json`
+   - MD → from `Components-MD.json`
+   - LG → from `Components-LG.json`
+   - XL → from `Components-XL.json`
+   - Each file defines padding, gap, border radius, and font-size.
+
+2. **Icon Buttons**
+   - Use the same variant + state tokens as text buttons.
+   - Icon size scales with component size tokens.
+   - Padding values from component JSON must always be applied.
+
+3. **Cards + Sections**
+   - Component padding and border radius must come from `Components-*.json`.
+   - Vertical rhythm between components = **0 by default** (no global page spacing).
+   - If spacing between sections is needed, apply responsive spacing tokens (e.g., `margin-top: var(--spacing-xl)`).
+
+4. **Consistency**
+   - Never mix primitives (e.g., `#fff`, `20px`) with component tokens.
+   - All radius, padding, and gap values must come from component JSON.
+
+---
+
+## Example (Button / MD)
+```css
+.button-md {
+  padding: var(--button-md-padding-y) var(--button-md-padding-x);
+  font-size: var(--button-md-font-size);
+  border-radius: var(--button-md-radius);
+  gap: var(--button-md-gap);
+}
