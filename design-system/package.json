@@ -1,0 +1,25 @@
+{
+  "name": "complete-design-system",
+  "version": "1.0.0",
+  "description": "Complete responsive design system generated from Figma tokens",
+  "main": "css/design-system.css",
+  "files": [
+    "css/",
+    "js/",
+    "fonts/",
+    "docs/",
+    "rules/",
+    "globals.css",
+    "tailwind.config.js",
+    "examples.html"
+  ],
+  "keywords": [
+    "design-system",
+    "tailwind",
+    "figma",
+    "responsive",
+    "typography"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,113 @@
+/* Generated font-face declarations */
+@font-face {
+  font-family: 'Overused Grotesk';
+  src: url('../fonts/OverusedGroteskRoman-VF.ttf') format('truetype'), url('@fonts/OverusedGroteskRoman-VF.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overused Grotesk';
+  src: url('../fonts/OverusedGrotesk-VF.ttf') format('truetype'), url('@fonts/OverusedGrotesk-VF.ttf') format('truetype');
+  font-weight: 300 900;
+  font-style: italic; /* TODO: VERIFY: confirm VF italic axis */
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overused Grotesk';
+  src: url('../fonts/OverusedGrotesk-Roman.otf') format('opentype'), url('@fonts/OverusedGrotesk-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Overused Grotesk';
+  src: url('../fonts/OverusedGrotesk-Italic.otf') format('opentype'), url('@fonts/OverusedGrotesk-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Rg.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Rg.otf') format('opentype');
+  font-weight: 400; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Rg.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-It.otf') format('opentype');
+  font-weight: 400; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-It.otf */
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Md.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Md.otf') format('opentype');
+  font-weight: 500; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Md.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Md-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Md-It.otf') format('opentype');
+  font-weight: 500; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Md-It.otf */
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Smbd.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Smbd.otf') format('opentype');
+  font-weight: 600; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Smbd.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Smbd-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Smbd-It.otf') format('opentype');
+  font-weight: 600; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Smbd-It.otf */
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Bd.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Bd.otf') format('opentype');
+  font-weight: 700; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Bd.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Bd-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Bd-It.otf') format('opentype');
+  font-weight: 700; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Bd-It.otf */
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Xbd.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Xbd.otf') format('opentype');
+  font-weight: 800; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Xbd.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Xbd-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Xbd-It.otf') format('opentype');
+  font-weight: 800; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Xbd-It.otf */
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Blk.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Blk.otf') format('opentype');
+  font-weight: 900; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Blk.otf */
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Behind The Nineties';
+  src: url('../fonts/Behind-The-Nineties-Blk-It.otf') format('opentype'), url('@fonts/Behind-The-Nineties-Blk-It.otf') format('opentype');
+  font-weight: 900; /* TODO: VERIFY: confirm weight mapping for Behind-The-Nineties-Blk-It.otf */
+  font-style: italic;
+  font-display: swap;
+}

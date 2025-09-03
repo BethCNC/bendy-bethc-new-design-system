@@ -1,0 +1,1139 @@
+/* Complete Design System - Generated from Figma */
+/* Generated Semantic Design Tokens */
+:root {
+  --surface-neutral-page: #f9fafa;
+  --surface-neutral-card: #f1f2f2;
+  --surface-neutral-elevated: #e8eaea;
+  --surface-neutral-focus: #dddfdf;
+  --surface-neutral-disabled: #d2d4d4;
+  --surface-neutral-hover: #f9fafa;
+  --surface-neutral-inverse: #252626;
+  --surface-neutral-inverse-hover: #3e4040;
+  --surface-neutral-inverse-focus: #5e6060;
+  --surface-neutral-ghost: #f9fafa;
+  --surface-neutral-disabled-opacity: #f9fafa;
+  --surface-primary-default: #f0f081;
+  --surface-primary-hover: #f5f5ab;
+  --surface-primary-disabled: #fcfce6;
+  --surface-primary-a-80: #f5f5ab;
+  --surface-primary-a-50: #fafad5;
+  --surface-primary-a-30: #fafad5;
+  --surface-success-default: #85edb0;
+  --surface-success-disabled: #e7fbef;
+  --surface-success-hover: #6fc593;
+  --surface-warning-default: #ffa970;
+  --surface-warning-disabled: #ffeee2;
+  --surface-warning-hover: #d48d5d;
+  --surface-error-default: #ff879f;
+  --surface-error-disabled: #ffe7ec;
+  --surface-error-hover: #e57a8f;
+  --surface-tertiary-default: #83e9f2;
+  --surface-tertiary-disabled: #e6fbfc;
+  --surface-tertiary-hover: #6dc2ca;
+  --surface-secondary-default: #f0aaf0;
+  --surface-secondary-hover: #c88ec8;
+  --surface-secondary-disabled: #fcf2fc;
+  --surface-secondary-a-80: #f0aaf0;
+  --surface-secondary-a-50: #f0aaf0;
+  --surface-secondary-a-30: #f0aaf0;
+  --surface-info-default: #3a84f2;
+  --surface-info-hover: #306eca;
+  --surface-info-disabled: #d8e6fc;
+  --text-neutral-display: #0c0d0d;
+  --text-neutral-heading: #252626;
+  --text-neutral-title: #3e4040;
+  --text-neutral-disabled: #bbbfbf;
+  --text-neutral-inverse: #f9fafa;
+  --text-neutral-subtle-inverse: #f1f2f2;
+  --text-neutral-body: #3e4040;
+  --text-primary-default: #f0f081;
+  --text-primary-disabled: #f5f5ab;
+  --text-primary-hover: #d6d673;
+  --text-success-default: #85edb0;
+  --text-success-disabled: #c2f6d7;
+  --text-success-hover: #6fc593;
+  --text-success-on-disabled: #599e75;
+  --text-warning-default: #ffa970;
+  --text-warning-disabled: #ffd4b7;
+  --text-warning-hover: #d48d5d;
+  --text-warning-on-disabled: #aa714b;
+  --text-error-default: #ff879f;
+  --text-error-disabled: #ffc3cf;
+  --text-error-hover: #e57a8f;
+  --text-tertiary-default: #83e9f2;
+  --text-tertiary-disabled: #c1f4f8;
+  --text-tertiary-hover: #6dc2ca;
+  --text-tertiary-on-disabled: #579ba1;
+  --text-secondary-default: #f0aaf0;
+  --text-secondary-hover: #c88ec8;
+  --text-secondary-disabled: #f5c6f5;
+  --text-info-default: #3a84f2;
+  --text-info-hover: #306eca;
+  --text-info-disabled: #9cc1f8;
+  --text-info-on-disabled: #2758a1;
+  --icon-neutral-display: #0c0d0d;
+  --icon-neutral-heading: #252626;
+  --icon-neutral-title: #3e4040;
+  --icon-neutral-disabled: #bbbfbf;
+  --icon-neutral-display-inverse: #f9fafa;
+  --icon-neutral-body: #5e6060;
+  --icon-neutral-heading-inverse: #f1f2f2;
+  --icon-neutral-title-inverse: #e8eaea;
+  --icon-primary-default: #f0f081;
+  --icon-primary-disabled: #f5f5ab;
+  --icon-primary-hover: #d6d673;
+  --icon-success-default: #85edb0;
+  --icon-success-disabled: #aef3ca;
+  --icon-success-hover: #6fc593;
+  --icon-warning-default: #ffa970;
+  --icon-warning-disabled: #ffc6a0;
+  --icon-warning-hover: #d48d5d;
+  --icon-error-default: #ff879f;
+  --icon-error-disabeld: #ffc3cf;
+  --icon-error-hover: #e57a8f;
+  --icon-tertiary-default: #83e9f2;
+  --icon-tertiary-disabled: #c1f4f8;
+  --icon-tertiary-hover: #6dc2ca;
+  --icon-focus: #3a84f2;
+  --icon-secondary-default: #f0aaf0;
+  --icon-secondary-hover: #c88ec8;
+  --icon-secondary-disabled: #f5c6f5;
+  --icon-info-default: #3a84f2;
+  --icon-info-hover: #306eca;
+  --icon-info-disabled: #9cc1f8;
+  --border-neutral-default: #dddfdf;
+  --border-neutral-subtle: #d2d4d4;
+  --border-neutral-dark: #252626;
+  --border-neutral-dark-subtle: #3e4040;
+  --border-neutral-disabled: #bbbfbf;
+  --border-neutral-dark-muted: #5e6060;
+  --border-neutral-muted: #c6caca;
+  --border-neutral-inverse: #f9fafa;
+  --border-neutral-inverse-subtle: #f1f2f2;
+  --border-primary-default: #f0f081;
+  --border-primary-disabled: #f7f7c0;
+  --border-primary-hover: #d6d673;
+  --border-success-default: #85edb0;
+  --border-success-disabled: #c2f6d7;
+  --border-success-hover: #6fc593;
+  --border-warning-default: #ffa970;
+  --border-warning-disabled: #ffd4b7;
+  --border-warning-hover: #d48d5d;
+  --border-error-default: #ff879f;
+  --border-error-disabled: #ffc3cf;
+  --border-error-hover: #e57a8f;
+  --border-tertiary-default: #83e9f2;
+  --border-tertiary-disabled: #c1f4f8;
+  --border-tertiary-hover: #6dc2ca;
+  --border-focus ring-0: #;
+  --border-focus ring-1: 3;
+  --border-focus ring-2: a;
+  --border-focus ring-3: 8;
+  --border-focus ring-4: 4;
+  --border-focus ring-5: f;
+  --border-focus ring-6: 2;
+  --border-secondary-default: #f0aaf0;
+  --border-secondary-disabled: #f7d4f7;
+  --border-secondary-hover: #c88ec8;
+  --border-info-default: #3a84f2;
+  --border-info-disabled: #9cc1f8;
+  --border-info-hover: #306eca;
+  --surface-focus: #3a84f2;
+
+  /* Simplified Text Tokens */
+  --text-primary: #252626;
+  --text-secondary: #3e4040;
+  --text-inverse: #f9fafa;
+
+  /* Responsive Design System Spacing Tokens */
+  --spacing-sm: 12px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 64px;
+  --spacing-2xl: 96px;
+  --margins-desktop: 96px;
+  --gutter-desktop: 24px;
+  --spacing-sm-tablet: 8px;
+  --spacing-md-tablet: 12px;
+  --spacing-lg-tablet: 32px;
+  --spacing-xl-tablet: 56px;
+  --spacing-2xl-tablet: 80px;
+  --margins-tablet: 64px;
+  --gutter-tablet: 24px;
+  --spacing-sm-mobile: 8px;
+  --spacing-md-mobile: 12px;
+  --spacing-lg-mobile: 24px;
+  --spacing-xl-mobile: 48px;
+  --spacing-2xl-mobile: 64px;
+  --margins-mobile: 32px;
+  --gutter-mobile: 24px;
+
+  /* Border Radius Tokens */
+  --radius-3xl: 24px;
+  --radius-2xl: 16px;
+  --radius-4xl: 32px;
+  --radius-md: 6px;
+  --radius-sm: 4px;
+  --radius-xl: 12px;
+  --radius-lg: 8px;
+  --radius-xs: 2px;
+  --radius-none: 0px;
+  --radius-full: 9999px;
+
+  /* Responsive Breakpoint Tokens */
+  --breakpoint-mobile: 390px;
+  --breakpoint-tablet: 810px;
+  --breakpoint-desktop: 1440px;
+
+  /* Font Family Tokens */
+  --font-body: "Overused Grotesk", sans-serif;
+  --font-title: "Overused Grotesk", sans-serif;
+  --font-heading: "Behind The Nineties", sans-serif;
+  --font-display: "Behind The Nineties", sans-serif;
+}
+
+/* Complete Typography System - Generated from Figma Responsive Tokens */
+
+/* Font Family Tokens */
+  --font-body: "Overused Grotesk", sans-serif;
+  --font-title: "Overused Grotesk", sans-serif;
+  --font-heading: "Behind The Nineties", sans-serif;
+  --font-display: "Behind The Nineties", sans-serif;
+
+/* Responsive Typography - Mobile First */
+@media (min-width: 390px) {
+  :root {
+    --font-body-sm-mobile: 12px;
+    --line-body-sm-mobile: 16px;
+    --font-body-xs-mobile: 10px;
+    --line-body-xs-mobile: 16px;
+    --font-body-md-mobile: 14px;
+    --line-body-md-mobile: 20px;
+    --font-body-lg-mobile: 16px;
+    --line-body-lg-mobile: 24px;
+    --font-body-xl-mobile: 18px;
+    --line-body-xl-mobile: 28px;
+    --font-title-xs-mobile: 18px;
+    --line-title-xs-mobile: 24px;
+    --font-title-xl-mobile: 36px;
+    --line-title-xl-mobile: 40px;
+    --font-title-md-mobile: 24px;
+    --line-title-md-mobile: 28px;
+    --font-title-lg-mobile: 30px;
+    --line-title-lg-mobile: 32px;
+    --font-title-sm-mobile: 20px;
+    --line-title-sm-mobile: 30px;
+    --font-heading-H6-mobile: 12px;
+    --line-heading-H6-mobile: 16px;
+    --font-heading-H5-mobile: 18px;
+    --line-heading-H5-mobile: 24px;
+    --font-heading-H4-mobile: 18px;
+    --line-heading-H4-mobile: 28px;
+    --font-heading-H3-mobile: 24px;
+    --line-heading-H3-mobile: 32px;
+    --font-heading-H2-mobile: 24px;
+    --line-heading-H2-mobile: 48px;
+    --font-heading-H1-mobile: 48px;
+    --line-heading-H1-mobile: 60px;
+    --font-display-display-mobile: 48px;
+    --line-display-display-mobile: 48px;
+  }
+}
+
+@media (min-width: 810px) {
+  :root {
+    --font-body-sm-tablet: 14px;
+    --line-body-sm-tablet: 20px;
+    --font-body-xs-tablet: 12px;
+    --line-body-xs-tablet: 16px;
+    --font-body-md-tablet: 16px;
+    --line-body-md-tablet: 24px;
+    --font-body-lg-tablet: 18px;
+    --line-body-lg-tablet: 28px;
+    --font-body-xl-tablet: 20px;
+    --line-body-xl-tablet: 30px;
+    --font-title-xs-tablet: 18px;
+    --line-title-xs-tablet: 24px;
+    --font-title-xl-tablet: 48px;
+    --line-title-xl-tablet: 60px;
+    --font-title-md-tablet: 30px;
+    --line-title-md-tablet: 34px;
+    --font-title-lg-tablet: 36px;
+    --line-title-lg-tablet: 48px;
+    --font-title-sm-tablet: 24px;
+    --line-title-sm-tablet: 32px;
+    --font-heading-H6-tablet: 16px;
+    --line-heading-H6-tablet: 24px;
+    --font-heading-H5-tablet: 24px;
+    --line-heading-H5-tablet: 28px;
+    --font-heading-H4-tablet: 24px;
+    --line-heading-H4-tablet: 32px;
+    --font-heading-H3-tablet: 36px;
+    --line-heading-H3-tablet: 48px;
+    --font-heading-H2-tablet: 36px;
+    --line-heading-H2-tablet: 60px;
+    --font-heading-H1-tablet: 60px;
+    --line-heading-H1-tablet: 72px;
+    --font-display-display-tablet: 72px;
+    --line-display-display-tablet: 96px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --font-body-sm-desktop: 14px;
+    --line-body-sm-desktop: 20px;
+    --font-body-xs-desktop: 12px;
+    --line-body-xs-desktop: 16px;
+    --font-body-md-desktop: 16px;
+    --line-body-md-desktop: 24px;
+    --font-body-lg-desktop: 18px;
+    --line-body-lg-desktop: 24px;
+    --font-body-xl-desktop: 20px;
+    --line-body-xl-desktop: 28px;
+    --font-title-xs-desktop: 24px;
+    --line-title-xs-desktop: 32px;
+    --font-title-xl-desktop: 60px;
+    --line-title-xl-desktop: 72px;
+    --font-title-md-desktop: 36px;
+    --line-title-md-desktop: 40px;
+    --font-title-lg-desktop: 48px;
+    --line-title-lg-desktop: 60px;
+    --font-title-sm-desktop: 30px;
+    --line-title-sm-desktop: 40px;
+    --font-heading-H6-desktop: 30px;
+    --line-heading-H6-desktop: 40px;
+    --font-heading-H5-desktop: 36px;
+    --line-heading-H5-desktop: 48px;
+    --font-heading-H4-desktop: 48px;
+    --line-heading-H4-desktop: 60px;
+    --font-heading-H3-desktop: 60px;
+    --line-heading-H3-desktop: 72px;
+    --font-heading-H2-desktop: 72px;
+    --line-heading-H2-desktop: 96px;
+    --font-heading-H1-desktop: 96px;
+    --line-heading-H1-desktop: 128px;
+    --font-display-display-desktop: 128px;
+    --line-display-display-desktop: 136px;
+  }
+}
+
+
+/* Typography Scale */
+.font-display-regular {
+  font-family: var(--font-display, "Behind The Nineties", serif);
+  font-size: 128px;
+  line-height: 136px;
+  font-weight: 400;
+}
+
+.font-display-medium {
+  font-family: var(--font-display, "Behind The Nineties", serif);
+  font-size: 128px;
+  line-height: 136px;
+  font-weight: 500;
+}
+
+.font-heading-h6-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.font-heading-h6-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.font-heading-h5-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.font-heading-h5-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+.font-heading-h4-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.font-heading-h4-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.font-heading-h3-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.font-heading-h3-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+.font-heading-h2-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 72px;
+  line-height: 96px;
+  font-weight: 400;
+}
+
+.font-heading-h2-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 72px;
+  line-height: 96px;
+  font-weight: 500;
+}
+
+.font-heading-h1-regular {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 96px;
+  line-height: 128px;
+  font-weight: 400;
+}
+
+.font-heading-h1-medium {
+  font-family: var(--font-heading, "Behind The Nineties", serif);
+  font-size: 96px;
+  line-height: 128px;
+  font-weight: 500;
+}
+
+.font-title-xs-regular {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.font-title-xs-medium {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.font-title-xl-regular {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+.font-title-xl-medium {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+.font-title-md-regular {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+}
+
+.font-title-md-medium {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+}
+
+.font-title-lg-regular {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.font-title-lg-medium {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 500;
+}
+
+.font-title-sm-regular {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.font-title-sm-medium {
+  font-family: var(--font-title, "Overused Grotesk", sans-serif);
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.font-body-sm-regular {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.font-body-sm-medium {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.font-body-xs-regular {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.font-body-xs-medium {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.font-body-md-regular {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-md-medium {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.font-body-lg-regular {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-body-lg-medium {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.font-body-xl-regular {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.font-body-xl-medium {
+  font-family: var(--font-body, "Overused Grotesk", sans-serif);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+
+/* Existing Typography Classes from Figma */
+.font-displayregular {
+    @apply font-behind-the-nineties text-9xl font-normal leading-none;
+  }
+
+.font-displaymedium {
+    @apply font-behind-the-nineties text-9xl font-medium leading-none;
+  }
+
+.font-headingh1regular {
+    @apply font-behind-the-nineties text-8xl font-normal leading-snug;
+  }
+
+.font-headingh1medium {
+    @apply font-behind-the-nineties text-8xl font-medium leading-snug;
+  }
+
+.font-headingh2regular {
+    @apply font-behind-the-nineties text-7xl font-normal leading-snug;
+  }
+
+.font-headingh2medium {
+    @apply font-behind-the-nineties text-7xl font-medium leading-snug;
+  }
+
+.font-headingh3regular {
+    @apply font-behind-the-nineties text-6xl font-normal leading-tight;
+  }
+
+.font-headingh3medium {
+    @apply font-behind-the-nineties text-6xl font-medium leading-tight;
+  }
+
+.font-headingh4regular {
+    @apply font-behind-the-nineties text-5xl font-normal leading-tight;
+  }
+
+.font-headingh4medium {
+    @apply font-behind-the-nineties text-5xl font-medium leading-tight;
+  }
+
+.font-headingh5regular {
+    @apply font-behind-the-nineties text-4xl font-normal leading-snug;
+  }
+
+.font-headingh5medium {
+    @apply font-behind-the-nineties text-4xl font-medium leading-snug;
+  }
+
+.font-headingh6regular {
+    @apply font-behind-the-nineties text-3xl font-normal leading-10;
+  }
+
+.font-headingh6medium {
+    @apply font-behind-the-nineties text-3xl font-medium leading-10;
+  }
+
+.font-titletitle-xlregular {
+    @apply font-overused-grotesk text-6xl font-normal leading-tight;
+  }
+
+.font-titletitle-xlmedium {
+    @apply font-overused-grotesk text-6xl font-medium leading-tight;
+  }
+
+.font-titletitle-xlsemibold {
+    @apply font-overused-grotesk text-6xl font-semibold leading-tight;
+  }
+
+.font-titletitle-lgregular {
+    @apply font-overused-grotesk text-5xl font-normal leading-tight;
+  }
+
+.font-titletitle-lgmedium {
+    @apply font-overused-grotesk text-5xl font-medium leading-tight;
+  }
+
+.font-titletitle-lgsemibold {
+    @apply font-overused-grotesk text-5xl font-semibold leading-tight;
+  }
+
+.font-titletitle-mdregular {
+    @apply font-overused-grotesk text-4xl font-normal leading-snug;
+  }
+
+.font-titletitle-mdmedium {
+    @apply font-overused-grotesk text-4xl font-medium leading-snug;
+  }
+
+.font-titletitle-mdsemibold {
+    @apply font-overused-grotesk text-4xl font-semibold leading-snug;
+  }
+
+.font-titletitle-smregular {
+    @apply font-overused-grotesk text-3xl font-normal leading-10;
+  }
+
+.font-titletitle-smmedium {
+    @apply font-overused-grotesk text-3xl font-medium leading-10;
+  }
+
+.font-titletitle-smsemibold {
+    @apply font-overused-grotesk text-3xl font-semibold leading-10;
+  }
+
+.font-titletitle-xsmedium {
+    @apply font-overused-grotesk text-2xl font-medium leading-8;
+  }
+
+.font-titletitle-xsregular {
+    @apply font-overused-grotesk text-2xl font-normal leading-8;
+  }
+
+.font-titletitle-xssemibold {
+    @apply font-overused-grotesk text-2xl font-semibold leading-8;
+  }
+
+.font-bodybody-lgregular {
+    @apply font-overused-grotesk text-lg font-normal leading-6;
+  }
+
+.font-bodybody-lgmedium {
+    @apply font-overused-grotesk text-lg font-medium leading-6;
+  }
+
+.font-bodybody-lgsemibold {
+    @apply font-overused-grotesk text-lg font-semibold leading-6;
+  }
+
+.font-bodybody-lgbold {
+    @apply font-overused-grotesk text-lg font-bold leading-6;
+  }
+
+.font-bodybody-mdregular {
+    @apply font-overused-grotesk text-base font-normal leading-6;
+  }
+
+.font-bodybody-mdmedium {
+    @apply font-overused-grotesk text-base font-medium leading-6;
+  }
+
+.font-bodybody-mdsemibold {
+    @apply font-overused-grotesk text-base font-semibold leading-6;
+  }
+
+.font-bodybody-smregular {
+    @apply font-overused-grotesk text-sm font-normal leading-5;
+  }
+
+.font-bodybody-smmedium {
+    @apply font-overused-grotesk text-sm font-medium leading-5;
+  }
+
+.font-bodybody-smsemibold {
+    @apply font-overused-grotesk text-sm font-semibold leading-5;
+  }
+
+.font-bodybody-xsregular {
+    @apply font-overused-grotesk text-xs font-normal leading-4;
+  }
+
+.font-bodybody-xsmedium {
+    @apply font-overused-grotesk text-xs font-medium leading-4;
+  }
+
+.font-bodybody-xssemibold {
+    @apply font-overused-grotesk text-xs font-semibold leading-4;
+  }
+
+.font-eightshapes-specannotationsmarker {
+    @apply font-inter text-sm font-bold;
+  }
+
+.font-eightshapes-specannotationsmarker-small {
+    @apply font-inter text-xs font-bold;
+  }
+
+.font-eightshapes-specannotationsspace-size {
+    @apply font-inter text-xs font-bold;
+  }
+
+.font-eightshapes-specannotationsspace-pill {
+    @apply font-inter text-xs font-normal;
+  }
+
+.font-eightshapes-specheadingtitle {
+    @apply font-inter text-6xl font-bold;
+  }
+
+.font-eightshapes-specheadingsection {
+    @apply font-inter text-5xl font-bold;
+  }
+
+.font-eightshapes-specheadingsubsection {
+    @apply font-inter text-4xl font-bold;
+  }
+
+.font-eightshapes-specheadingsubsectionmetadata {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectablecolumn-header {
+    @apply font-inter text-xs font-bold;
+  }
+
+.font-eightshapes-spectextlabel {
+    @apply font-inter text-2xl font-bold;
+  }
+
+.font-eightshapes-spectextelement {
+    @apply font-inter text-base font-bold;
+  }
+
+.font-eightshapes-spectextelement-type {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectextattribute-property {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectextattribute-value {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectexttoken-value {
+    @apply font-inter text-xs font-normal;
+  }
+
+.font-eightshapes-spectextstyle-value {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectextvariable-value {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectextvariable-collection-value {
+    @apply font-inter text-base font-normal;
+  }
+
+.font-eightshapes-spectextdependency-value {
+    @apply font-inter text-xs font-bold;
+  }
+
+.font-eightshapes-spectextmessage {
+    @apply font-inter text-xs font-normal;
+  }
+
+.font-eightshapes-spectextlabel-metadata {
+    @apply font-inter text-lg font-normal;
+  }
+
+/* Button Components - Exact Figma Specifications */
+
+.btn-sm {
+    padding: 4px 8px;
+    border-radius: var(--radius-md, 6px);
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-sm:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Icon-only buttons */
+.btn-icon-sm {
+    padding: 8px;
+    border-radius: var(--radius-md, 6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-icon-sm:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+.btn-md {
+    padding: 8px 12px;
+    border-radius: var(--radius-md, 6px);
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.btn-md:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Icon-only buttons */
+.btn-icon-md {
+    padding: 8px;
+    border-radius: var(--radius-md, 6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-icon-md:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    border-radius: var(--radius-md, 6px);
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.btn-lg:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Icon-only buttons */
+.btn-icon-lg {
+    padding: 10px;
+    border-radius: var(--radius-md, 6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-icon-lg:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+.btn-xl {
+    padding: 12px 20px;
+    border-radius: var(--radius-md, 6px);
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.btn-xl:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Icon-only buttons */
+.btn-icon-xl {
+    padding: 12px;
+    border-radius: var(--radius-md, 6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-icon-xl:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+/* Chip Components - Exact Figma Specifications */
+
+.chip-sm {
+    padding: 2px 8px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border-width: 0.5px;
+}
+
+.chip-sm:focus {
+    outline: none;
+    border: 1px solid var(--surface-focus);
+    box-shadow: 0 0 0 1px var(--surface-focus);
+}
+
+/* Chip with icon */
+.chip-icon-sm {
+    padding: 2px 8px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 4px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border-width: 0.5px;
+}
+
+.chip-icon-sm:focus {
+    outline: none;
+    border: 1px solid var(--surface-focus);
+    box-shadow: 0 0 0 1px var(--surface-focus);
+}
+
+.chip-md {
+    padding: 4px 10px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 6px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-md:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Chip with icon */
+.chip-icon-md {
+    padding: 4px 10px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 6px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-icon-md:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+.chip-lg {
+    padding: 6px 12px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-lg:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Chip with icon */
+.chip-icon-lg {
+    padding: 6px 12px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-icon-lg:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+.chip-xl {
+    padding: 10px 16px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-xl:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Chip with icon */
+.chip-icon-xl {
+    padding: 10px 16px;
+    border-radius: var(--radius-full, 9999px);
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.2s ease;
+    border-width: 1px;
+}
+
+.chip-icon-xl:focus {
+    outline: none;
+    border: 2px solid var(--surface-focus);
+    box-shadow: 0 0 0 2px var(--surface-focus);
+}
+
+/* Feature Card Components */
+.feature-card {
+    background: linear-gradient(135deg, var(--surface-primary-default) 0%, var(--surface-success-default) 100%);
+    border-radius: var(--radius-2xl, 16px);
+    padding: var(--spacing-8, 32px);
+    border: 3px solid var(--surface-primary-default);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    backdrop-filter: blur(10px);
+    width: 470px;
+    min-height: 288px;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(240, 240, 129, 0.3);
+    border-color: var(--surface-primary-hover);
+}
+
+.feature-card:focus {
+    outline: none;
+    border: 3px solid var(--surface-focus);
+    box-shadow: 0 0 0 3px var(--surface-focus);
+}
+
+.feature-card-alt {
+    background: linear-gradient(135deg, var(--surface-tertiary-default) 0%, var(--surface-secondary-default) 100%);
+    border: 3px solid var(--surface-tertiary-default);
+    border-radius: var(--radius-2xl, 16px);
+    padding: var(--spacing-8, 32px);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 470px;
+    min-height: 288px;
+}
+
+.feature-card-alt:hover {
+    border-color: var(--surface-tertiary-hover);
+    box-shadow: 0 12px 32px rgba(131, 233, 242, 0.3);
+}
+
+/* Card content styling */
+.card-title {
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.card-description {
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 0;
+}

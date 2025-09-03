@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Design System Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/design-system.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/typography-overrides.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./globals.css">
+</head>
+<body class="bg-surface-neutral-page p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="font-displayregular text-text-neutral-display mb-8">
+            Complete Design System
+        </h1>
+        
+        <section class="mb-8">
+            <h2 class="font-headingh2regular text-text-neutral-heading mb-4">
+                Responsive Typography
+            </h2>
+            <div class="space-y-4 bg-surface-neutral-card p-6 rounded">
+                <div class="font-displayregular text-text-neutral-display">
+                    Display Text (Responsive)
+                </div>
+                <div class="font-headingh1regular text-text-neutral-heading">
+                    Heading H1 (Responsive)
+                </div>
+                <div class="font-titletitle-xlregular text-text-neutral-title">
+                    Title XL (Responsive)
+                </div>
+                <div class="font-bodybody-mdregular text-text-neutral-title">
+                    Body text that scales across breakpoints
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-headingh2regular text-text-neutral-heading mb-4">
+                Responsive Spacing
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-[var(--spacing-sm)] bg-surface-neutral-card rounded">
+                    <p class="text-sm">Small Spacing</p>
+                </div>
+                <div class="p-[var(--spacing-md)] bg-surface-neutral-card rounded">
+                    <p class="text-sm">Medium Spacing</p>
+                </div>
+                <div class="p-[var(--spacing-lg)] bg-surface-neutral-card rounded">
+                    <p class="text-sm">Large Spacing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="font-headingh2regular text-text-neutral-heading mb-4">
+                Component Examples
+            </h2>
+            <div class="space-y-4">
+                <button class="
+                    px-[var(--ui-menu-item-h-padding)] 
+                    py-[var(--ui-menu-item-v-padding)] 
+                    rounded-button-radius-md
+                    bg-surface-primary-default
+                    text-text-neutral-display
+                    font-medium
+                ">
+                    Button Component
+                </button>
+                
+                <div class="
+                    inline-block
+                    px-[var(--ui-menu-item-h-padding)] 
+                    py-[var(--ui-menu-item-v-padding)] 
+                    border-[var(--ui-menu-item-border-width)]
+                    border-border-neutral-dark
+                    bg-surface-neutral-card
+                ">
+                    Chip Component
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

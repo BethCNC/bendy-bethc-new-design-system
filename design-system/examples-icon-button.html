@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon-only Button – Design System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/design-system.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="./css/typography-overrides.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./globals.css">
+</head>
+<body class="bg-surface-neutral-page text-text-neutral-title p-8">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <h1 class="font-headingh2regular text-text-neutral-heading">Icon-only Button</h1>
+
+    <!-- Guidance -->
+    <div class="text-sm opacity-80">
+      <p>Buttons use responsive tokens for padding, radius, border width, color, and font-size (icon scales with font-size).</p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Padding: <code>p-[var(--ui-menu-item-v-padding)]</code> (responsive via media queries)</li>
+        <li>Radius: <code>rounded-button-radius-md</code> (component token)</li>
+        <li>Border: <code>border-[var(--ui-menu-item-border-width)]</code> + <code>border-border-neutral-dark</code></li>
+        <li>BG: <code>bg-surface-neutral-card</code> (or primary)</li>
+        <li>Icon size: inherits from <code>font-size</code> (e.g., <code>text-body-md</code>)</li>
+      </ul>
+    </div>
+
+    <!-- Row: different sizes via font-size + padding token -->
+    <div class="flex items-center gap-6">
+      <!-- Small (body-sm) -->
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-neutral-card text-text-neutral-title
+                     rounded-button-radius-md text-body-sm" aria-label="Settings">
+        <i data-lucide="settings" class="block"></i>
+      </button>
+
+      <!-- Medium (body-md) -->
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-primary-default text-text-neutral-display
+                     rounded-button-radius-md text-body-md" aria-label="Plus">
+        <i data-lucide="plus" class="block"></i>
+      </button>
+
+      <!-- Large (body-lg) -->
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-secondary-default text-text-neutral-display
+                     rounded-button-radius-md text-body-lg" aria-label="Search">
+        <i data-lucide="search" class="block"></i>
+      </button>
+    </div>
+
+    <!-- States: default, focus, disabled -->
+    <div class="flex items-center gap-6">
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-neutral-card text-text-neutral-title
+                     rounded-button-radius-md text-body-md focus:outline-none focus:ring-2 focus:ring-[color:var(--border-focus-ring)]" aria-label="Heart">
+        <i data-lucide="heart" class="block"></i>
+      </button>
+
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-neutral-card text-text-neutral-title opacity-50 cursor-not-allowed
+                     rounded-button-radius-md text-body-md" aria-label="Disabled" disabled>
+        <i data-lucide="x" class="block"></i>
+      </button>
+    </div>
+
+    <!-- Dark preview -->
+    <div class="p-6 rounded bg-[color:var(--color-neutral-900)] text-[color:var(--color-neutral-white)]">
+      <p class="text-sm mb-3">Dark preview (simulates dark surface; system dark mode will swap semantic vars)</p>
+      <button class="inline-flex items-center justify-center select-none 
+                     p-[var(--ui-menu-item-v-padding)] aspect-square
+                     border-[var(--ui-menu-item-border-width)] border-border-neutral-dark
+                     bg-surface-primary-default text-text-neutral-display
+                     rounded-button-radius-md text-body-md" aria-label="Moon">
+        <i data-lucide="moon" class="block"></i>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    window.lucide && window.lucide.createIcons();
+  </script>
+</body>
+</html>
+

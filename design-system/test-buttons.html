@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System - Button Test</title>
+    <link rel="stylesheet" href="complete-design-system.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        "darkMode": "class",
+        "theme": {
+          "screens": {
+            "mobile": "390px",
+            "tablet": "810px", 
+            "desktop": "1440px"
+          },
+          "extend": {
+            "fontFamily": {
+              "overused-grotesk": ['Arial', 'Helvetica', 'sans-serif'],
+              "behind-the-nineties": ['Georgia', 'Times', 'serif'],
+              "inter": ['Inter', 'sans-serif']
+            },
+            "colors": {
+              "primary": { "DEFAULT": "#f0f081", "hover": "#f5f5ab" },
+              "success": { "DEFAULT": "#85edb0", "hover": "#6fc593" },
+              "warning": { "DEFAULT": "#ffa970", "hover": "#d48d5d" },
+              "error": { "DEFAULT": "#ff879f", "hover": "#e57a8f" },
+              "secondary": { "DEFAULT": "#f0aaf0", "hover": "#c88ec8" },
+              "tertiary": { "DEFAULT": "#83e9f2", "hover": "#6dc2ca" },
+              "info": { "DEFAULT": "#3a84f2", "hover": "#306eca" },
+              "neutral": { 
+                "card": "#f1f2f2", 
+                "page": "#f9fafa",
+                "inverse": "#252626",
+                "inversehover": "#3e4040"
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="p-8 bg-neutral-page">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Header -->
+        <header class="mb-12">
+            <h1 class="text-6xl font-bold mb-4">Design System Button Test</h1>
+            <p class="text-lg">Exact component tokens: padding, spacing, icon sizes, typography</p>
+        </header>
+
+        <!-- Button Size Comparison -->
+        <section class="mb-12 bg-neutral-card p-8 rounded-lg">
+            <h2 class="text-3xl font-semibold mb-6">Button Sizes (Exact Figma Component Specs)</h2>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <!-- XL Buttons -->
+                <div>
+                    <h3 class="text-xl font-medium mb-4">XL Buttons (20px H-padding, 12px V-padding, 16px gap, 20px font)</h3>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <button class="btn-xl bg-primary hover:bg-primary-hover text-neutral-inverse font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-xl bg-error hover:bg-error-hover text-white font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-xl bg-secondary hover:bg-secondary-hover text-white font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-xl bg-neutral-inverse hover:bg-neutral-inversehover text-white font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- LG Buttons -->
+                <div>
+                    <h3 class="text-xl font-medium mb-4">LG Buttons (16px H-padding, 10px V-padding, 12px gap, 18px font)</h3>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <button class="btn-lg bg-warning hover:bg-warning-hover text-white font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-lg bg-tertiary hover:bg-tertiary-hover text-neutral-inverse font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MD Buttons -->
+                <div>
+                    <h3 class="text-xl font-medium mb-4">MD Buttons (12px H-padding, 8px V-padding, 12px gap, 16px font)</h3>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <button class="btn-md bg-success hover:bg-success-hover text-white font-medium">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-md border-2 border-neutral-inverse hover:bg-neutral-inverse hover:text-white text-neutral-inverse font-medium bg-transparent">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SM Buttons -->
+                <div>
+                    <h3 class="text-xl font-medium mb-4">SM Buttons (8px H-padding, 4px V-padding, 6px gap, 14px font)</h3>
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <button class="btn-sm bg-info hover:bg-info-hover text-white font-medium">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                        <button class="btn-sm bg-transparent hover:bg-neutral-card text-neutral-inverse font-medium">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                            Button
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <p class="mt-8 text-sm text-neutral-inverse">Press Tab to test focus states with blue focus rings!</p>
+    </div>
+</body>
+</html>

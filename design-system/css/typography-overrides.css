@@ -1,0 +1,213 @@
+/* Typography overrides generated from responsive tokens */
+@layer utilities {
+  .font-displayregular {
+    font-size: var(--font-size-display-display);
+    line-height: var(--line-height-display-display);
+  }
+
+  .font-displaymedium {
+    font-size: var(--font-size-display-display);
+    line-height: var(--line-height-display-display);
+  }
+
+  .font-headingh1regular {
+    font-size: var(--font-size-heading-h1);
+    line-height: var(--line-height-heading-h1);
+  }
+
+  .font-headingh1medium {
+    font-size: var(--font-size-heading-h1);
+    line-height: var(--line-height-heading-h1);
+  }
+
+  .font-headingh2regular {
+    font-size: var(--font-size-heading-h2);
+    line-height: var(--line-height-heading-h2);
+  }
+
+  .font-headingh2medium {
+    font-size: var(--font-size-heading-h2);
+    line-height: var(--line-height-heading-h2);
+  }
+
+  .font-headingh3regular {
+    font-size: var(--font-size-heading-h3);
+    line-height: var(--line-height-heading-h3);
+  }
+
+  .font-headingh3medium {
+    font-size: var(--font-size-heading-h3);
+    line-height: var(--line-height-heading-h3);
+  }
+
+  .font-headingh4regular {
+    font-size: var(--font-size-heading-h4);
+    line-height: var(--line-height-heading-h4);
+  }
+
+  .font-headingh4medium {
+    font-size: var(--font-size-heading-h4);
+    line-height: var(--line-height-heading-h4);
+  }
+
+  .font-headingh5regular {
+    font-size: var(--font-size-heading-h5);
+    line-height: var(--line-height-heading-h5);
+  }
+
+  .font-headingh5medium {
+    font-size: var(--font-size-heading-h5);
+    line-height: var(--line-height-heading-h5);
+  }
+
+  .font-headingh6regular {
+    font-size: var(--font-size-heading-h6);
+    line-height: var(--line-height-heading-h6);
+  }
+
+  .font-headingh6medium {
+    font-size: var(--font-size-heading-h6);
+    line-height: var(--line-height-heading-h6);
+  }
+
+  .font-titletitle-xlregular {
+    font-size: var(--font-size-title-xl);
+    line-height: var(--line-height-title-xl);
+  }
+
+  .font-titletitle-xlmedium {
+    font-size: var(--font-size-title-xl);
+    line-height: var(--line-height-title-xl);
+  }
+
+  .font-titletitle-xlsemibold {
+    font-size: var(--font-size-title-xl);
+    line-height: var(--line-height-title-xl);
+  }
+
+  .font-titletitle-lgregular {
+    font-size: var(--font-size-title-lg);
+    line-height: var(--line-height-title-lg);
+  }
+
+  .font-titletitle-lgmedium {
+    font-size: var(--font-size-title-lg);
+    line-height: var(--line-height-title-lg);
+  }
+
+  .font-titletitle-lgsemibold {
+    font-size: var(--font-size-title-lg);
+    line-height: var(--line-height-title-lg);
+  }
+
+  .font-titletitle-mdregular {
+    font-size: var(--font-size-title-md);
+    line-height: var(--line-height-title-base);
+  }
+
+  .font-titletitle-mdmedium {
+    font-size: var(--font-size-title-md);
+    line-height: var(--line-height-title-base);
+  }
+
+  .font-titletitle-mdsemibold {
+    font-size: var(--font-size-title-md);
+    line-height: var(--line-height-title-base);
+  }
+
+  .font-titletitle-smregular {
+    font-size: var(--font-size-title-sm);
+    line-height: var(--line-height-title-sm);
+  }
+
+  .font-titletitle-smmedium {
+    font-size: var(--font-size-title-sm);
+    line-height: var(--line-height-title-sm);
+  }
+
+  .font-titletitle-smsemibold {
+    font-size: var(--font-size-title-sm);
+    line-height: var(--line-height-title-sm);
+  }
+
+  .font-titletitle-xsregular {
+    font-size: var(--font-size-title-xs);
+    line-height: var(--line-height-title-xs);
+  }
+
+  .font-titletitle-xsmedium {
+    font-size: var(--font-size-title-xs);
+    line-height: var(--line-height-title-xs);
+  }
+
+  .font-titletitle-xssemibold {
+    font-size: var(--font-size-title-xs);
+    line-height: var(--line-height-title-xs);
+  }
+
+  .font-bodybody-lgbold {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body-lg);
+  }
+
+  .font-bodybody-lgsemibold {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body-lg);
+  }
+
+  .font-bodybody-lgmedium {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body-lg);
+  }
+
+  .font-bodybody-lgregular {
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body-lg);
+  }
+
+  .font-bodybody-mdsemibold {
+    font-size: var(--font-size-body-md);
+    line-height: var(--line-height-body-md);
+  }
+
+  .font-bodybody-mdmedium {
+    font-size: var(--font-size-body-md);
+    line-height: var(--line-height-body-md);
+  }
+
+  .font-bodybody-mdregular {
+    font-size: var(--font-size-body-md);
+    line-height: var(--line-height-body-md);
+  }
+
+  .font-bodybody-smsemibold {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--line-height-body-sm);
+  }
+
+  .font-bodybody-smmedium {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--line-height-body-sm);
+  }
+
+  .font-bodybody-smregular {
+    font-size: var(--font-size-body-sm);
+    line-height: var(--line-height-body-sm);
+  }
+
+  .font-bodybody-xssemibold {
+    font-size: var(--font-size-body-xs);
+    line-height: var(--line-height-body-xs);
+  }
+
+  .font-bodybody-xsmedium {
+    font-size: var(--font-size-body-xs);
+    line-height: var(--line-height-body-xs);
+  }
+
+  .font-bodybody-xsregular {
+    font-size: var(--font-size-body-xs);
+    line-height: var(--line-height-body-xs);
+  }
+
+}

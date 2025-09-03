@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bendy BethC Design System - Button Components</title>
+    <link rel="stylesheet" href="complete-design-system.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: var(--surface-neutral-page);
+            color: var(--text-neutral-heading);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--text-neutral-display);
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin: 40px 0 20px 0;
+            color: var(--text-neutral-heading);
+            border-bottom: 2px solid var(--surface-primary-default);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            color: var(--text-neutral-title);
+        }
+        
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .button-section {
+            background: var(--surface-neutral-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--surface-neutral-elevated);
+        }
+        
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            align-items: center;
+        }
+        
+        .button-demo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            background: var(--surface-neutral-elevated);
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        
+        .button-demo button {
+            margin: 0;
+        }
+        
+        .button-demo .label {
+            font-size: 14px;
+            color: var(--text-neutral-body);
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .spacing-demo {
+            background: var(--surface-primary-a-30);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .spacing-demo h4 {
+            margin: 0 0 15px 0;
+            color: var(--text-neutral-heading);
+        }
+        
+        .spacing-demo .spacing-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background: var(--surface-neutral-card);
+            border-radius: 6px;
+        }
+        
+        .spacing-demo .spacing-value {
+            font-family: monospace;
+            color: var(--text-neutral-body);
+        }
+        
+        .color-demo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .color-swatch {
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            color: var(--text-neutral-inverse);
+            font-weight: 600;
+        }
+        
+        .color-swatch.primary { background: var(--surface-primary-default); }
+        .color-swatch.secondary { background: var(--surface-secondary-default); }
+        .color-swatch.success { background: var(--surface-success-default); }
+        .color-swatch.warning { background: var(--surface-warning-default); }
+        .color-swatch.error { background: var(--surface-error-default); }
+        .color-swatch.info { background: var(--surface-info-default); }
+        
+        .interactive-demo {
+            background: var(--surface-neutral-card);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .interactive-demo button {
+            margin: 10px;
+        }
+        
+        .state-demo {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .state-demo button {
+            min-width: 120px;
+        }
+        
+        .code-block {
+            background: var(--surface-neutral-inverse);
+            color: var(--text-neutral-inverse);
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .responsive-demo {
+            background: var(--surface-tertiary-a-30);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .responsive-demo .breakpoint {
+            margin: 10px 0;
+            padding: 10px;
+            background: var(--surface-neutral-card);
+            border-radius: 6px;
+        }
+        
+        .responsive-demo .breakpoint-label {
+            font-weight: 600;
+            color: var(--text-neutral-heading);
+            margin-bottom: 5px;
+        }
+        
+        .responsive-demo .breakpoint-value {
+            font-family: monospace;
+            color: var(--text-neutral-body);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Bendy BethC Design System</h1>
+        <p style="font-size: 20px; color: var(--text-neutral-body); margin-bottom: 40px;">
+            Complete button component showcase with responsive design tokens
+        </p>
+
+        <!-- Button Sizes Section -->
+        <h2>Button Sizes</h2>
+        <div class="button-section">
+            <h3>All Button Variants</h3>
+            <div class="button-row">
+                <div class="button-demo">
+                    <button class="btn-sm bg-surface-primary-default text-neutral-heading">
+                        Small Button
+                    </button>
+                    <div class="label">Small (SM)</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-md bg-surface-primary-default text-neutral-heading">
+                        Medium Button
+                    </button>
+                    <div class="label">Medium (MD)</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-lg bg-surface-primary-default text-neutral-heading">
+                        Large Button
+                    </button>
+                    <div class="label">Large (LG)</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-xl bg-surface-primary-default text-neutral-heading">
+                        Extra Large
+                    </button>
+                    <div class="label">Extra Large (XL)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icon Buttons Section -->
+        <h2>Icon Buttons</h2>
+        <div class="button-section">
+            <h3>Icon Button Variants</h3>
+            <div class="button-row">
+                <div class="button-demo">
+                    <button class="btn-icon-sm bg-surface-primary-default text-neutral-heading">
+                        <span style="font-size: 16px;">🎯</span>
+                    </button>
+                    <div class="label">Icon Small</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-icon-md bg-surface-primary-default text-neutral-heading">
+                        <span style="font-size: 24px;">🚀</span>
+                    </button>
+                    <div class="label">Icon Medium</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-icon-lg bg-surface-primary-default text-neutral-heading">
+                        <span style="font-size: 32px;">⭐</span>
+                    </button>
+                    <div class="label">Icon Large</div>
+                </div>
+                
+                <div class="button-demo">
+                    <button class="btn-icon-xl bg-surface-primary-default text-neutral-heading">
+                        <span style="font-size: 40px;">🌟</span>
+                    </button>
+                    <div class="label">Icon Extra Large</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color Variants Section -->
+        <h2>Color Variants</h2>
+        <div class="button-section">
+            <h3>Surface Color Tokens</h3>
+            <div class="color-demo">
+                <div class="color-swatch primary">
+                    Primary<br>
+                    <small>#f0f081</small>
+                </div>
+                <div class="color-swatch secondary">
+                    Secondary<br>
+                    <small>#f0aaf0</small>
+                </div>
+                <div class="color-swatch success">
+                    Success<br>
+                    <small>#85edb0</small>
+                </div>
+                <div class="color-swatch warning">
+                    Warning<br>
+                    <small>#ffa970</small>
+                </div>
+                <div class="color-swatch error">
+                    Error<br>
+                    <small>#ff879f</small>
+                </div>
+                <div class="color-swatch info">
+                    Info<br>
+                    <small>#3a84f2</small>
+                </div>
+            </div>
+            
+            <h3>Colored Buttons</h3>
+            <div class="button-row">
+                <button class="btn-md bg-surface-primary-default text-neutral-heading">
+                    Primary Button
+                </button>
+                <button class="btn-md bg-surface-secondary-default text-neutral-heading">
+                    Secondary Button
+                </button>
+                <button class="btn-md bg-surface-success-default text-neutral-heading">
+                    Success Button
+                </button>
+                <button class="btn-md bg-surface-warning-default text-neutral-heading">
+                    Warning Button
+                </button>
+                <button class="btn-md bg-surface-error-default text-neutral-heading">
+                    Error Button
+                </button>
+                <button class="btn-md bg-surface-info-default text-neutral-heading">
+                    Info Button
+                </button>
+            </div>
+        </div>
+
+        <!-- Interactive States Section -->
+        <h2>Interactive States</h2>
+        <div class="interactive-demo">
+            <h3>Hover & Focus States</h3>
+            <div class="state-demo">
+                <button class="btn-md bg-surface-primary-default text-neutral-heading">
+                    Default State
+                </button>
+                <button class="btn-md bg-surface-primary-hover text-neutral-heading">
+                    Hover State
+                </button>
+                <button class="btn-md bg-surface-primary-default text-neutral-heading" style="border: 2px solid var(--icon-focus);">
+                    Focus State
+                </button>
+                <button class="btn-md bg-surface-primary-disabled text-neutral-heading" disabled>
+                    Disabled State
+                </button>
+            </div>
+            
+            <h3>Interactive Demo</h3>
+            <p style="color: var(--text-neutral-body); margin-bottom: 15px;">
+                Click and hover over these buttons to see the interactive states:
+            </p>
+            <div class="state-demo">
+                <button class="btn-lg bg-surface-primary-default text-neutral-heading" onclick="alert('Primary button clicked!')">
+                    Click Me!
+                </button>
+                <button class="btn-lg bg-surface-secondary-default text-neutral-heading" onclick="alert('Secondary button clicked!')">
+                    Try Me!
+                </button>
+                <button class="btn-lg bg-surface-success-default text-neutral-heading" onclick="alert('Success button clicked!')">
+                    Success!
+                </button>
+            </div>
+        </div>
+
+        <!-- Spacing Tokens Section -->
+        <h2>Spacing System</h2>
+        <div class="spacing-demo">
+            <h3>Responsive Spacing Tokens</h3>
+            <div class="spacing-item">
+                <span>Mobile Margins:</span>
+                <span class="spacing-value">var(--margins-mobile)</span>
+            </div>
+            <div class="spacing-item">
+                <span>Tablet Margins:</span>
+                <span class="spacing-value">var(--margins-tablet)</span>
+            </div>
+            <div class="spacing-item">
+                <span>Desktop Margins:</span>
+                <span class="spacing-value">var(--margins-desktop)</span>
+            </div>
+            <div class="spacing-item">
+                <span>Small Spacing:</span>
+                <span class="spacing-value">var(--spacing-sm)</span>
+            </div>
+            <div class="spacing-item">
+                <span>Medium Spacing:</span>
+                <span class="spacing-value">var(--spacing-md)</span>
+            </div>
+            <div class="spacing-item">
+                <span>Large Spacing:</span>
+                <span class="spacing-value">var(--spacing-lg)</span>
+            </div>
+        </div>
+
+        <!-- Responsive Typography Section -->
+        <h2>Responsive Typography</h2>
+        <div class="responsive-demo">
+            <h3>Typography Scale Across Breakpoints</h3>
+            <div class="breakpoint">
+                <div class="breakpoint-label">Mobile (390px+)</div>
+                <div class="breakpoint-value">
+                    Display: var(--font-mobile-display-display) / var(--line-mobile-display-display)<br>
+                    H1: var(--font-mobile-heading-H1) / var(--line-mobile-heading-H1)
+                </div>
+            </div>
+            <div class="breakpoint">
+                <div class="breakpoint-label">Tablet (810px+)</div>
+                <div class="breakpoint-value">
+                    Display: var(--font-tablet-display-display) / var(--line-tablet-display-display)<br>
+                    H1: var(--font-tablet-heading-H1) / var(--line-tablet-heading-H1)
+                </div>
+            </div>
+            <div class="breakpoint">
+                <div class="breakpoint-label">Desktop (1440px+)</div>
+                <div class="breakpoint-value">
+                    Display: var(--font-desktop-display-display) / var(--line-desktop-display-display)<br>
+                    H1: var(--font-desktop-heading-H1) / var(--line-desktop-heading-H1)
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Examples Section -->
+        <h2>Implementation Examples</h2>
+        <div class="button-section">
+            <h3>HTML Usage</h3>
+            <div class="code-block">
+&lt;!-- Basic Button --&gt;
+&lt;button class="btn-md bg-surface-primary-default text-neutral-heading"&gt;
+    Click Me
+&lt;/button&gt;
+
+&lt;!-- Icon Button --&gt;
+&lt;button class="btn-icon-md bg-surface-secondary-default text-neutral-heading"&gt;
+    &lt;span&gt;🎯&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Different Sizes --&gt;
+&lt;button class="btn-sm bg-surface-success-default text-neutral-heading"&gt;Small&lt;/button&gt;
+&lt;button class="btn-lg bg-surface-warning-default text-neutral-heading"&gt;Large&lt;/button&gt;
+&lt;button class="btn-xl bg-surface-error-default text-neutral-heading"&gt;Extra Large&lt;/button&gt;
+            </div>
+            
+            <h3>CSS Custom Properties</h3>
+            <div class="code-block">
+/* Button sizing tokens */
+--button-h-padding-sm: 8px;
+--button-v-padding-sm: 4px;
+--button-radius-sm: 6px;
+
+/* Surface colors */
+--surface-primary-default: #f0f081;
+--surface-primary-hover: #f5f5ab;
+--surface-primary-disabled: #fcfce6;
+
+/* Text colors */
+--text-neutral-heading: #252626;
+--text-neutral-body: #3e4040;
+            </div>
+        </div>
+
+        <!-- Token Count Summary -->
+        <h2>Design System Coverage</h2>
+        <div class="button-section">
+            <h3>Token Summary</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: var(--surface-primary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0 0 10px 0;">Surface Tokens</h4>
+                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">19+</div>
+                    <div style="color: var(--text-neutral-body);">Background colors</div>
+                </div>
+                <div style="background: var(--surface-secondary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0 0 10px 0;">Text Tokens</h4>
+                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">29+</div>
+                    <div style="color: var(--text-neutral-body);">Text colors</div>
+                </div>
+                <div style="background: var(--surface-tertiary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading); margin: 0 0 10px 0;">Icon Tokens</h4>
+                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">28+</div>
+                    <div style="color: var(--text-neutral-body);">Icon colors</div>
+                </div>
+                <div style="background: var(--surface-info-a-30); padding: 20px; border-radius: 8px; text-align: center;">
+                    <h4 style="margin: 0 0 10px 0;">Border Tokens</h4>
+                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">27+</div>
+                    <div style="color: var(--text-neutral-body);">Border colors</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 60px 0; padding: 40px; background: var(--surface-neutral-card); border-radius: 12px;">
+            <h2 style="color: var(--text-neutral-display);">🎉 Design System Ready!</h2>
+            <p style="font-size: 18px; color: var(--text-neutral-body); margin: 20px 0;">
+                Your enhanced design system is now generating comprehensive button components with:
+            </p>
+            <ul style="text-align: left; display: inline-block; color: var(--text-neutral-body); font-size: 16px;">
+                <li>✅ Responsive button sizes (SM, MD, LG, XL)</li>
+                <li>✅ Icon button variants</li>
+                <li>✅ Color system integration</li>
+                <li>✅ Interactive states (hover, focus, disabled)</li>
+                <li>✅ Responsive typography and spacing</li>
+                <li>✅ Complete token coverage (291+ tokens)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactive functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click effects to all buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Create ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.width = ripple.style.height = size + 'px';
+                    ripple.style.left = x + 'px';
+                    ripple.style.top = y + 'px';
+                    ripple.classList.add('ripple');
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
