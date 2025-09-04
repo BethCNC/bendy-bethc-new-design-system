@@ -1,0 +1,44 @@
+---
+alwaysApply: false
+---
+# 📚 Bendy BethC Design System – Component List
+
+This document lists all components defined in the Figma design system. Each component will be expanded with usage rules, tokens, and examples in future documentation.
+
+---
+
+## Components
+1. **Label**  
+2. **Field**  
+3. **Inputs**  
+4. **CTA (Call to Action)**  
+5. **Menu Bar**  
+6. **Image Gallery**  
+7. **Copy Placeholders**  
+8. **Copy Blocks**  
+9. **Image Placeholders**  
+10. **Slot**  
+11. **Slot Rows**  
+12. **Sample Slot Cards**  
+13. **Slot Columns**  
+14. **Pagination**  
+15. **Bendy Beth Logo**  
+16. **Avatar**  
+17. **Blog Post Card**  
+18. **Page Title**  
+19. **Button**  
+20. **Features**  
+21. **About Me**  
+22. **Footer**  
+23. **Icon-only Button**  
+24. **Social Feed Preview**  
+25. **Footer Scrolling Text Animation**  
+26. **Favicon**  
+27. **Cursor**  
+28. **Blog Categories**  
+29. **Contact Me Animation**  
+30. **Chip**  
+
+---
+
+📌 *Next Steps*: Each component will have its own section with description, usage rules, tokens, and code examples.
