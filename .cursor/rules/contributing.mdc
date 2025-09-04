@@ -1,0 +1,103 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# 🤝 Contributing Guidelines
+
+Welcome to the **Bendy_BethC Website** project!  
+This repo demonstrates **design system mastery** by enforcing token-driven, responsive, and accessible development.  
+Please read and follow these rules carefully when contributing.
+
+---
+
+## 📐 Core Principles
+1. **Design System First**  
+   - Always use semantic tokens (`tokens/index.css`).  
+   - Never hardcode colors, spacing, font sizes, or breakpoints.  
+
+2. **Responsive by Default**  
+   - Use mobile-first classes.  
+   - Apply `grid.css` utilities (`grid-mobile-4`, `grid-tablet-8`, `grid-desktop-12`).  
+
+3. **Accessibility Always**  
+   - Maintain WCAG 2.1 AA contrast ratios.  
+   - Use `aria-label` on icon-only buttons.  
+   - Focus management must use semantic focus tokens.  
+
+4. **Consistency**  
+   - Follow `.cursor/rules/` files for token, typography, responsive, and component rules.  
+   - Match Figma → tokens → code exactly.  
+
+---
+
+## 📁 Project Structure
+```
+app/           # Pages, layouts, components
+lib/           # Data fetching, Notion integration
+content/       # MD/MDX fallback posts
+tokens/        # Design system tokens (entry: index.css)
+public/        # Assets (images, fonts, videos)
+styles/        # Base reset only
+```
+
+---
+
+## 🛠️ Development Workflow
+1. **Branching**
+   - `main` → production-ready
+   - `dev` → active development
+   - Feature branches: `feature/<name>`
+
+2. **Commits**
+   - Use clear commit messages:
+     - `feat: add Button component`
+     - `fix: refactor Footer spacing`
+
+3. **Linting & Validation**
+   - Run:
+     ```bash
+     npm run lint
+     npm run lint:css
+     npm run validate:design-system
+     ```
+   - Fix all errors before pushing.
+
+4. **Pull Requests**
+   - Reference the related Figma node if applicable.  
+   - Ensure code passes design system validation.  
+   - No PR is merged with hardcoded styling.
+
+---
+
+## 🧩 Component Development
+- Use **semantic utility classes**:  
+  - ✅ `btn btn-primary btn-md`  
+  - ✅ `text-heading-h2`  
+  - ✅ `bg-surface-neutral-card`  
+  - ❌ `px-4 py-2 bg-blue-500 rounded-lg`
+- Use **responsive tokens** for typography:  
+  - `text-body-md` scales across mobile, tablet, desktop.  
+- Apply **focus-visible** for accessibility.  
+
+---
+
+## 🚦 Rules for AI Agents (Cursor, Claude, etc.)
+- Follow `.cursor/rules/*.mdc`.  
+- Never copy old `/tokens` or `/styles` from legacy repo.  
+- Transform hardcoded values into semantic tokens.  
+- Preserve page structure, routes, API, and content.  
+- Refactor navigation and footer with tokens, not custom CSS.  
+
+---
+
+## ✅ Contribution Checklist
+- [ ] No hardcoded colors, px, or hex values.  
+- [ ] All typography uses semantic + responsive tokens.  
+- [ ] Responsive grid utilities applied.  
+- [ ] Accessibility (contrast, aria-labels, focus) enforced.  
+- [ ] Code passes lint + design system validation.  
+
+---
+
+*Built with ❤️ by Beth Cartrette*  

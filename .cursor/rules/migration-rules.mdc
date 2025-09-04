@@ -1,0 +1,82 @@
+# 🚚 Migration Rules (Old → New Repo)
+
+These rules guide Cursor AI when migrating code from  
+[`bendy_bethc_website`](https://github.com/BethCNC/bendy_bethc_website)  
+into [`bendy-bethc-new-design-system`](https://github.com/BethCNC/bendy-bethc-new-design-system).
+
+---
+
+## ✅ Allowed to Copy
+- `app/` pages, layouts, and API routes  
+- `lib/` (data fetching + Notion integration)  
+- `content/` (Markdown/MDX posts)  
+- Root files: `middleware.ts`, `next.config.js`, `vercel.json`  
+- Footer + navigation JSX structure (but refactor styling)  
+- Legacy docs (`COMPONENT_STYLING_SPECS.md`, etc.) into `/docs/legacy/`
+
+---
+
+## ❌ Do Not Copy
+- Old `/tokens` folder (use new design system instead)  
+- Old `/styles` folder (use utilities + tokens)  
+- Any JSX/HTML with:
+  - Hardcoded `px` or `rem` font sizes  
+  - Hardcoded `#hex` colors  
+  - Tailwind-like classes (`mx-auto`, `rounded-lg`, `min-h-screen`)  
+
+---
+
+## 🔄 Migration Transformations
+
+### 1. Replace Hardcoded Styling
+```diff
+- <button className="bg-blue-500 px-4 py-2 rounded">
++ <button className="btn btn-primary btn-md">
+```
+
+### 2. Typography
+```diff
+- <h2 style={{ fontSize: "28px", fontWeight: 600 }}>
++ <h2 className="text-heading-h2">
+```
+
+### 3. Layout & Spacing
+```diff
+- <div className="mx-auto min-h-screen rounded-lg">
++ <div className="container grid grid-desktop-12 bg-surface-neutral-card">
+```
+
+### 4. Footer & Navigation
+- Keep structure and links.  
+- Replace with semantic tokens:  
+  - `text-body-sm`  
+  - `bg-surface-neutral-strong`  
+  - `btn-link`
+
+---
+
+## 📐 Responsive
+- Always mobile-first.  
+- Use `grid.css` utilities:  
+  - `grid-mobile-4`, `grid-tablet-8`, `grid-desktop-12`  
+- Never hardcode breakpoints. Always map to `Responsive-*.json`.  
+
+---
+
+## 🔒 Accessibility
+- Replace inline `onClick` icons with `<button aria-label="...">`.  
+- All icon-only buttons must include `aria-label`.  
+- Focus styles must use:  
+  ```css
+  outline: 2px solid var(--border-focus);
+  outline-offset: 2px;
+  ```
+
+---
+
+## ✅ Final Checklist
+- [ ] No hardcoded colors or px values remain  
+- [ ] All components styled via semantic tokens/utilities  
+- [ ] Navigation + footer links preserved  
+- [ ] Blog + content migration works with Notion + MDX  
+- [ ] Old `tokens/` and `styles/` excluded  
