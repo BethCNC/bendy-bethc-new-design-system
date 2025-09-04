@@ -1,0 +1,364 @@
+/* Main Design System CSS - Import the complete design system */
+@import url('../design-system/src/complete-design-system.css');
+
+/* Import additional CSS utilities */
+@import url('../design-system/css/responsive.css');
+
+/* Responsive Typography utilities using semantic tokens */
+.text-heading-h1 {
+  font-family: var(--font-family-heading-mobile, "Behind The Nineties", serif);
+  font-size: var(--font-size-heading-h1-mobile, 48px);
+  line-height: var(--line-height-heading-h1-mobile, 60px);
+  font-weight: 400;
+}
+
+.text-heading-h2 {
+  font-family: var(--font-family-heading-mobile, "Behind The Nineties", serif);
+  font-size: var(--font-size-heading-h2-mobile, 24px);
+  line-height: var(--line-height-heading-h2-mobile, 48px);
+  font-weight: 400;
+}
+
+.text-heading-h3 {
+  font-family: var(--font-family-heading-mobile, "Behind The Nineties", serif);
+  font-size: var(--font-size-heading-h3-mobile, 24px);
+  line-height: var(--line-height-heading-h3-mobile, 32px);
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-family: var(--font-family-body-mobile, "Overused Grotesk", sans-serif);
+  font-size: var(--font-size-body-md-mobile, 14px);
+  line-height: var(--line-height-body-md-mobile, 20px);
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-family: var(--font-family-body-mobile, "Overused Grotesk", sans-serif);
+  font-size: var(--font-size-body-sm-mobile, 12px);
+  line-height: var(--line-height-body-sm-mobile, 16px);
+  font-weight: 400;
+}
+
+.text-body-lg {
+  font-family: var(--font-family-body-mobile, "Overused Grotesk", sans-serif);
+  font-size: var(--font-size-body-lg-mobile, 16px);
+  line-height: var(--line-height-body-lg-mobile, 24px);
+  font-weight: 400;
+}
+
+.text-display {
+  font-family: var(--font-family-display-mobile, "Behind The Nineties", serif);
+  font-size: var(--font-size-display-display-mobile, 48px);
+  line-height: var(--line-height-display-display-mobile, 48px);
+  font-weight: 400;
+}
+
+/* Tablet responsive typography */
+@media (min-width: 810px) {
+  .text-heading-h1 {
+    font-family: var(--font-family-heading-tablet, "Behind The Nineties", serif);
+    font-size: var(--font-size-heading-h1-tablet, 60px);
+    line-height: var(--line-height-heading-h1-tablet, 72px);
+  }
+  
+  .text-heading-h2 {
+    font-family: var(--font-family-heading-tablet, "Behind The Nineties", serif);
+    font-size: var(--font-size-heading-h2-tablet, 36px);
+    line-height: var(--line-height-heading-h2-tablet, 56px);
+  }
+  
+  .text-body-md {
+    font-size: var(--font-size-body-md-tablet, 16px);
+    line-height: var(--line-height-body-md-tablet, 24px);
+  }
+  
+  .text-display {
+    font-size: var(--font-size-display-display-tablet, 72px);
+    line-height: var(--line-height-display-display-tablet, 72px);
+  }
+}
+
+/* Desktop responsive typography */
+@media (min-width: 1440px) {
+  .text-heading-h1 {
+    font-family: var(--font-family-heading-desktop, "Behind The Nineties", serif);
+    font-size: var(--font-size-heading-h1-desktop, 72px);
+    line-height: var(--line-height-heading-h1-desktop, 84px);
+  }
+  
+  .text-heading-h2 {
+    font-family: var(--font-family-heading-desktop, "Behind The Nineties", serif);
+    font-size: var(--font-size-heading-h2-desktop, 48px);
+    line-height: var(--line-height-heading-h2-desktop, 64px);
+  }
+  
+  .text-body-md {
+    font-size: var(--font-size-body-md-desktop, 16px);
+    line-height: var(--line-height-body-md-desktop, 24px);
+  }
+  
+  .text-display {
+    font-size: var(--font-size-display-display-desktop, 96px);
+    line-height: var(--line-height-display-display-desktop, 96px);
+  }
+}
+
+/* Background utilities using semantic tokens */
+.bg-surface-neutral-inverse {
+  background-color: var(--surface-neutral-inverse);
+}
+
+.bg-surface-neutral-page {
+  background-color: var(--surface-neutral-page);
+}
+
+.bg-surface-primary-default {
+  background-color: var(--surface-primary-default);
+}
+
+/* Text color utilities using semantic tokens */
+.text-neutral-inverse {
+  color: var(--text-neutral-inverse);
+}
+
+.text-neutral-body {
+  color: var(--text-neutral-body);
+}
+
+.text-primary-default {
+  color: var(--text-primary-default);
+}
+
+/* Layout utilities using semantic tokens */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--margins-mobile);
+}
+
+@media (min-width: 810px) {
+  .container {
+    padding: 0 var(--margins-tablet);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 var(--margins-desktop);
+  }
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+}
+
+.grid-mobile-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gutter-mobile);
+}
+
+@media (min-width: 810px) {
+  .grid-tablet-8 {
+    grid-template-columns: repeat(8, 1fr);
+    gap: var(--gutter-tablet);
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid-desktop-12 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gutter-desktop);
+  }
+}
+
+/* Responsive Spacing utilities using semantic tokens */
+.padding-sm {
+  padding: var(--spacing-sm-mobile, 8px);
+}
+
+.padding-md {
+  padding: var(--spacing-md-mobile, 12px);
+}
+
+.padding-lg {
+  padding: var(--spacing-lg-mobile, 16px);
+}
+
+.margin-sm {
+  margin: var(--spacing-sm-mobile, 8px);
+}
+
+.margin-md {
+  margin: var(--spacing-md-mobile, 12px);
+}
+
+.margin-lg {
+  margin: var(--spacing-lg-mobile, 16px);
+}
+
+/* Tablet responsive spacing */
+@media (min-width: 810px) {
+  .padding-sm {
+    padding: var(--spacing-sm-tablet, 12px);
+  }
+  
+  .padding-md {
+    padding: var(--spacing-md-tablet, 16px);
+  }
+  
+  .padding-lg {
+    padding: var(--spacing-lg-tablet, 24px);
+  }
+  
+  .margin-sm {
+    margin: var(--spacing-sm-tablet, 12px);
+  }
+  
+  .margin-md {
+    margin: var(--spacing-md-tablet, 16px);
+  }
+  
+  .margin-lg {
+    margin: var(--spacing-lg-tablet, 24px);
+  }
+}
+
+/* Desktop responsive spacing */
+@media (min-width: 1440px) {
+  .padding-sm {
+    padding: var(--spacing-sm-desktop, 16px);
+  }
+  
+  .padding-md {
+    padding: var(--spacing-md-desktop, 24px);
+  }
+  
+  .padding-lg {
+    padding: var(--spacing-lg-desktop, 32px);
+  }
+  
+  .margin-sm {
+    margin: var(--spacing-sm-desktop, 16px);
+  }
+  
+  .margin-md {
+    margin: var(--spacing-md-desktop, 24px);
+  }
+  
+  .margin-lg {
+    margin: var(--spacing-lg-desktop, 32px);
+  }
+}
+
+/* Component tokens - Button MD specifications */
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-md {
+  padding: 8px 12px;
+  gap: 12px;
+  border-radius: 6px;
+}
+
+.btn-md .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Component tokens - Chip specifications */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 6px;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.chip .icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Focus states using semantic tokens */
+.btn:focus-visible,
+.chip:focus-visible {
+  outline: 2px solid var(--border-focus, #3a84f2);
+  outline-offset: 2px;
+}
+
+/* Border utilities using semantic tokens */
+.border-default {
+  border: 1px solid var(--border-neutral-subtle, #dddfdf);
+}
+
+.border-top-default {
+  border-top: 1px solid var(--border-neutral-subtle, #dddfdf);
+}
+
+.border-right-default {
+  border-right: 1px solid var(--border-neutral-subtle, #dddfdf);
+}
+
+.border-radius-md {
+  border-radius: var(--border-radius-md, 8px);
+}
+
+.border-radius-full {
+  border-radius: 9999px;
+}
+
+/* Layout utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm-mobile, 8px);
+}
+
+.gap-md {
+  gap: var(--spacing-md-mobile, 12px);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.transition-all {
+  transition: all 0.2s ease;
+}
+
+/* Image filter utilities */
+.brightness-0 {
+  filter: brightness(0);
+}
+
+.invert {
+  filter: brightness(0) invert(1);
+}

@@ -3,7 +3,13 @@
     "allow": [
       "Bash(claude mcp add:*)",
       "Bash(claude mcp)",
-      "Bash(claude mcp:*)"
+      "Bash(claude mcp:*)",
+      "Read(//Users/bethcartrette/REPOS/bendy_bethc_website/**)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(npm run lint)",
+      "Bash(npm install)"
     ],
     "deny": [],
     "ask": []

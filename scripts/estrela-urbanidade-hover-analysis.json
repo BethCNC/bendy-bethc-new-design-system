@@ -1,0 +1,616 @@
+{
+  "timestamp": "2025-08-01T19:49:25.537Z",
+  "url": "https://estrelaurbanidade.com.br/contato",
+  "hoverEffects": [
+    {
+      "selector": ".plyr__menu__container .plyr__control--forward:focus-visible::after, .plyr__menu__container .plyr__control--forward:hover::after",
+      "properties": "border-left-color: initial;",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr__menu__container .plyr__control--back:focus-visible::after, .plyr__menu__container .plyr__control--back:hover::after",
+      "properties": "border-right-color: initial;",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr__menu__container .plyr__control[role=\"menuitemradio\"]:focus-visible::before, .plyr__menu__container .plyr__control[role=\"menuitemradio\"]:hover::before",
+      "properties": "background: rgba(35, 40, 47, 0.1);",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr .plyr__control:focus-visible .plyr__tooltip, .plyr .plyr__control:hover .plyr__tooltip, .plyr__tooltip--visible",
+      "properties": "opacity: 1; transform: translate(-50%) scale(1);",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr .plyr__control:hover .plyr__tooltip",
+      "properties": "z-index: 3;",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr__controls > .plyr__control:first-child .plyr__tooltip--visible, .plyr__controls > .plyr__control:first-child + .plyr__control .plyr__tooltip--visible, .plyr__controls > .plyr__control:first-child + .plyr__control:focus-visible .plyr__tooltip, .plyr__controls > .plyr__control:first-child + .plyr__control:hover .plyr__tooltip, .plyr__controls > .plyr__control:first-child:focus-visible .plyr__tooltip, .plyr__controls > .plyr__control:first-child:hover .plyr__tooltip, .plyr__controls > .plyr__control:last-child .plyr__tooltip--visible, .plyr__controls > .plyr__control:last-child:focus-visible .plyr__tooltip, .plyr__controls > .plyr__control:last-child:hover .plyr__tooltip",
+      "properties": "transform: translate(0px) scale(1);",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr--audio .plyr__control:focus-visible, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=\"true\"]",
+      "properties": "background: var(--plyr-audio-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#00b2ff))); color: var(--plyr-audio-control-color-hover,#fff);",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr--video .plyr__control:focus-visible, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=\"true\"]",
+      "properties": "background: var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main,#00b2ff))); color: var(--plyr-video-control-color-hover,#fff);",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".plyr__control--overlaid:focus, .plyr__control--overlaid:hover",
+      "properties": "opacity: 1;",
+      "source": "https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css"
+    },
+    {
+      "selector": ".link-underline:hover",
+      "properties": "color: var(--color-hover, black);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".link-underline:hover::before",
+      "properties": "transform: scaleX(1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".link-underlined:hover",
+      "properties": "color: var(--color-hover, black);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".link-underlined:hover::before",
+      "properties": "transform: scaleX(0);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".btn-underline:hover span, .btn-underline-black:hover span, .btn-underline.active span, .active.btn-underline-black span",
+      "properties": "background-image: linear-gradient(to right,var(--btn-color, var(--white-1)) 0%,var(--btn-color, var(--white-1)) 100%); background-size: 100% 1px; background-position: 0px 100%;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".btn-underlined:hover span, .btn-underlined-black:hover span, .btn-underlined.active span, .active.btn-underlined-black span",
+      "properties": "background-image: linear-gradient(to right,var(--btn-color, var(--white-1)) 0%,var(--btn-color, var(--white-1)) 100%); background-size: 0px 1px; background-position: 100% 100%;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".container-social .btn-talk-to-us:hover span, .container-social .btn-talk-to-us:hover i",
+      "properties": "color: var(--black-1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".conteudos-list .conteudos-item.aos-animate a:hover .column-img .container-img .media, .conteudos-list .conteudos-item.aos-animate a:hover .column-img .container-img video",
+      "properties": "transform: scale(1.1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".conteudos-list .conteudos-item.aos-animate a:hover .arrow-wrapper .static",
+      "properties": "animation: 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0s 1 normal both running enterStatic;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".conteudos-list .conteudos-item.aos-animate a:hover .arrow-wrapper .hover",
+      "properties": "animation: 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s 1 normal both running enterHover;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".conteudos-list.text-light .conteudos-item a .btn-primary-solid-dark:hover i, .conteudos-list.text-light .conteudos-item a .btn-primary-solid-dark:hover span",
+      "properties": "color: var(--btn-color);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".form-01 input:-webkit-autofill, .form-01 input:-webkit-autofill:hover, .form-01 input:-webkit-autofill:focus, .form-01 textarea:-webkit-autofill, .form-01 textarea:-webkit-autofill:hover, .form-01 textarea:-webkit-autofill:focus, .form-01 select:-webkit-autofill, .form-01 select:-webkit-autofill:hover, .form-01 select:-webkit-autofill:focus",
+      "properties": "-webkit-text-fill-color: var(--white-1); transition: background-color 5000s ease-in-out; box-shadow: transparent 0px 0px 0px 1000px inset !important; background-color: transparent !important; color: var(--white-1) !important;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".form-01 .container-input:hover label, .form-01 .container-textarea:hover label, .form-01 .container-select:hover label, .form-01 .container-input:hover input, .form-01 .container-textarea:hover input, .form-01 .container-select:hover input, .form-01 .container-input:hover select, .form-01 .container-textarea:hover select, .form-01 .container-select:hover select, .form-01 .container-input:hover textarea, .form-01 .container-textarea:hover textarea, .form-01 .container-select:hover textarea",
+      "properties": "opacity: 0.4;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".form-newsletter input:-webkit-autofill, .form-newsletter input:-webkit-autofill:hover, .form-newsletter input:-webkit-autofill:focus, .form-newsletter textarea:-webkit-autofill, .form-newsletter textarea:-webkit-autofill:hover, .form-newsletter textarea:-webkit-autofill:focus, .form-newsletter select:-webkit-autofill, .form-newsletter select:-webkit-autofill:hover, .form-newsletter select:-webkit-autofill:focus",
+      "properties": "-webkit-text-fill-color: var(--white-1); transition: background-color 5000s ease-in-out; box-shadow: transparent 0px 0px 0px 1000px inset !important; background-color: transparent !important; color: var(--white-1) !important;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".editor a:hover",
+      "properties": "transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86); color: rgb(0, 0, 0);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".editor.editor-blog a:hover",
+      "properties": "color: var(--green-1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "#bt-menu:hover #bt-menu-bars path",
+      "properties": "fill: var(--color-hover);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".menu--wrapper .menu--list li a:hover",
+      "properties": "color: var(--color-hover);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".container-close a:hover::after",
+      "properties": "transform: scale(1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".container-close a:hover i",
+      "properties": "color: var(--color-invert);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "btn-modal-close:hover",
+      "properties": "background: transparent;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "btn-modal-close:hover::before, btn-modal-close:hover::after",
+      "properties": "background-color: rgb(255, 255, 255);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".container-cookies .utilizamos-cookies .btn-cookies:hover",
+      "properties": "background: var(--white-1); color: var(--black-1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "#pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item button:hover, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item button.active, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item a:hover, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item a.active",
+      "properties": "color: var(--white-1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "#pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item button:hover::after, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item button.active::after, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item a:hover::after, #pg-conteudos .conteudos-blog-list .blog-filter-wrapper .blog-filter-list .blog-filter-item a.active::after",
+      "properties": "transform: translateY(0px);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "#pg-conteudos-post .social-list-icon-wrapper .social-list-icon li a:hover",
+      "properties": "color: var(--white-1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": "#pg-conteudos-post .social-list-icon-wrapper .social-list-icon li a:hover::before",
+      "properties": "transform: scale(1);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".section-conteudos .filter.aos-animate .filter-list .filter-item a:hover .indicator",
+      "properties": "right: 0.6rem;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".section-conteudos .filter.aos-animate .filter-list .filter-item a:hover::after",
+      "properties": "opacity: 1;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".section-fale-com-a-gente .link-contact:hover .text i, .section-fale-com-a-gente .link-contact:hover .text > span",
+      "properties": "transform: translate(3rem);",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".section-fale-com-a-gente .link-contact:hover .text i",
+      "properties": "transition-delay: 0.1s;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".section-fale-com-a-gente .link-contact:hover .text span",
+      "properties": "transition-delay: 0s;",
+      "source": "https://estrelaurbanidade.com.br/build/assets/app-b2084780.css"
+    },
+    {
+      "selector": ".choices[data-type*=\"select-one\"] .rd-choices__button:hover, .choices[data-type*=\"select-one\"] .rd-choices__button:focus",
+      "properties": "opacity: 1;",
+      "source": "inline"
+    },
+    {
+      "selector": ".choices[data-type*=\"select-multiple\"] .rd-choices__button:hover, .choices[data-type*=\"select-multiple\"] .rd-choices__button:focus, .choices[data-type*=\"text\"] .rd-choices__button:hover, .choices[data-type*=\"text\"] .rd-choices__button:focus",
+      "properties": "opacity: 1;",
+      "source": "inline"
+    }
+  ],
+  "animations": [
+    {
+      "tag": "html",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "head",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "meta",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "meta",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "meta",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "meta",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "meta",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "script",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "script",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "script",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "script",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "script",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    },
+    {
+      "tag": "link",
+      "class": "",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "transform": "none"
+    }
+  ],
+  "interactiveElements": [
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Estrela Urbanidade",
+      "classes": "logo",
+      "position": {
+        "x": 64,
+        "y": -75.0078125,
+        "width": 83,
+        "height": 35.1015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Quem somos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 978.21875,
+        "y": -71.8046875,
+        "width": 94.0546875,
+        "height": 25.6015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Empreendimentos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 1174.2734375,
+        "y": -71.8046875,
+        "width": 138.0546875,
+        "height": 25.6015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Conteúdos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 1414.328125,
+        "y": -71.8046875,
+        "width": 84.484375,
+        "height": 25.6015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Compliance",
+      "classes": "btn-underline",
+      "position": {
+        "x": 1600.8125,
+        "y": -71.8046875,
+        "width": 89.75,
+        "height": 25.6015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Contato",
+      "classes": "btn-underline active",
+      "position": {
+        "x": 1792.5625,
+        "y": -71.8046875,
+        "width": 63.4296875,
+        "height": 25.6015625
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "contatos@infoestrelaurbanidade.com.br",
+      "classes": "btn-underline fs--24 text-uppercase",
+      "position": {
+        "x": 64,
+        "y": 790.5,
+        "width": 485.453125,
+        "height": 31
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "(32) 99915-9017",
+      "classes": "btn-underline fs--24 text-uppercase",
+      "position": {
+        "x": 64,
+        "y": 850.5,
+        "width": 157.2734375,
+        "height": 31
+      }
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "text": "Conheça nossa loja",
+      "classes": "btn-primary-outline-light btn-x-small js-running",
+      "position": {
+        "x": 64,
+        "y": 1028,
+        "width": 196.1328125,
+        "height": 32
+      }
+    },
+    {
+      "tag": "input",
+      "type": "text",
+      "text": "",
+      "classes": "",
+      "position": {
+        "x": 975.984375,
+        "y": 628,
+        "width": 728,
+        "height": 128
+      }
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "text": "",
+      "classes": "",
+      "position": {
+        "x": 975.984375,
+        "y": 771,
+        "width": 728,
+        "height": 128
+      }
+    },
+    {
+      "tag": "input",
+      "type": "tel",
+      "text": "",
+      "classes": "",
+      "position": {
+        "x": 975.984375,
+        "y": 914,
+        "width": 728,
+        "height": 128
+      }
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "text": "Enviar mensagem",
+      "classes": "bt-submit btn-primary-solid-light btn-small",
+      "position": {
+        "x": 1511.7109375,
+        "y": 1541,
+        "width": 192.2734375,
+        "height": 42
+      }
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "text": "",
+      "classes": "",
+      "position": {
+        "x": 64,
+        "y": 3504,
+        "width": 576,
+        "height": 72
+      }
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "text": "inscreva-se",
+      "classes": "btn-primary-solid-light btn-small bt-submit",
+      "position": {
+        "x": 461.4765625,
+        "y": 3519,
+        "width": 162.5234375,
+        "height": 42
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Quem somos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 975.9921875,
+        "y": 3506,
+        "width": 363.3984375,
+        "height": 64
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Empreendimentos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 975.9921875,
+        "y": 3594,
+        "width": 532.9921875,
+        "height": 64
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Conteúdos",
+      "classes": "btn-underline",
+      "position": {
+        "x": 975.9921875,
+        "y": 3682,
+        "width": 326.40625,
+        "height": 64
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "Contato",
+      "classes": "btn-underline",
+      "position": {
+        "x": 975.9921875,
+        "y": 3770,
+        "width": 244.7421875,
+        "height": 64
+      }
+    },
+    {
+      "tag": "a",
+      "type": "link",
+      "text": "contatos@infoestrelaurbanidade.com.br",
+      "classes": "btn-underline",
+      "position": {
+        "x": 64,
+        "y": 4033,
+        "width": 492.3125,
+        "height": 36
+      }
+    }
+  ],
+  "hoverTestResults": [],
+  "recommendations": [
+    "1. Implement smooth transitions on hover (0.2s ease-in-out)",
+    "2. Use subtle scale transforms (1.05x) for hover effects",
+    "3. Add opacity changes for overlay elements",
+    "4. Use transform3d for hardware acceleration",
+    "5. Implement cursor pointer for interactive elements",
+    "6. Add focus states for accessibility",
+    "7. Use CSS custom properties for consistent timing",
+    "8. Implement reduced motion support"
+  ]
+}

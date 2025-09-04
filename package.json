@@ -1,5 +1,36 @@
 {
+  "name": "bendy-bethc-new-design-system",
+  "version": "2.0.0",
+  "description": "Design system and website for Bendy BethC health journey",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:css": "node scripts/lint-css-violations.js",
+    "validate:design-system": "node scripts/validate-design-system.js",
+    "precommit": "npm run validate:design-system",
+    "build-design-system": "node scripts/build-design-system.js"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.3",
+    "@notionhq/client": "^2.2.13",
+    "glob": "^11.0.3",
+    "lucide-react": "^0.400.0",
+    "next": "^14.0.3",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "styled-components": "^6.0.0"
+  },
   "devDependencies": {
-    "style-dictionary": "^5.0.4"
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^14.0.0",
+    "style-dictionary": "^5.0.4",
+    "typescript": "^5.0.0"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-07-22T16:59:13.148Z",
+  "url": "https://www.theoceanagency.org/",
+  "performance": {
+    "totalDuration": 196192.49525000298,
+    "averageFPS": 60,
+    "animationCount": 0,
+    "scrollEventCount": 0
+  },
+  "animations": [],
+  "scrollEvents": [],
+  "observations": {
+    "loadingSequence": "Progressive reveal with staggered timing",
+    "scrollBehavior": "Smooth parallax and fade-in effects",
+    "hoverEffects": "Subtle transitions and micro-interactions",
+    "performance": "Optimized with CSS transforms and opacity"
+  }
+}

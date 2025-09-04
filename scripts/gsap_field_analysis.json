@@ -1,0 +1,893 @@
+{
+  "html_structure": {
+    "title": "The GSAP Field™ — A motion playground by BYQ",
+    "sections": [
+      {
+        "tag": "div",
+        "classes": [
+          "nav-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 26
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "hero-section"
+        ],
+        "id": "hero",
+        "data_attributes": {},
+        "children_count": 22
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 17
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-hero-section"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 16
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "base"
+        ],
+        "id": "base",
+        "data_attributes": {},
+        "children_count": 59
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 58
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-section-top-tile"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 5
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "left-scroll-section"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 1
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "right-scroll-section"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 2
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 5
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 5
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 5
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_4"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 5
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "makes"
+        ],
+        "id": "makes",
+        "data_attributes": {},
+        "children_count": 86
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-snap-sections"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 85
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-snap-section",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 29
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-snap-section",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 28
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-snap-section",
+          "_3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 25
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "skills"
+        ],
+        "id": "skills",
+        "data_attributes": {},
+        "children_count": 83
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 82
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "story"
+        ],
+        "id": "story",
+        "data_attributes": {},
+        "children_count": 37
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 31
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "mobile-no-padding",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 4
+      },
+      {
+        "tag": "section",
+        "classes": [
+          "section",
+          "signal"
+        ],
+        "id": "signal",
+        "data_attributes": {},
+        "children_count": 36
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 35
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "circle-wrapper"
+        ],
+        "id": "",
+        "data_attributes": {
+          "data-w-id": "263d2523-89e5-a3b9-3a0b-374ff01cc041"
+        },
+        "children_count": 24
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 15
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "w-layout-blockcontainer",
+          "main-container",
+          "w-container"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 4
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "section-divider",
+          "footer-divider"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "children_count": 0
+      }
+    ],
+    "animations_elements": [
+      {
+        "tag": "div",
+        "classes": [
+          "navbar",
+          "w-nav"
+        ],
+        "id": "",
+        "data_attributes": {
+          "data-animation": "default",
+          "data-collapse": "medium",
+          "data-duration": "400",
+          "data-easing": "ease",
+          "data-easing2": "ease"
+        },
+        "text_content": "THE GSAP FIELD™Get if for freeTHE GSAP FIELD™BaseMakesSkillsStorySignalGet if for free"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label",
+          "hero-animated"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "A playground where animation meets curiosity. Built on GSAP. Designed by BYQ®."
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-section-top-tile"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "scroll gently into that good fieldSomewhere between the code and the grass, we found motion worth ke..."
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "left-scroll-section"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "scroll gently into that good field"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "right-scroll-section"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Somewhere between the code and the grass, we found motion worth keeping —gentle, curious, and made w..."
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-scroll-right"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Somewhere between the code and the grass, we found motion worth keeping —gentle, curious, and made w..."
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "EenyMore than motionmeenyA field of expressionminyBuilt on GSAPmoeRooted in real joy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-master-scroll-center"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "EenyMore than motionmeenyA field of expressionminyBuilt on GSAPmoeRooted in real joy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "EenyMore than motion"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Eeny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label",
+          "scroll-1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Eeny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "More than motion"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-h2",
+          "scroll-1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "More than motion"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "meenyA field of expression"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "meeny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label",
+          "scroll-2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "meeny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "A field of expression"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-h2",
+          "scroll-2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "A field of expression"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "minyBuilt on GSAP"
+      },
+      {
+        "tag": "img",
+        "classes": [
+          "gsap-svg"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "miny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label",
+          "scroll-3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "miny"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Built on GSAP"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-h2",
+          "scroll-3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Built on GSAP"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-wrapper-single",
+          "_4"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "moeRooted in real joy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "moe"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "label",
+          "scroll-4"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "moe"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-wrap-scroll"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Rooted in real joy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-h2",
+          "scroll-4"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Rooted in real joy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "images-scroll-block"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "master-scroll-images"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-large",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-vertical",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-small",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-large",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-large",
+          "_3"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-large",
+          "heading-404"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-small",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-row",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-small",
+          "_5"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-horizontall",
+          "_1"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-row",
+          "_2"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-small",
+          "_6"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "scroll-image-large",
+          "_4"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": ""
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-scroll-right"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "PopcornStrategy"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-scroll-right"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "DirectionFinding"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-scroll-right"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Detail  Patrol"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "text-scroll-right"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "Turns out we were making a field — full of noise, joy, scrolls, and crumbs. We mapped it, played in ..."
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "number-animate"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "8"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "number-animate"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "327"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "number-animate"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "9"
+      },
+      {
+        "tag": "div",
+        "classes": [
+          "number-animate"
+        ],
+        "id": "",
+        "data_attributes": {},
+        "text_content": "100%"
+      }
+    ],
+    "data_attributes": []
+  },
+  "css_animations": {
+    "inline_style_0": {
+      "type": "inline",
+      "content": "@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id=\"0ea3037d-b7bd-219c-ad75-87db8389eb5d\"] {display:none;-webkit-transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}}",
+      "animations": [
+        "transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);",
+        "transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);",
+        "transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);",
+        "transform:translate3d(0, -25px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);"
+      ],
+      "length": 533
+    },
+    "external_css_0": {
+      "type": "external",
+      "href": "https://cdn.prod.website-files.com/6851958ef29f498fc80cb5c1/css/the-gsap-field.webflow.shared.9b9a67e94.css",
+      "is_webflow": true
+    }
+  },
+  "javascript_code": {
+    "inline_0": {
+      "type": "inline",
+      "content": "WebFont.load({  google: {    families: [\"Instrument Sans:regular,500,600,700,italic,500italic,600italic,700italic\",\"Instrument Serif:regular,italic\"]  }});",
+      "has_gsap": false,
+      "has_animations": false,
+      "length": 155
+    },
+    "inline_1": {
+      "type": "inline",
+      "content": "!function(o,c){var n=c.documentElement,t=\" w-mod-\";n.className+=t+\"js\",(\"ontouchstart\"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+\"touch\")}(window,document);",
+      "has_gsap": false,
+      "has_animations": false,
+      "length": 181
+    },
+    "inline_2": {
+      "type": "inline",
+      "content": "gsap.registerPlugin(Flip,SplitText,ScrollTrigger);",
+      "has_gsap": true,
+      "has_animations": false,
+      "length": 50
+    },
+    "inline_3": {
+      "type": "inline",
+      "content": "\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const tabs   = gsap.utils.toArray(\".tab-btn\");\n  const track  = document.querySelector(\".panels-track\");\n  const panels = gsap.utils.toArray(\".panel\");\n  const hl     = document.querySelector(\".tab-highlight\");\n  const sliderDur = 0.6;\n\n  tabs.forEach((btn, i) => {\n    btn.addEventListener(\"click\", () => {\n      if (btn.classList.contains(\"is-active\")) return;\n\n      // 1. Update active classes\n      tabs.forEach(b => b.classList.remove(\"is-active\"));\n      btn.classList.add(\"is-active\");\n\n      // 2. MOVE / RESIZE highlight with Flip - but fix the stacking\n      const state = Flip.getState(hl);\n      \n      // Ensure highlight stays behind content during animation\n      gsap.set(hl, { \n        zIndex: -1,\n        force3D: true\n      });\n      \n      btn.appendChild(hl);\n      \n      Flip.from(state, {\n        duration: 0.4,\n        ease: \"power1.inOut\",\n        // Force the highlight to stay behind during animation\n        onStart: () => {\n          gsap.set(hl, { zIndex: -1 });\n        },\n        onUpdate: () => {\n          gsap.set(hl, { zIndex: -1 });\n        },\n        onComplete: () => {\n          gsap.set(hl, { zIndex: -1 });\n        }\n      });\n\n      // 3. SLIDE the panels\n      const xPercent = -100 * i;\n      gsap.to(track, {\n        xPercent,\n        duration: sliderDur,\n        ease: \"power2.inOut\"\n      });\n    });\n  });\n});\n",
+      "has_gsap": true,
+      "has_animations": false,
+      "length": 1418
+    },
+    "inline_4": {
+      "type": "inline",
+      "content": "\ndocument.addEventListener('DOMContentLoaded', () => {\n  const wrapper = document.querySelector('.circle-wrapper');\n  const items   = document.querySelectorAll('.circle-image');\n\n  if (!wrapper || !items.length) return console.error('Missing wrapper or images');\n\n  const r        = (Math.min(wrapper.offsetWidth, wrapper.offsetHeight) / 2) - 50;\n  const stepDeg  = 360 / items.length;\n\n  items.forEach((item, i) => {\n    const angle = stepDeg * i;          // where it sits on the circle\n    const rad   = angle * Math.PI / 180;\n\n    gsap.set(item, {\n      x: Math.cos(rad) * r,\n      y: Math.sin(rad) * r,\n      rotation: angle + 90,             // <- tangent, not radial\n      transformOrigin: '50% 50%',\n      position: 'absolute'              // makes the translation take effect\n    });\n  });\n});\n",
+      "has_gsap": true,
+      "has_animations": false,
+      "length": 803
+    }
+  },
+  "gsap_patterns": {
+    "gsap_calls": [
+      "gsap.set(item, {\n      x: Math.cos(rad) * r,\n      y: Math.sin(rad) * r,\n      rotation: angle + 90,             // <- tangent, not radial\n      transformOrigin: '50% 50%',\n      position: 'absolute'              // makes the translation take effect\n    });",
+      "gsap.registerPlugin(Flip,SplitText,ScrollTrigger);",
+      "gsap.utils.toArray(\".panel\");",
+      "gsap.set(hl, { zIndex: -1 });",
+      "gsap.to(track, {\n        xPercent,\n        duration: sliderDur,\n        ease: \"power2.inOut\"\n      });",
+      "gsap.utils.toArray(\".tab-btn\");",
+      "gsap.set(hl, { \n        zIndex: -1,\n        force3D: true\n      });"
+    ],
+    "custom_animations": [],
+    "total_gsap_calls": 9
+  },
+  "motion_analysis": {
+    "loading_animations": [],
+    "scroll_triggers": [
+      "gsap.registerPlugin(Flip,SplitText,ScrollTrigger);"
+    ],
+    "hover_effects": [],
+    "timeline_animations": [],
+    "layout_patterns": {
+      "circular_layouts": 1,
+      "grid_layouts": 0,
+      "scroll_sections": 19,
+      "tab_systems": 0
+    },
+    "key_findings": [
+      "Uses 1 ScrollTrigger animations",
+      "Has 1 circular/radial layouts"
+    ]
+  },
+  "assets": []
+}
