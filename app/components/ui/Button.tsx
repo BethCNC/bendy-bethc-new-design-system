@@ -1,9 +1,11 @@
 import React from 'react';
+import { LucideIcon } from 'lucide-react';
+import Icon from './Icon';
 
 interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'tertiary';
   size?: 'sm' | 'md' | 'lg' | 'xl';
-  icon?: React.ComponentType;
+  icon?: LucideIcon;
   iconPosition?: 'left' | 'right';
   type?: 'button' | 'submit' | 'reset';
   children: React.ReactNode;
@@ -14,7 +16,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   size = 'md',
-  icon: Icon,
+  icon,
   iconPosition = 'right',
   type = 'button',
   children,
@@ -63,9 +65,23 @@ const Button: React.FC<ButtonProps> = ({
       className={`${getButtonStyles()} ${className}`}
       aria-label={typeof children === 'string' ? children : undefined}
     >
-      {Icon && iconPosition === 'left' && <Icon className="icon" />}
+      {icon && iconPosition === 'left' && (
+        <Icon 
+          icon={icon} 
+          size={size}
+          variant="button"
+          aria-hidden={true}
+        />
+      )}
       {children}
-      {Icon && iconPosition === 'right' && <Icon className="icon" />}
+      {icon && iconPosition === 'right' && (
+        <Icon 
+          icon={icon} 
+          size={size}
+          variant="button"
+          aria-hidden={true}
+        />
+      )}
     </button>
   );
 };

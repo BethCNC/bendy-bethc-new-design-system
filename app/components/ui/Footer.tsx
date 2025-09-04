@@ -7,6 +7,7 @@ import FooterTextMarquee from './FooterTextMarquee';
 import SocialIcons from './SocialIcons';
 import Input from './Input';
 import Button from './Button';
+import Icon from './Icon';
 
 export type FooterVariant = 'desktop' | 'mobile';
 

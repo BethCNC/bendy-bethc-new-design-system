@@ -198,6 +198,76 @@
   margin: var(--spacing-lg-mobile, 16px);
 }
 
+/* Icon sizing tokens from component specifications */
+:root {
+  /* Button icon sizes */
+  --icon-size-button-sm: 16px;
+  --icon-size-button-md: 24px;
+  --icon-size-button-lg: 28px;
+  --icon-size-button-xl: 32px;
+  
+  /* Chip icon sizes */
+  --icon-size-chip-sm: 10px;
+  --icon-size-chip-md: 14px;
+  --icon-size-chip-lg: 16px;
+  --icon-size-chip-xl: 18px;
+  
+  /* Icon border widths */
+  --icon-border-width-sm: 1px;
+  --icon-border-width-md: 2px;
+  --icon-border-width-lg: 2px;
+  --icon-border-width-xl: 2px;
+}
+
+/* Lucide icon utility classes */
+.icon-button-sm {
+  width: var(--icon-size-button-sm);
+  height: var(--icon-size-button-sm);
+  stroke-width: var(--icon-border-width-sm);
+}
+
+.icon-button-md {
+  width: var(--icon-size-button-md);
+  height: var(--icon-size-button-md);
+  stroke-width: var(--icon-border-width-md);
+}
+
+.icon-button-lg {
+  width: var(--icon-size-button-lg);
+  height: var(--icon-size-button-lg);
+  stroke-width: var(--icon-border-width-lg);
+}
+
+.icon-button-xl {
+  width: var(--icon-size-button-xl);
+  height: var(--icon-size-button-xl);
+  stroke-width: var(--icon-border-width-xl);
+}
+
+.icon-chip-sm {
+  width: var(--icon-size-chip-sm);
+  height: var(--icon-size-chip-sm);
+  stroke-width: var(--icon-border-width-sm);
+}
+
+.icon-chip-md {
+  width: var(--icon-size-chip-md);
+  height: var(--icon-size-chip-md);
+  stroke-width: var(--icon-border-width-md);
+}
+
+.icon-chip-lg {
+  width: var(--icon-size-chip-lg);
+  height: var(--icon-size-chip-lg);
+  stroke-width: var(--icon-border-width-lg);
+}
+
+.icon-chip-xl {
+  width: var(--icon-size-chip-xl);
+  height: var(--icon-size-chip-xl);
+  stroke-width: var(--icon-border-width-xl);
+}
+
 /* Tablet responsive spacing */
 @media (min-width: 810px) {
   .padding-sm {
