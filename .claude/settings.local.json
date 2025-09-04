@@ -8,5 +8,10 @@
     "deny": [],
     "ask": []
   },
-  "enableAllProjectMcpServers": false
+  "enableAllProjectMcpServers": false,
+  "enabledMcpjsonServers": [
+    "notion",
+    "figma-dev-mode-mcp-server",
+    "github"
+  ]
 }
