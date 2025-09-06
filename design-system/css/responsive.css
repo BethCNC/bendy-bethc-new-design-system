@@ -6,7 +6,7 @@
   :root {
     --breakpoint-mobile: 390;
     --columns-mobile: 4;
-    --margins-mobile: 32px;
+    --margins-mobile: 24px;
     --gutter-mobile: 24px;
     --font-size-body-sm-mobile: 12px;
     --font-size-body-xs-mobile: 10px;
@@ -24,7 +24,7 @@
     --font-size-heading-h3-mobile: 24px;
     --font-size-heading-h2-mobile: 24px;
     --font-size-heading-h1-mobile: 48px;
-    --font-size-display-display-mobile: 48px;
+    --font-size-display-display-mobile: 36px;
     --font-family-body-mobile: Overused Grotesk;
     --font-family-title-mobile: Overused Grotesk;
     --font-family-heading-mobile: Behind The Nineties;
@@ -52,7 +52,7 @@
     --spacing-xl-mobile: 48px;
     --spacing-2xl-mobile: 64px;
     --ui-menu-item-h-padding-mobile: 4px;
-    --ui-menu-item-v-padding-mobile: 4px;
+    --ui-menu-item-v-padding-mobile: 0px;
     --ui-menu-item-spacing-mobile: 4px;
     --ui-menu-item-border-width-mobile: 1px;
     --ui-menu-border-width-mobile: 1px;

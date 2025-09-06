@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Bendy Friends! - Bendy BethC</title>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <style>
+        body {
+            font-family: var(--font-title);
+            background: var(--surface-neutral-inverse);
+            color: var(--text-neutral-inverse);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        iframe {
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+            line-height: 0;
+        }
+        
+        /* Remove all gaps between sections */
+        .header-section,
+        .nav-menubar,
+        .hero-section {
+            margin: 0;
+            display: block;
+            border: none;
+        }
+        
+        /* Header Section with Logo */
+        .header-section {
+            background: var(--surface-neutral-card);
+            padding: 48px 96px;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .header-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .header-section:hover {
+            background: var(--surface-neutral-inverse);
+        }
+        
+        .header-section:hover .header-video {
+            opacity: 0.8;
+        }
+        
+        .header-section:hover .logo-container {
+            transform: scale(1.02);
+        }
+        
+        .logo-container {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .logo {
+            height: 75px;
+            width: 232.5px;
+            display: block;
+        }
+        
+        
+        /* Responsive header margins */
+        @media (max-width: 809px) {
+            .header-section {
+                padding: 48px 64px;
+            }
+        }
+        
+        @media (max-width: 390px) {
+            .header-section {
+                padding: 48px 24px;
+            }
+        }
+        
+        /* Navigation Menu - Desktop default */
+        .nav-menubar {
+            display: flex;
+            width: 100%;
+            border-top: 4px solid var(--border-neutral-dark);
+            border-bottom: 4px solid var(--border-neutral-dark);
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .nav-menuitem {
+            flex: 1;
+            background: var(--surface-neutral-card);
+            border-right: 2px solid var(--border-neutral-dark);
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: auto;
+        }
+        
+        .nav-menuitem:last-child {
+            border-right: none;
+        }
+        
+        /* Selected state */
+        .nav-menuitem.selected {
+            background: var(--surface-secondary-default);
+        }
+        
+        /* Tablet: 3x2 grid layout (391px to 809px) */
+        @media (max-width: 809px) and (min-width: 391px) {
+            .nav-menubar {
+                border-top: 2px solid var(--border-neutral-dark);
+                border-bottom: 2px solid var(--border-neutral-dark);
+                flex-wrap: wrap;
+            }
+            
+            .nav-menuitem {
+                border-right: 2px solid var(--border-neutral-dark);
+                border-bottom: 2px solid var(--border-neutral-dark);
+                flex: 0 0 33.333%;
+                width: 33.333%;
+            }
+            
+            /* Remove right border from 3rd and 6th items */
+            .nav-menuitem:nth-child(3n) {
+                border-right: none;
+            }
+            
+            /* Remove bottom border from last row items (4th, 5th, 6th) */
+            .nav-menuitem:nth-child(n+4) {
+                border-bottom: none;
+            }
+        }
+
+        /* Mobile: responsive borders and 2x3 grid (390px and below) */
+        @media (max-width: 390px) {
+            .nav-menubar {
+                border-top: 1px solid var(--border-neutral-dark);
+                border-bottom: 1px solid var(--border-neutral-dark);
+                flex-wrap: wrap;
+                margin: 0;
+            }
+            
+            .nav-menuitem {
+                border-right: 1px solid var(--border-neutral-dark);
+                border-bottom: 1px solid var(--border-neutral-dark);
+                flex: 0 0 50%;
+                width: 50%;
+            }
+            
+            /* Remove right border from odd-numbered items (2nd, 4th, 6th) */
+            .nav-menuitem:nth-child(2n) {
+                border-right: none;
+            }
+            
+            /* Remove bottom border from last row items */
+            .nav-menuitem:nth-child(5),
+            .nav-menuitem:nth-child(6) {
+                border-bottom: none;
+            }
+            
+            .nav-menuitem:last-child {
+                border-right: none;
+            }
+        }
+        
+        .nav-menuitem a {
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: var(--font-size-title-xs);
+            line-height: var(--line-height-title-xs);
+            color: var(--text-neutral-heading);
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            min-height: auto;
+            box-sizing: border-box;
+        }
+        
+        .nav-menuitem:hover {
+            background: var(--surface-primary-hover);
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .nav-menuitem a:hover {
+            background: none;
+            transform: none;
+        }
+        
+        /* Tablet: Adjust padding for tablet */
+        @media (max-width: 809px) and (min-width: 391px) {
+            .nav-menuitem a {
+                padding: 6px 8px;
+            }
+        }
+        
+        /* Mobile: Adjust padding for mobile */
+        @media (max-width: 390px) {
+            .nav-menuitem a {
+                padding: 0px 4px;
+            }
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: var(--surface-neutral-inverse);
+            background-image: url('../assets/832b009a057443500b928071ab8d6728bb71f075.svg');
+            background-size: cover;
+            background-position: center;
+            padding: var(--spacing-2xl);
+            height: 894px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .hero-content {
+            width: 496px;
+            padding: var(--spacing-2xl);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: flex-end;
+        }
+        
+        .hero-main-text {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H1);
+            line-height: 1.2;
+            color: var(--text-neutral-inverse);
+            text-align: right;
+            margin: 0;
+        }
+        
+        .hero-list {
+            text-align: right;
+        }
+        
+        .hero-list p {
+            font-family: var(--font-title);
+            font-size: var(--font-title-lg);
+            line-height: 1.33;
+            color: var(--text-neutral-inverse);
+            margin: var(--spacing-sm) 0;
+        }
+        
+        .hero-story h3 {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H1);
+            line-height: 1.25;
+            color: var(--text-neutral-inverse);
+            text-align: right;
+            margin: 0 0 var(--spacing-lg) 0;
+        }
+        
+        .hero-story p {
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: var(--font-heading-H1);
+            line-height: 1.25;
+            color: var(--text-neutral-inverse);
+            text-align: right;
+            margin: 0;
+        }
+        
+        /* Copy Block Section */
+        .copy-block {
+            background: var(--surface-neutral-inverse);
+            padding: var(--spacing-2xl);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: center;
+            text-align: center;
+        }
+        
+        .copy-line {
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: var(--font-heading-H1);
+            line-height: 1.2;
+            color: var(--text-neutral-inverse);
+            margin: 0;
+        }
+        
+        .copy-line.script {
+            font-family: var(--font-display);
+            font-weight: 400;
+        }
+        
+        /* Image Gallery */
+        .image-gallery {
+            background: var(--surface-neutral-inverse);
+            padding: var(--spacing-2xl);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 220px);
+            gap: var(--spacing-md);
+            max-width: 1196px;
+        }
+        
+        .gallery-image {
+            width: 220px;
+            height: 220px;
+            border-radius: var(--radius-md);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .gallery-image.with-year {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        
+        .gallery-year {
+            font-family: var(--font-title);
+            font-weight: 600;
+            font-size: var(--font-heading-H1);
+            line-height: 1.25;
+            color: var(--text-neutral-inverse);
+            text-shadow: 0px 1px 2px var(--surface-neutral-inverse);
+            padding: var(--spacing-sm);
+            backdrop-filter: blur(2px);
+        }
+        
+        /* Feature Cards */
+        .features-section {
+            background: var(--surface-neutral-inverse);
+            padding: var(--spacing-2xl);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: var(--spacing-2xl);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl);
+        }
+        
+        .feature-card {
+            background: var(--surface-warning-subtle);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            box-shadow: 
+                -8px 0px 8px 12px var(--surface-primary-default),
+                8px 0px 8px 12px var(--surface-primary-default),
+                0px -8px 8px 12px var(--surface-primary-default),
+                0px 8px 8px 12px var(--surface-primary-default);
+            text-align: center;
+        }
+        
+        .feature-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--font-display-display);
+            line-height: 1.33;
+            color: var(--text-neutral-body);
+            margin: 0 0 var(--spacing-md) 0;
+        }
+        
+        .feature-card p {
+            font-family: var(--font-title);
+            font-size: var(--font-title-md);
+            line-height: 1.33;
+            color: var(--text-neutral-body);
+            margin: 0;
+        }
+        
+        /* Social Feed */
+        .social-feed {
+            background: var(--surface-neutral-inverse);
+        }
+        
+        .social-quote {
+            background: var(--surface-primary-default);
+            padding: var(--spacing-md) var(--spacing-2xl);
+            text-align: center;
+        }
+        
+        .social-quote p {
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: var(--font-title-xl);
+            line-height: 1.33;
+            color: var(--surface-neutral-inverse);
+            margin: 0;
+        }
+        
+        .instagram-feed {
+            height: 200px;
+            overflow-x: auto;
+            display: flex;
+            background: var(--surface-neutral-inverse);
+        }
+        
+        .instagram-post {
+            width: 200px;
+            height: 200px;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+            border: var(--border-width-sm) solid var(--border-neutral-default);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--surface-neutral-inverse);
+            padding: var(--spacing-2xl) 0 var(--spacing-lg);
+        }
+        
+        .footer-marquee {
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .footer-marquee-text {
+            font-family: var(--font-display);
+            font-size: var(--font-display-display);
+            line-height: 1.33;
+            color: var(--text-neutral-inverse);
+            white-space: nowrap;
+            animation: marquee 20s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        .footer-content {
+            padding: 0 var(--spacing-lg);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .social-icon {
+            width: var(--spacing-lg);
+            height: var(--spacing-lg);
+        }
+        
+        .newsletter-signup {
+            display: flex;
+            gap: var(--spacing-sm);
+            align-items: center;
+        }
+        
+        .newsletter-input {
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: var(--border-width-sm) solid var(--border-neutral-default);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-title);
+            font-size: var(--font-body-xl);
+        }
+        
+        .newsletter-button {
+            background: var(--surface-primary-default);
+            color: var(--text-neutral-body);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-title);
+            font-weight: 500;
+            font-size: var(--font-body-xl);
+            cursor: pointer;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        
+        .footer-logo {
+            height: var(--spacing-xl);
+        }
+        
+        .copyright {
+            font-family: var(--font-title);
+            font-size: var(--font-body-md);
+            line-height: 1.4;
+            color: var(--text-neutral-disabled);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .gallery-grid {
+                grid-template-columns: repeat(4, 220px);
+            }
+        }
+        
+        @media (max-width: 1000px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 220px);
+            }
+            
+            .page-title {
+                font-size: var(--font-display-display);
+                line-height: 1.1;
+            }
+            
+            .hero-section {
+                height: auto;
+                min-height: 600px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 220px);
+            }
+            
+            .nav-menuitem a {
+                font-size: var(--font-body-xl);
+            }
+            
+            .page-title {
+                font-size: var(--font-heading-H1);
+                line-height: 1.2;
+            }
+            
+            .hero-main-text {
+                font-size: var(--font-title-xl);
+                line-height: 1.2;
+            }
+            
+            .copy-line {
+                font-size: var(--font-title-xl);
+                line-height: 1.2;
+            }
+        }
+    </style>
+    <script>
+        // Header video control
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header-section');
+            const video = header ? header.querySelector('.header-video') : null;
+            
+            if (video) {
+                video.load();
+                
+                header.addEventListener('mouseenter', () => {
+                    if (video.paused) {
+                        video.play().catch(e => console.log('Video autoplay blocked:', e));
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <!-- Background video for hover effect -->
+        <video 
+            class="header-video" 
+            autoplay 
+            muted 
+            loop 
+            preload="metadata"
+        >
+            <source src="../../public/videos/clouds.mp4" type="video/mp4">
+            <source src="../../public/videos/clouds_halfsize.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="logo-container">
+            <img src="../assets/a6f4b276bb66a227ddbf32093e7c75d56a2b64d3.svg" alt="bendy beth logo" class="logo">
+        </div>
+    </header>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menubar">
+        <div class="nav-menuitem selected">
+            <a href="#home">Home</a>
+        </div>
+        <div class="nav-menuitem">
+            <a href="#about">About Me</a>
+        </div>
+        <div class="nav-menuitem">
+            <a href="#blog">Blog</a>
+        </div>
+        <div class="nav-menuitem">
+            <a href="#resources">Resources</a>
+        </div>
+        <div class="nav-menuitem">
+            <a href="#contact">Contact Me</a>
+        </div>
+        <div class="nav-menuitem">
+            <a href="#links">Links</a>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-main">
+                <h2 class="hero-main-text">Finding my peace has been a journey</h2>
+            </div>
+            
+            <div class="hero-list">
+                <p>The pain</p>
+                <p>The gasligting</p>
+                <p>The fear</p>
+                <p>The loneliness</p>
+            </div>
+            
+            <div class="hero-story">
+                <h3>It all led me to this</h3>
+                <p>Here is my story</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Copy Block Section -->
+    <section class="copy-block">
+        <p class="copy-line">This isn't content.</p>
+        <p class="copy-line script">It's proof of what it really takes to get answers.</p>
+        <p class="copy-line script">What it means to keep going when no one believes you.</p>
+    </section>
+    
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+        <div class="gallery-grid">
+            <div class="gallery-image" style="background-image: url('../assets/2071065da9d5eca107a38d932c4c6e4a50877198.png')"></div>
+            <div class="gallery-image with-year" style="background-image: url('../assets/d951c425a08a44fd037a9a581a44b165013debb8.png')">
+                <div class="gallery-year">2004</div>
+            </div>
+            <div class="gallery-image" style="background-image: url('../assets/64f610e8a5e5dc846206740ef17547ebae77e2f6.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/625f8e8deabc7c609164c652b62a70cd367091a8.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/cfa76ac6b79430cdabaa5788af97d7913d17849f.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/97eda0cee41e0a5a52011d8bc8d5a575aae4fc89.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/dd9cbb7aabd0f0766b9559676cf644e13683a385.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/7ee69eda8cb16c28c8c31a61fef0e678ebd3085d.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/bcf203cfd531daa6b3a8f6a2947544c583278a60.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/181abedabe474aaeff46649b537bd079bfcfa060.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/3380f7edbbac0831685b5c34a79c78e88c1e3901.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/f8ed97a0725b4a33e5c91efde664a7e2c00c1b90.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/0f162a781df1bbe07ade940364ce7607b696fea3.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/61e90079e9608c8045436c8e03a5da2558d2a329.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/36b5b87e7cbdcc80e50891525f74dc0c157a276f.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/33157db69962c58c56bca06c0b85faddc73e14ea.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/01bc6e98ca10276a4925876a2eaf8921edb11c95.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/54db0a3465912dd5a1ce8d84e336679ae6c57208.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/3a277274913e519cbb3c471baf5075383d8d6eed.png')"></div>
+            <div class="gallery-image" style="background-image: url('../assets/32df1b23d3266edccd589413af05f446144b1de7.png')"></div>
+        </div>
+    </section>
+    
+    <!-- Feature Cards -->
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>About Me</h3>
+                <p>A snapshot of who I am behind the screens, the bendy body behind the site</p>
+            </div>
+            <div class="feature-card">
+                <h3>Blog</h3>
+                <p>Stories, insights, and thoughts from my journey of healing and growth</p>
+            </div>
+            <div class="feature-card">
+                <h3>Resources</h3>
+                <p>Tools and resources that have helped me along the way</p>
+            </div>
+            <div class="feature-card">
+                <h3>Contact</h3>
+                <p>Let's connect and support each other on this journey</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Feed Preview -->
+    <section class="social-feed">
+        <div class="social-quote">
+            <p>Alone we can do so little; together we can do so much — Helen Keller</p>
+        </div>
+        <div class="instagram-feed">
+            <div class="instagram-post" style="background-image: url('../assets/1a9ff8804106c1054587365add4189fdac959638.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/81dbbf1b55201b3affb8684a479f48421a9f1ad5.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/0cc921abc11ff3a2277caac7b7b43ba42f05798e.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/4bfe29fff34fe6c537976a7e9a1a52886a71f2be.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/ea53000aee81443f65d90dfba18f2979fc21e9d2.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/6e7b3f48c41e9eaa3eac27df8607535b420c360c.png')"></div>
+            <div class="instagram-post" style="background-image: url('../assets/f1465c9377f22ff7e25618484ae055b214af2902.png')"></div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-marquee">
+            <div class="footer-marquee-text">
+                ✨ Every view, every listen, every heart Thank you for holding space for my story
+            </div>
+        </div>
+        
+        <div class="footer-content">
+            <div class="social-icons">
+                <img src="../assets/53bf8e3213096a05ec343814d043def496a5358f.svg" alt="Facebook" class="social-icon">
+                <img src="../assets/126b8c0db7e8d01887b2fcbb3b8fce4f15076bb4.svg" alt="Twitter" class="social-icon">
+                <img src="../assets/a2d2ddb214a747da64fee042e00c47b8e48e9382.svg" alt="Instagram" class="social-icon">
+                <img src="../assets/a0a867540b65616a2b4915e2ecb647cee39f91da.svg" alt="YouTube" class="social-icon">
+                <img src="../assets/ff099a4fd159f53eaccffea59418f9db7cb372c5.svg" alt="GitHub" class="social-icon">
+                <img src="../assets/c7fb5455cf680608abce8b5b7739237d10455a32.svg" alt="Pinterest" class="social-icon">
+            </div>
+            
+            <p style="color: var(--text-neutral-inverse); font-size: var(--font-body-xl); text-align: center; margin: var(--spacing-md) 0;">
+                Bend the Rules, Break the Silence, Join My Journey
+            </p>
+            
+            <div class="newsletter-signup">
+                <input type="email" placeholder="Enter your email" class="newsletter-input">
+                <button class="newsletter-button">I'm In</button>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <img src="../assets/8b22fa7b22eeb057e2c7c9c77ef3ceb02797e828.svg" alt="Bendy BethC" class="footer-logo">
+            <div class="copyright">Copyright © 2025. All rights reserved</div>
+        </div>
+    </footer>
+</body>
+</html>
