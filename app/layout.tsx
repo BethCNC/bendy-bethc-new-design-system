@@ -4,9 +4,12 @@ import type { Metadata } from 'next';
 import { usePathname } from 'next/navigation';
 import StyledComponentsRegistry from './lib/registry';
 import { overusedGrotesk, behindTheNineties } from './lib/fonts';
-// Design system CSS - using semantic tokens
-import '../tokens/index.css';
-import { CTA } from './components/ui/CTA';
+// Import design system styles (CSS custom properties approach)
+import '../design-system/css/fonts.css';
+import '../design-system/css/responsive.css';  
+import '../design-system/src/complete-design-system.css';
+import '../design-system/css/globals.css';
+import Header from './components/ui/Header';
 import MenuBar from './components/ui/MenuBar';
 import Footer from './components/ui/Footer';
 import CustomCursor from './components/ui/CustomCursor';
@@ -36,7 +39,7 @@ export default function RootLayout({
         <link rel="icon" href="/android-chrome-192x192.png" sizes="192x192" type="image/png" />
         <link rel="icon" href="/android-chrome-512x512.png" sizes="512x512" type="image/png" />
       </head>
-      <body className={`${overusedGrotesk.variable} ${behindTheNineties.variable} bg-surface-neutral-inverse`}>
+      <body className={`${overusedGrotesk.variable} ${behindTheNineties.variable}`}>
         <StyledComponentsRegistry>
           <AnimationProvider 
             showPreloader={isHomepage}
@@ -44,8 +47,8 @@ export default function RootLayout({
             {/* Custom Cursor - global cursor for interactive elements */}
             <CustomCursor />
             
-            {/* CTA Component - appears on every page */}
-            <CTA variant="logo" />
+            {/* Header - logo with clouds video hover effect */}
+            <Header />
             
             {/* MenuBar - appears on every page */}
             <MenuBar />

@@ -30,29 +30,55 @@ export const Footer: React.FC<FooterProps> = ({
 
   return (
     <footer 
-      className={`bg-surface-neutral-inverse border-top-default ${className}`}
+      className={`footer-section ${className}`}
+      style={{
+        background: 'var(--surface-neutral-inverse)',
+        borderTop: 'var(--border-width-lg) solid var(--border-neutral-dark)',
+        marginTop: 'var(--margins-desktop)',
+      }}
     >
-      <div className="container padding-lg">
+      <div 
+        style={{
+          padding: 'var(--margins-desktop)',
+          textAlign: 'center',
+        }}
+      >
         {/* Marquee Section */}
         <FooterTextMarquee />
 
         {/* Call-to-Action Text */}
-        <div className="margin-md">
-          <p className="text-body-lg text-neutral-inverse">
+        <div style={{ margin: 'var(--spacing-xl) 0' }}>
+          <p
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 'var(--font-size-body-lg)',
+              lineHeight: 'var(--line-height-body-lg)',
+              color: 'var(--text-neutral-inverse)',
+              margin: 0,
+            }}
+          >
             Bend the Rules, Break the Silence, Join My Journey
           </p>
         </div>
 
         {/* Newsletter Section */}
-        <div className="margin-md">
-          <form onSubmit={handleEmailSubmit} className="grid grid-mobile-4 items-center gap-md">
+        <div style={{ margin: '32px 0', display: 'flex', justifyContent: 'center', gap: 'var(--spacing-md)' }}>
+          <form 
+            onSubmit={handleEmailSubmit} 
+            style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: 'var(--spacing-md)',
+              maxWidth: 'var(--content-max-width, 600px)',
+              width: '100%',
+            }}
+          >
             <Input
               type="email"
               value={email}
               onChange={(value) => setEmail(value)}
               placeholder="user@someuseremail.com"
               required
-              className="grid-mobile-3"
             />
             <Button
               variant="primary"
@@ -67,24 +93,63 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Social Icons */}
-        <div className="margin-md">
+        <div style={{ margin: 'var(--spacing-xl) 0' }}>
           <SocialIcons brands={['instagram', 'facebook', 'github', 'pinterest', 'website']} variant="white" />
         </div>
 
         {/* Bottom Section */}
-        <div className="margin-md flex flex-col items-center gap-md">
+        <div 
+          style={{ 
+            margin: 'var(--spacing-xl) 0', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center', 
+            gap: 'var(--spacing-md)' 
+          }}
+        >
           <Image
             src="/logos/horizontal.svg"
             alt="Bendy BethC Logo"
             width={200}
             height={50}
-            className="brightness-0 invert"
+            style={{ filter: 'brightness(0) invert(1)' }}
           />
-          <p className="text-body-sm text-neutral-inverse">
+          <p 
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: 'var(--font-size-body-sm)',
+              lineHeight: 'var(--line-height-body-sm)',
+              color: 'var(--text-neutral-inverse)',
+              margin: 0,
+            }}
+          >
             Copyright © 2025. All rights reserved.
           </p>
         </div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 809px) {
+          .footer-section {
+            margin-top: var(--margins-tablet) !important;
+          }
+          
+          .footer-section > div {
+            padding: var(--margins-tablet) !important;
+          }
+        }
+        
+        @media (max-width: 390px) {
+          .footer-section {
+            margin-top: var(--margins-mobile) !important;
+            border-top: var(--border-width-md) solid var(--border-neutral-dark) !important;
+          }
+          
+          .footer-section > div {
+            padding: var(--margins-mobile) !important;
+          }
+        }
+      `}</style>
     </footer>
   );
 };
