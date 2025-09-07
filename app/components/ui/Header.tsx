@@ -103,6 +103,7 @@ const Header: FunctionComponent = () => {
             width: '100%',
             maxWidth: '472px',
             display: 'block',
+            color: 'var(--surface-neutral-inverse)',
           }}
         />
       </div>
