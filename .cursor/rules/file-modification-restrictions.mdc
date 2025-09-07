@@ -1,0 +1,49 @@
+---
+alwaysApply: true
+priority: 2
+---
+# 📁 FILE MODIFICATION RESTRICTIONS
+
+## 🔒 READ-ONLY FILES (NEVER EDIT):
+
+### Core Design System:
+- `design-system/src/complete-design-system.css`
+- `design-system/css/design-system.css`  
+- `design-system/css/globals.css`
+- `design-system/src/tailwind.config.js`
+
+### Token Files:
+- `variables/*.json` (ALL JSON files in variables directory)
+- `tokens/index.css`
+
+### Rule Files:
+- `.cursor/rules/button-rules.mdc`
+- `.cursor/rules/component-rules.mdc`
+- `.cursor/rules/state-rules.mdc`
+- `.cursor/rules/tokens-rules.mdc`
+
+---
+
+## ✅ ALLOWED FILE OPERATIONS:
+
+### Can Create New Files:
+- `/design-system/examples/*.html` - Demo pages
+- `/docs/*.md` - Documentation  
+- `/test-files/*.html` - Testing files
+- Root level test files (like `focus-test.html`)
+
+### Can Read (But Not Modify):
+- Any existing file for analysis
+- Configuration files for understanding
+
+---
+
+## 🚨 VIOLATION DETECTION:
+
+If asked to modify protected files:
+1. **IMMEDIATE REFUSAL** with explanation
+2. **ALTERNATIVE SUGGESTION** 
+3. **NO EXCEPTIONS** - Even for "small fixes" or "improvements"
+
+**Example Response:**
+"I cannot modify `design-system/src/complete-design-system.css` as it's a protected generated file. I can create a demo file in `/examples/` to show the desired functionality instead."

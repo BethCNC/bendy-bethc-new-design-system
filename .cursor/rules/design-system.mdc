@@ -6,9 +6,11 @@ alwaysApply: true
 # 📘 Design System Development Guide (for Cursor AI Agent)
 
 ## 1. 🎯 Purpose
-This guide ensures that any component developed from the **Figma Bendy_BethC design file** uses the **new design system** tokens and follows consistent rules.  
+This guide ensures that any component developed from the **Figma Bendy_BethC design file** uses the **existing design system** tokens and follows consistent rules.  
 
 The AI agent (Cursor) must **never hardcode raw values** (hex colors, px spacing, etc.), but instead reference semantic tokens defined in `design-system/css/*.css`.
+
+⚠️ **CRITICAL**: The AI agent must **NEVER MODIFY** the design system core files. This is a generated system.
 
 ---
 

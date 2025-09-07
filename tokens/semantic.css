@@ -1,0 +1,205 @@
+/**
+ * SEMANTIC TOKENS
+ * Generated from Mapped.json - Complete Figma design system
+ */
+
+:root {
+  /* === SURFACE TOKENS === */
+  /* Neutral surfaces */
+  --surface-neutral-page: #f9fafa;
+  --surface-neutral-card: #f1f2f2;
+  --surface-neutral-elevated: #e8eaea;
+  --surface-neutral-focus: #dddfdf;
+  --surface-neutral-disabled: #d2d4d4;
+  --surface-neutral-hover: #f9fafa;
+  --surface-neutral-inverse: #252626;
+  --surface-neutral-inverse-hover: #3e4040;
+  --surface-neutral-inverse-focus: #5e6060;
+  --surface-neutral-ghost: #f9fafa;
+  --surface-neutral-disabled-opacity: #f9fafa;
+
+  /* Primary surfaces */
+  --surface-primary-default: #f0f081;
+  --surface-primary-hover: #f5f5ab;
+  --surface-primary-disabled: #fcfce6;
+
+  /* Success surfaces */
+  --surface-success-default: #85edb0;
+  --surface-success-disabled: #e7fbef;
+  --surface-success-hover: #6fc593;
+
+  /* Warning surfaces */
+  --surface-warning-default: #ffa970;
+  --surface-warning-disabled: #ffeee2;
+  --surface-warning-hover: #d48d5d;
+
+  /* Error surfaces */
+  --surface-error-default: #ff879f;
+  --surface-error-disabled: #ffe7ec;
+  --surface-error-hover: #e57a8f;
+
+  /* Tertiary surfaces */
+  --surface-tertiary-default: #83e9f2;
+  --surface-tertiary-disabled: #e6fbfc;
+  --surface-tertiary-hover: #6dc2ca;
+
+  /* Secondary surfaces */
+  --surface-secondary-default: #f0aaf0;
+  --surface-secondary-hover: #c88ec8;
+  --surface-secondary-disabled: #fceefc;
+
+  /* Info surfaces */
+  --surface-info-default: #3a84f2;
+  --surface-info-hover: #306eca;
+  --surface-info-disabled: #d8e6fc;
+
+  /* === TEXT TOKENS === */
+  /* Neutral text */
+  --text-neutral-display: #0c0d0d;
+  --text-neutral-heading: #252626;
+  --text-neutral-title: #3e4040;
+  --text-neutral-disabled: #bbbfbf;
+  --text-neutral-inverse: #f9fafa;
+  --text-neutral-subtle-inverse: #f1f2f2;
+  --text-neutral-body: #3e4040;
+
+  /* Primary text */
+  --text-primary-default: #f0f081;
+  --text-primary-disabled: #f5f5ab;
+  --text-primary-hover: #d6d673;
+
+  /* Success text */
+  --text-success-default: #85edb0;
+  --text-success-disabled: #c2f6d7;
+  --text-success-hover: #6fc593;
+  --text-success-on-disabled: #599e75;
+
+  /* Warning text */
+  --text-warning-default: #ffa970;
+  --text-warning-disabled: #ffd4b7;
+  --text-warning-hover: #d48d5d;
+  --text-warning-on-disabled: #aa714b;
+
+  /* Error text */
+  --text-error-default: #ff879f;
+  --text-error-disabled: #ffc3cf;
+  --text-error-hover: #e57a8f;
+
+  /* Tertiary text */
+  --text-tertiary-default: #83e9f2;
+  --text-tertiary-disabled: #c1f4f8;
+  --text-tertiary-hover: #6dc2ca;
+  --text-tertiary-on-disabled: #579ba1;
+
+  /* Secondary text */
+  --text-secondary-default: #f0aaf0;
+  --text-secondary-hover: #c88ec8;
+  --text-secondary-disabled: #f5c6f5;
+
+  /* Info text */
+  --text-info-default: #3a84f2;
+  --text-info-hover: #306eca;
+  --text-info-disabled: #9cc1f8;
+  --text-info-on-disabled: #2758a1;
+
+  /* === ICON TOKENS === */
+  /* Neutral icons */
+  --icon-neutral-display: #0c0d0d;
+  --icon-neutral-heading: #252626;
+  --icon-neutral-title: #3e4040;
+  --icon-neutral-disabled: #bbbfbf;
+  --icon-neutral-display-inverse: #f9fafa;
+  --icon-neutral-body: #5e6060;
+  --icon-neutral-heading-inverse: #f1f2f2;
+  --icon-neutral-title-inverse: #e8eaea;
+
+  /* Primary icons */
+  --icon-primary-default: #f0f081;
+  --icon-primary-disabled: #f5f5ab;
+  --icon-primary-hover: #d6d673;
+
+  /* Success icons */
+  --icon-success-default: #85edb0;
+  --icon-success-disabled: #aef3ca;
+  --icon-success-hover: #6fc593;
+
+  /* Warning icons */
+  --icon-warning-default: #ffa970;
+  --icon-warning-disabled: #ffc6a0;
+  --icon-warning-hover: #d48d5d;
+
+  /* Error icons */
+  --icon-error-default: #ff879f;
+  --icon-error-disabeld: #ffc3cf;
+  --icon-error-hover: #e57a8f;
+
+  /* Tertiary icons */
+  --icon-tertiary-default: #83e9f2;
+  --icon-tertiary-disabled: #c1f4f8;
+  --icon-tertiary-hover: #6dc2ca;
+
+  --icon-focus: #3a84f2;
+
+  /* Secondary icons */
+  --icon-secondary-default: #f0aaf0;
+  --icon-secondary-hover: #c88ec8;
+  --icon-secondary-disabled: #f5c6f5;
+
+  /* Info icons */
+  --icon-info-default: #3a84f2;
+  --icon-info-hover: #306eca;
+  --icon-info-disabled: #9cc1f8;
+
+  /* === BORDER TOKENS === */
+  /* Neutral borders */
+  --border-neutral-default: #dddfdf;
+  --border-neutral-subtle: #d2d4d4;
+  --border-neutral-dark: #252626;
+  --border-neutral-dark-subtle: #3e4040;
+  --border-neutral-disabled: #bbbfbf;
+  --border-neutral-dark-muted: #5e6060;
+  --border-neutral-muted: #c6caca;
+  --border-neutral-inverse: #f9fafa;
+  --border-neutral-inverse-subtle: #f1f2f2;
+
+  /* Primary borders */
+  --border-primary-default: #f0f081;
+  --border-primary-disabled: #f7f7c0;
+  --border-primary-hover: #d6d673;
+
+  /* Success borders */
+  --border-success-default: #85edb0;
+  --border-success-disabled: #c2f6d7;
+  --border-success-hover: #6fc593;
+
+  /* Warning borders */
+  --border-warning-default: #ffa970;
+  --border-warning-disabled: #ffd4b7;
+  --border-warning-hover: #d48d5d;
+
+  /* Error borders */
+  --border-error-default: #ff879f;
+  --border-error-disabled: #ffc3cf;
+  --border-error-hover: #e57a8f;
+
+  /* Tertiary borders */
+  --border-tertiary-default: #83e9f2;
+  --border-tertiary-disabled: #c1f4f8;
+  --border-tertiary-hover: #6dc2ca;
+
+  --border-focus-ring: #3a84f2;
+
+  /* Secondary borders */
+  --border-secondary-default: #f0aaf0;
+  --border-secondary-disabled: #f7d4f7;
+  --border-secondary-hover: #c88ec8;
+
+  /* Info borders */
+  --border-info-default: #3a84f2;
+  --border-info-disabled: #9cc1f8;
+  --border-info-hover: #306eca;
+
+  /* Stroke widths */
+  --stroke-width-sm: 1px;
+  --stroke-width-md: 2px;
+}

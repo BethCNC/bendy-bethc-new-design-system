@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTitle Component - Design System Demo</title>
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/typography-overrides.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family-body);
+            background: var(--color-grayscale-50);
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+        
+        .demo-section {
+            margin-bottom: var(--spacing-2xl);
+            background: var(--color-grayscale-white);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .demo-title {
+            font-family: var(--font-family-heading);
+            font-size: var(--font-size-heading-h2);
+            line-height: var(--line-height-heading-h2);
+            color: var(--text-neutral-body);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .demo-description {
+            font-size: var(--font-size-body-md);
+            line-height: var(--line-height-body-md);
+            color: var(--text-neutral-body);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .page-title-demo {
+            margin-bottom: var(--spacing-lg);
+            border: 2px solid var(--color-grayscale-200);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .demo-label {
+            background: var(--color-grayscale-100);
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: var(--font-size-body-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+            border-bottom: 1px solid var(--color-grayscale-200);
+        }
+        
+        .responsive-demo {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+        }
+        
+        @media (min-width: 810px) {
+            .responsive-demo {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .breakpoint-demo {
+            border: 2px solid var(--color-grayscale-200);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .breakpoint-label {
+            background: var(--color-grayscale-200);
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-size: var(--font-size-body-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+            text-align: center;
+        }
+        
+        .breakpoint-content {
+            transform-origin: top left;
+        }
+        
+        .mobile-demo {
+            width: 390px;
+            transform: scale(0.8);
+        }
+        
+        .tablet-demo {
+            width: 810px;
+            transform: scale(0.6);
+        }
+        
+        .desktop-demo {
+            width: 100%;
+            transform: scale(1);
+        }
+        
+        .token-reference {
+            background: var(--color-grayscale-100);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: var(--font-size-body-sm);
+            line-height: var(--line-height-body-md);
+            overflow-x: auto;
+        }
+        
+        .token-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+        
+        .token-item {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+        
+        .token-name {
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+        }
+        
+        .token-value {
+            color: var(--color-grayscale-700);
+            font-size: var(--font-size-body-xs);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-section">
+            <h1 class="demo-title">PageTitle Component</h1>
+            <p class="demo-description">
+                The PageTitle component displays large, prominent page titles using the "Behind The Nineties" display font. 
+                It matches the Figma design specifications with proper responsive scaling and design system tokens.
+            </p>
+            
+            <div class="page-title-demo">
+                <div class="demo-label">Default PageTitle (Desktop)</div>
+                <div class="page-title" style="
+                    padding: var(--spacing-xl) var(--margins-desktop);
+                    background-color: var(--surface-neutral-inverse);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+                    box-sizing: border-box;
+                ">
+                    <h1 style="
+                        font-family: var(--font-behind-the-nineties);
+                        font-weight: var(--font-weight-regular);
+                        font-size: var(--font-size-display-display);
+                        line-height: var(--line-height-display-display);
+                        color: var(--text-neutral-inverse);
+                        margin: 0;
+                        flex: 1 1 0;
+                        min-width: 1px;
+                        min-height: 1px;
+                    ">
+                        Hello Bendy Friends!
+                    </h1>
+                </div>
+            </div>
+            
+            <div class="page-title-demo">
+                <div class="demo-label">Custom PageTitle</div>
+                <div class="page-title" style="
+                    padding: var(--spacing-xl) var(--margins-desktop);
+                    background-color: var(--surface-neutral-inverse);
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+                    box-sizing: border-box;
+                ">
+                    <h1 style="
+                        font-family: var(--font-behind-the-nineties);
+                        font-weight: var(--font-weight-regular);
+                        font-size: var(--font-size-display-display);
+                        line-height: var(--line-height-display-display);
+                        color: var(--text-neutral-inverse);
+                        margin: 0;
+                        flex: 1 1 0;
+                        min-width: 1px;
+                        min-height: 1px;
+                    ">
+                        About Me
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2 class="demo-title">Responsive Behavior</h2>
+            <p class="demo-description">
+                The PageTitle component automatically scales across different screen sizes using responsive design tokens.
+            </p>
+            
+            <div class="responsive-demo">
+                <div class="breakpoint-demo">
+                    <div class="breakpoint-label">Mobile (390px)</div>
+                    <div class="breakpoint-content mobile-demo">
+                        <div class="page-title" style="
+                            padding: var(--spacing-xl) var(--margins-mobile);
+                            background-color: var(--surface-neutral-inverse);
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 100%;
+                            box-sizing: border-box;
+                        ">
+                            <h1 style="
+                                font-family: var(--font-behind-the-nineties);
+                                font-weight: var(--font-weight-regular);
+                                font-size: var(--font-size-display-display-mobile);
+                                line-height: var(--line-height-display-display-mobile);
+                                color: var(--text-neutral-inverse);
+                                margin: 0;
+                                flex: 1 1 0;
+                                min-width: 1px;
+                                min-height: 1px;
+                            ">
+                                Hello Bendy Friends!
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="breakpoint-demo">
+                    <div class="breakpoint-label">Tablet (810px)</div>
+                    <div class="breakpoint-content tablet-demo">
+                        <div class="page-title" style="
+                            padding: var(--spacing-xl) var(--margins-tablet);
+                            background-color: var(--surface-neutral-inverse);
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 100%;
+                            box-sizing: border-box;
+                        ">
+                            <h1 style="
+                                font-family: var(--font-behind-the-nineties);
+                                font-weight: var(--font-weight-regular);
+                                font-size: var(--font-size-display-display-tablet);
+                                line-height: var(--line-height-display-display-tablet);
+                                color: var(--text-neutral-inverse);
+                                margin: 0;
+                                flex: 1 1 0;
+                                min-width: 1px;
+                                min-height: 1px;
+                            ">
+                                Hello Bendy Friends!
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2 class="demo-title">Design Tokens Used</h2>
+            <p class="demo-description">
+                The PageTitle component uses the following design system tokens to ensure consistency and maintainability.
+            </p>
+            
+            <div class="token-reference">
+                <div class="token-list">
+                    <div class="token-item">
+                        <div class="token-name">Font Family</div>
+                        <div class="token-value">var(--font-behind-the-nineties)</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Font Size (Desktop)</div>
+                        <div class="token-value">var(--font-size-display-display) - 128px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Font Size (Tablet)</div>
+                        <div class="token-value">var(--font-size-display-display-tablet) - 72px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Font Size (Mobile)</div>
+                        <div class="token-value">var(--font-size-display-display-mobile) - 36px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Line Height (Desktop)</div>
+                        <div class="token-value">var(--line-height-display-display) - 136px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Line Height (Tablet)</div>
+                        <div class="token-value">var(--line-height-display-display-tablet) - 96px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Line Height (Mobile)</div>
+                        <div class="token-value">var(--line-height-display-display-mobile) - 48px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Text Color</div>
+                        <div class="token-value">var(--text-neutral-inverse) - #f9fafa</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Background Color</div>
+                        <div class="token-value">var(--surface-neutral-inverse) - #252626</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Padding (Desktop)</div>
+                        <div class="token-value">var(--spacing-xl) var(--margins-desktop) - 64px 96px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Padding (Tablet)</div>
+                        <div class="token-value">var(--spacing-xl) var(--margins-tablet) - 64px 64px</div>
+                    </div>
+                    <div class="token-item">
+                        <div class="token-name">Padding (Mobile)</div>
+                        <div class="token-value">var(--spacing-xl) var(--margins-mobile) - 64px 24px</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2 class="demo-title">Usage Examples</h2>
+            <p class="demo-description">
+                The PageTitle component is used consistently across all pages in the application.
+            </p>
+            
+            <div class="token-reference">
+                <pre><code>// React Component Usage
+import PageTitle from '../components/ui/PageTitle';
+
+// Default title
+&lt;PageTitle /&gt;
+
+// Custom title
+&lt;PageTitle title="About Me" /&gt;
+&lt;PageTitle title="Contact Me" /&gt;
+&lt;PageTitle title="Resources" /&gt;
+&lt;PageTitle title="Links" /&gt;
+&lt;PageTitle title="Blog" /&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

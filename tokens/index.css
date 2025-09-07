@@ -14,15 +14,17 @@
 
 .text-heading-h2 {
   font-family: var(--font-family-heading-mobile, "Behind The Nineties", serif);
-  font-size: var(--font-size-heading-h2-mobile, 24px);
+  /* Updated H2 fallback sizes */
+  font-size: var(--font-size-heading-h2-mobile, 36px);
   line-height: var(--line-height-heading-h2-mobile, 48px);
   font-weight: 400;
 }
 
 .text-heading-h3 {
   font-family: var(--font-family-heading-mobile, "Behind The Nineties", serif);
-  font-size: var(--font-size-heading-h3-mobile, 24px);
-  line-height: var(--line-height-heading-h3-mobile, 32px);
+  /* Updated H3 fallback sizes */
+  font-size: var(--font-size-heading-h3-mobile, 30px);
+  line-height: var(--line-height-heading-h3-mobile, 40px);
   font-weight: 400;
 }
 
@@ -49,8 +51,9 @@
 
 .text-display {
   font-family: var(--font-family-display-mobile, "Behind The Nineties", serif);
-  font-size: var(--font-size-display-display-mobile, 48px);
-  line-height: var(--line-height-display-display-mobile, 48px);
+  /* Updated display fallback sizes */
+  font-size: var(--font-size-display-display-mobile, 72px);
+  line-height: var(--line-height-display-display-mobile, 80px);
   font-weight: 400;
 }
 
@@ -64,8 +67,8 @@
   
   .text-heading-h2 {
     font-family: var(--font-family-heading-tablet, "Behind The Nineties", serif);
-    font-size: var(--font-size-heading-h2-tablet, 36px);
-    line-height: var(--line-height-heading-h2-tablet, 56px);
+    font-size: var(--font-size-heading-h2-tablet, 48px);
+    line-height: var(--line-height-heading-h2-tablet, 60px);
   }
   
   .text-body-md {
@@ -74,8 +77,8 @@
   }
   
   .text-display {
-    font-size: var(--font-size-display-display-tablet, 72px);
-    line-height: var(--line-height-display-display-tablet, 72px);
+    font-size: var(--font-size-display-display-tablet, 96px);
+    line-height: var(--line-height-display-display-tablet, 108px);
   }
 }
 
@@ -89,8 +92,8 @@
   
   .text-heading-h2 {
     font-family: var(--font-family-heading-desktop, "Behind The Nineties", serif);
-    font-size: var(--font-size-heading-h2-desktop, 48px);
-    line-height: var(--line-height-heading-h2-desktop, 64px);
+    font-size: var(--font-size-heading-h2-desktop, 60px);
+    line-height: var(--line-height-heading-h2-desktop, 72px);
   }
   
   .text-body-md {
@@ -99,8 +102,8 @@
   }
   
   .text-display {
-    font-size: var(--font-size-display-display-desktop, 96px);
-    line-height: var(--line-height-display-display-desktop, 96px);
+    font-size: var(--font-size-display-display-desktop, 128px);
+    line-height: var(--line-height-display-display-desktop, 140px);
   }
 }
 

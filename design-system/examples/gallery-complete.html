@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Gallery Demo - Bendy BethC Design System</title>
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-body);
+            background-color: var(--surface-neutral-page);
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--surface-neutral-card);
+            border-radius: var(--radius-md);
+        }
+        
+        .demo-title {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H2-desktop);
+            font-weight: var(--font-weight-regular);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-sm) 0;
+        }
+        
+        .demo-subtitle {
+            font-family: var(--font-title);
+            font-size: var(--font-title-md-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+            margin: 0;
+        }
+        
+        .demo-specs {
+            background-color: var(--surface-neutral-card);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .demo-specs h3 {
+            font-family: var(--font-title);
+            font-size: var(--font-title-lg-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-md) 0;
+        }
+        
+        .demo-specs ul {
+            font-family: var(--font-body);
+            font-size: var(--font-body-md-desktop);
+            color: var(--text-neutral-body);
+            margin: 0;
+            padding-left: var(--spacing-lg);
+        }
+        
+        .demo-specs li {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Gallery Component Styles - Using Design System Tokens */
+        .simple-image-gallery {
+            padding: var(--spacing-xl) var(--margins-desktop);
+            background-color: var(--surface-neutral-inverse);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 220px);
+            grid-template-rows: repeat(4, 220px);
+            gap: 24px;
+            justify-content: center;
+            max-width: 1196px;
+            margin: 0 auto;
+        }
+        
+        .gallery-image-container {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: var(--radius-md);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-image-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(1px) saturate(1.2);
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-image-container:hover .gallery-image {
+            filter: blur(0px) saturate(1);
+            transform: scale(1.1);
+        }
+        
+        .gallery-year-overlay {
+            position: absolute;
+            bottom: var(--spacing-sm);
+            right: var(--spacing-sm);
+            background-color: var(--surface-neutral-inverse);
+            color: var(--text-neutral-inverse);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: var(--font-body-sm-desktop);
+            font-weight: var(--font-weight-medium);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-image-container:hover .gallery-year-overlay {
+            opacity: 1;
+        }
+
+        /* Responsive grid layouts */
+        @media (max-width: 809px) and (min-width: 391px) {
+            .simple-image-gallery {
+                padding: var(--spacing-lg) var(--margins-tablet);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(3, 180px);
+                grid-template-rows: repeat(7, 180px);
+                gap: var(--spacing-md);
+            }
+            
+            .gallery-image-container {
+                width: 180px;
+                height: 180px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .simple-image-gallery {
+                padding: var(--spacing-md) var(--margins-mobile);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 160px);
+                grid-template-rows: repeat(10, 160px);
+                gap: var(--spacing-sm);
+            }
+            
+            .gallery-image-container {
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1 class="demo-title">Simple Image Gallery</h1>
+            <p class="demo-subtitle">Health Journey Visual Timeline</p>
+        </div>
+        
+        <div class="demo-specs">
+            <h3>Gallery Specifications</h3>
+            <ul>
+                <li><strong>Layout:</strong> 5×4 grid (20 images) matching Figma design</li>
+                <li><strong>Image Size:</strong> 220px × 220px with 24px gaps</li>
+                <li><strong>Responsive:</strong> 5/3/2 columns for desktop/tablet/mobile</li>
+                <li><strong>Hover Effects:</strong> Dual scaling with blur/saturation changes</li>
+                <li><strong>Year Overlays:</strong> Contextual timeline information</li>
+                <li><strong>Design System:</strong> Uses semantic tokens throughout</li>
+            </ul>
+        </div>
+        
+        <section class="simple-image-gallery">
+            <div class="gallery-grid">
+                <!-- Row 1 -->
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/1986.png" alt="Health journey 1986" class="gallery-image">
+                    <div class="gallery-year-overlay">1986</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2004.png" alt="Health journey 2004" class="gallery-image">
+                    <div class="gallery-year-overlay">2004</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2008.png" alt="Health journey 2008" class="gallery-image">
+                    <div class="gallery-year-overlay">2008</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2010.png" alt="Health journey 2010" class="gallery-image">
+                    <div class="gallery-year-overlay">2010</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2017-1.png" alt="Health journey 2017 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2017</div>
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2017-2.png" alt="Health journey 2017 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2017</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2017-3.png" alt="Health journey 2017 part 3" class="gallery-image">
+                    <div class="gallery-year-overlay">2017</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2018-1.png" alt="Health journey 2018 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2018</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2018-2.png" alt="Health journey 2018 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2018</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2020-1.png" alt="Health journey 2020 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2020</div>
+                </div>
+                
+                <!-- Row 3 -->
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2020-2.png" alt="Health journey 2020 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2020</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2020-3.png" alt="Health journey 2020 part 3" class="gallery-image">
+                    <div class="gallery-year-overlay">2020</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2020-4.png" alt="Health journey 2020 part 4" class="gallery-image">
+                    <div class="gallery-year-overlay">2020</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2021-1.png" alt="Health journey 2021 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2021</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2021-2.png" alt="Health journey 2021 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2021</div>
+                </div>
+                
+                <!-- Row 4 -->
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2023-1.png" alt="Health journey 2023 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2023</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2023-2.png" alt="Health journey 2023 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2023</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2024-1.png" alt="Health journey 2024 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2024</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2025-1.png" alt="Health journey 2025 part 1" class="gallery-image">
+                    <div class="gallery-year-overlay">2025</div>
+                </div>
+                <div class="gallery-image-container">
+                    <img src="../../public/images/gallery/2025-2.png" alt="Health journey 2025 part 2" class="gallery-image">
+                    <div class="gallery-year-overlay">2025</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script>
+        // Mobile touch interactions
+        const containers = document.querySelectorAll('.gallery-image-container');
+        containers.forEach(container => {
+            let activeImageId = null;
+            
+            container.addEventListener('touchstart', () => {
+                activeImageId = container.dataset.id;
+                container.style.transform = 'scale(1.05)';
+                const img = container.querySelector('.gallery-image');
+                const overlay = container.querySelector('.gallery-year-overlay');
+                img.style.filter = 'blur(0px) saturate(1)';
+                img.style.transform = 'scale(1.1)';
+                overlay.style.opacity = '1';
+            });
+            
+            container.addEventListener('touchend', () => {
+                setTimeout(() => {
+                    container.style.transform = 'scale(1)';
+                    const img = container.querySelector('.gallery-image');
+                    const overlay = container.querySelector('.gallery-year-overlay');
+                    img.style.filter = 'blur(1px) saturate(1.2)';
+                    img.style.transform = 'scale(1)';
+                    overlay.style.opacity = '0.8';
+                    activeImageId = null;
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>

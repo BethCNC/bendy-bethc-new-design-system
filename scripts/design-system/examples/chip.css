@@ -1,0 +1,241 @@
+/* Chip Component Styles */
+/* Generated using design system tokens only */
+
+.chip {
+    /* Base styles using design system tokens */
+    font-family: font-body;
+    font-size: var(--font-body-sm-mobile);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    
+    /* Spacing using design system tokens */
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) var(--spacing-md);
+    margin: 0;
+    
+    /* Colors using design system tokens */
+    background: var(--surface-primary-default);
+    color: var(--text-neutral-body);
+    
+    /* Borders using design system tokens */
+    border: none;
+    border-radius: var(--radius-md);
+    
+    /* Layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    
+    /* Transitions */
+    transition: all 0.2s ease;
+    
+    /* Cursor */
+    cursor: pointer;
+    
+    /* Text decoration */
+    text-decoration: none;
+}
+
+/* Hover state */
+.chip:hover {
+    background: var(--surface-primary-hover);
+}
+
+/* Focus state - ACCESSIBILITY REQUIREMENT */
+.chip:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+/* Active state */
+.chip:active {
+    background: var(--surface-primary-pressed);
+}
+
+/* Disabled state */
+.chip:disabled {
+    background: surface-primary-disabled;
+    color: var(--text-neutral-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Prevent hover/focus on disabled */
+.chip:disabled:hover,
+.chip:disabled:focus {
+    background: surface-primary-disabled;
+    outline: none;
+}
+
+
+/* default variant */
+.chip--default {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.chip--default:hover {
+    background: var(--surface-primary-hover);
+}
+
+.chip--default:active {
+    background: var(--surface-primary-pressed);
+}
+
+.chip--default:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.chip--default:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* success variant */
+.chip--success {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.chip--success:hover {
+    background: var(--surface-primary-hover);
+}
+
+.chip--success:active {
+    background: var(--surface-primary-pressed);
+}
+
+.chip--success:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.chip--success:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* warning variant */
+.chip--warning {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.chip--warning:hover {
+    background: var(--surface-primary-hover);
+}
+
+.chip--warning:active {
+    background: var(--surface-primary-pressed);
+}
+
+.chip--warning:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.chip--warning:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* error variant */
+.chip--error {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.chip--error:hover {
+    background: var(--surface-primary-hover);
+}
+
+.chip--error:active {
+    background: var(--surface-primary-pressed);
+}
+
+.chip--error:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.chip--error:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* info variant */
+.chip--info {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.chip--info:hover {
+    background: var(--surface-primary-hover);
+}
+
+.chip--info:active {
+    background: var(--surface-primary-pressed);
+}
+
+.chip--info:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.chip--info:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* SM size - using component tokens from Components-SM.json */
+.chip--sm {
+    padding: var(--button-sm-padding-y) var(--button-sm-padding-x);
+    font-size: var(--button-sm-font-size);
+    border-radius: var(--button-sm-radius);
+    gap: var(--button-sm-gap);
+}
+
+.chip--sm .icon {
+    width: var(--button-sm-icon-size);
+    height: var(--button-sm-icon-size);
+}
+
+/* MD size - using component tokens from Components-MD.json */
+.chip--md {
+    padding: var(--button-md-padding-y) var(--button-md-padding-x);
+    font-size: var(--button-md-font-size);
+    border-radius: var(--button-md-radius);
+    gap: var(--button-md-gap);
+}
+
+.chip--md .icon {
+    width: var(--button-md-icon-size);
+    height: var(--button-md-icon-size);
+}
+
+/* LG size - using component tokens from Components-LG.json */
+.chip--lg {
+    padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+    font-size: var(--button-lg-font-size);
+    border-radius: var(--button-lg-radius);
+    gap: var(--button-lg-gap);
+}
+
+.chip--lg .icon {
+    width: var(--button-lg-icon-size);
+    height: var(--button-lg-icon-size);
+}
+
+/* XL size - using component tokens from Components-XL.json */
+.chip--xl {
+    padding: var(--button-xl-padding-y) var(--button-xl-padding-x);
+    font-size: var(--button-xl-font-size);
+    border-radius: var(--button-xl-radius);
+    gap: var(--button-xl-gap);
+}
+
+.chip--xl .icon {
+    width: var(--button-xl-icon-size);
+    height: var(--button-xl-icon-size);
+}

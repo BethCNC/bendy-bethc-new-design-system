@@ -23,6 +23,29 @@ Define the workflow from Figma → Tokens → Style Dictionary → Code.
    - Use only generated variables.
    - ❌ Hardcoded values
    - ✅ `var(--token-name)`
+   - ❌ Manual CSS modifications
+   - ✅ Work within existing token constraints
 
 5. **Stay in sync**
    - Every Figma update flows into tokens → build → code.
+
+---
+
+## 🚨 AI AGENT ENFORCEMENT
+
+### FIGMA ANALYSIS WORKFLOW:
+1. **Extract** component specs via MCP server
+2. **Compare** with existing design system (read-only)
+3. **Document** differences without modifying system
+4. **Create** demo files using existing tokens only
+5. **NEVER** modify core design system files
+
+### VIOLATION PREVENTION:
+- Before any file edit: "Is this a protected core file?"
+- Before token changes: "Should this go through the build process?"  
+- Before CSS modifications: "Can I use existing tokens instead?"
+
+### REQUIRED RESPONSES:
+- "I cannot modify the design system core files"
+- "I'll create a demo using existing tokens" 
+- "This would need to go through the proper token build process"

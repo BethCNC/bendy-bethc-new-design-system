@@ -1,0 +1,105 @@
+---
+alwaysApply: true
+priority: 0
+description: Enforces mandatory rules reading before any code changes
+---
+# 🔐 WORKFLOW COMPLIANCE ENFORCER
+
+## PURPOSE:
+Prevent rule violations by enforcing mandatory rules review before any code modifications.
+
+## TRIGGER PHRASES:
+If the user asks to modify, edit, update, change, or create ANY file, this protocol activates:
+
+### ACTIVATION TRIGGERS:
+- "edit this file"
+- "modify the CSS"
+- "change the header"
+- "update the component"
+- "fix this issue"
+- "add this feature" 
+- "create a new..."
+- Any request involving code changes
+
+---
+
+## MANDATORY WORKFLOW:
+
+### STEP 1: IMMEDIATE RULES CHECK
+Before ANY response, I must:
+```
+1. Read .cursor/rules/system-protection-rules.mdc
+2. Read .cursor/rules/file-modification-restrictions.mdc
+3. Read .cursor/rules/no-hardcoding.mdc
+4. Verify compliance with all rules
+```
+
+### STEP 2: PROTECTION VERIFICATION
+Check if target file is in prohibited list:
+- `design-system/src/complete-design-system.css`
+- `design-system/css/design-system.css`
+- `variables/*.json`
+- Any file in `/design-system/src/`
+
+### STEP 3: COMPLIANCE DECISION
+- ✅ **COMPLIANT**: Proceed with token-only approach
+- ❌ **VIOLATION**: Refuse + explain + suggest alternative
+
+---
+
+## RESPONSE TEMPLATES:
+
+### ✅ COMPLIANT ACTION:
+```
+🔍 PRE-ACTION COMPLIANCE CHECK:
+✅ System protection rules reviewed
+✅ File modification restrictions checked  
+✅ Target file is modifiable
+✅ Token-only approach confirmed
+✅ No hardcoding violations
+
+PROCEEDING with compliant implementation...
+[actual implementation]
+```
+
+### ❌ RULE VIOLATION DETECTED:
+```
+🚨 COMPLIANCE CHECK FAILED - ACTION BLOCKED
+
+Violation detected: [specific rule]
+Target file: [filename] 
+Issue: [protected file / hardcoding / etc.]
+
+ALTERNATIVE APPROACH:
+[suggest compliant solution]
+
+Rules reference:
+- System Protection: .cursor/rules/system-protection-rules.mdc
+- File Restrictions: .cursor/rules/file-modification-restrictions.mdc
+```
+
+---
+
+## VIOLATION PREVENTION:
+
+### Historical Issues:
+1. **Modified protected file**: `complete-design-system.css`
+2. **Nearly introduced hardcoding**: Instead of using tokens
+
+### Prevention Measures:
+- **Mandatory rules reading** before any file operation
+- **Explicit compliance verification** in every response
+- **Zero tolerance** for rule bypassing
+- **Alternative suggestions** for blocked actions
+
+---
+
+## COMPLIANCE METRICS:
+
+**Success indicators:**
+- 0 protected file modifications
+- 100% design token usage
+- 0 hardcoded values introduced
+- 100% rules compliance rate
+
+**This enforcer ensures perfect rule adherence moving forward.**

@@ -1,0 +1,217 @@
+/* Copy Blocks Component Styles */
+/* Generated using design system tokens only */
+
+.copy-blocks {
+    /* Base styles using design system tokens */
+    font-family: font-body;
+    font-size: var(--font-body-sm-mobile);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    
+    /* Spacing using design system tokens */
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) var(--spacing-md);
+    margin: 0;
+    
+    /* Colors using design system tokens */
+    background: var(--surface-primary-default);
+    color: var(--text-neutral-body);
+    
+    /* Borders using design system tokens */
+    border: none;
+    border-radius: var(--radius-md);
+    
+    /* Layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    
+    /* Transitions */
+    transition: all 0.2s ease;
+    
+    /* Cursor */
+    cursor: pointer;
+    
+    /* Text decoration */
+    text-decoration: none;
+}
+
+/* Hover state */
+.copy-blocks:hover {
+    background: var(--surface-primary-hover);
+}
+
+/* Focus state - ACCESSIBILITY REQUIREMENT */
+.copy-blocks:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+/* Active state */
+.copy-blocks:active {
+    background: var(--surface-primary-pressed);
+}
+
+/* Disabled state */
+.copy-blocks:disabled {
+    background: surface-primary-disabled;
+    color: var(--text-neutral-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Prevent hover/focus on disabled */
+.copy-blocks:disabled:hover,
+.copy-blocks:disabled:focus {
+    background: surface-primary-disabled;
+    outline: none;
+}
+
+
+/* default variant */
+.copy-blocks--default {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.copy-blocks--default:hover {
+    background: var(--surface-primary-hover);
+}
+
+.copy-blocks--default:active {
+    background: var(--surface-primary-pressed);
+}
+
+.copy-blocks--default:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.copy-blocks--default:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* paragraph variant */
+.copy-blocks--paragraph {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.copy-blocks--paragraph:hover {
+    background: var(--surface-primary-hover);
+}
+
+.copy-blocks--paragraph:active {
+    background: var(--surface-primary-pressed);
+}
+
+.copy-blocks--paragraph:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.copy-blocks--paragraph:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* list variant */
+.copy-blocks--list {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.copy-blocks--list:hover {
+    background: var(--surface-primary-hover);
+}
+
+.copy-blocks--list:active {
+    background: var(--surface-primary-pressed);
+}
+
+.copy-blocks--list:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.copy-blocks--list:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* quote variant */
+.copy-blocks--quote {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.copy-blocks--quote:hover {
+    background: var(--surface-primary-hover);
+}
+
+.copy-blocks--quote:active {
+    background: var(--surface-primary-pressed);
+}
+
+.copy-blocks--quote:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.copy-blocks--quote:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* SM size - using component tokens from Components-SM.json */
+.copy-blocks--sm {
+    padding: var(--button-sm-padding-y) var(--button-sm-padding-x);
+    font-size: var(--button-sm-font-size);
+    border-radius: var(--button-sm-radius);
+    gap: var(--button-sm-gap);
+}
+
+.copy-blocks--sm .icon {
+    width: var(--button-sm-icon-size);
+    height: var(--button-sm-icon-size);
+}
+
+/* MD size - using component tokens from Components-MD.json */
+.copy-blocks--md {
+    padding: var(--button-md-padding-y) var(--button-md-padding-x);
+    font-size: var(--button-md-font-size);
+    border-radius: var(--button-md-radius);
+    gap: var(--button-md-gap);
+}
+
+.copy-blocks--md .icon {
+    width: var(--button-md-icon-size);
+    height: var(--button-md-icon-size);
+}
+
+/* LG size - using component tokens from Components-LG.json */
+.copy-blocks--lg {
+    padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+    font-size: var(--button-lg-font-size);
+    border-radius: var(--button-lg-radius);
+    gap: var(--button-lg-gap);
+}
+
+.copy-blocks--lg .icon {
+    width: var(--button-lg-icon-size);
+    height: var(--button-lg-icon-size);
+}
+
+/* XL size - using component tokens from Components-XL.json */
+.copy-blocks--xl {
+    padding: var(--button-xl-padding-y) var(--button-xl-padding-x);
+    font-size: var(--button-xl-font-size);
+    border-radius: var(--button-xl-radius);
+    gap: var(--button-xl-gap);
+}
+
+.copy-blocks--xl .icon {
+    width: var(--button-xl-icon-size);
+    height: var(--button-xl-icon-size);
+}

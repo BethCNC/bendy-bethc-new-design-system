@@ -20,13 +20,13 @@
         }
         
         h1 {
-            font-size: 48px;
+            font-size: var(--font-size-heading-h1);
             margin-bottom: 20px;
             color: var(--text-neutral-display);
         }
         
         h2 {
-            font-size: 32px;
+            font-size: var(--font-size-title-xl);
             margin: 40px 0 20px 0;
             color: var(--text-neutral-heading);
             border-bottom: 2px solid var(--surface-primary-default);
@@ -34,7 +34,7 @@
         }
         
         h3 {
-            font-size: 24px;
+            font-size: var(--font-size-title-md);
             margin: 30px 0 15px 0;
             color: var(--text-neutral-title);
         }
@@ -77,7 +77,7 @@
         }
         
         .button-demo .label {
-            font-size: 14px;
+            font-size: var(--font-size-body-md);
             color: var(--text-neutral-body);
             text-align: center;
             font-weight: 500;
@@ -160,7 +160,7 @@
             padding: 20px;
             border-radius: 8px;
             font-family: monospace;
-            font-size: 14px;
+            font-size: var(--font-size-body-md);
             overflow-x: auto;
             margin: 20px 0;
         }
@@ -194,7 +194,7 @@
 <body>
     <div class="container">
         <h1>🎨 Bendy BethC Design System</h1>
-        <p style="font-size: 20px; color: var(--text-neutral-body); margin-bottom: 40px;">
+        <p style="font-size: var(--font-size-title-sm); color: var(--text-neutral-body); margin-bottom: 40px;">
             Complete button component showcase with responsive design tokens
         </p>
 
@@ -240,28 +240,28 @@
             <div class="button-row">
                 <div class="button-demo">
                     <button class="btn-icon-sm bg-surface-primary-default text-neutral-heading">
-                        <span style="font-size: 16px;">🎯</span>
+                        <span style="font-size: var(--font-size-body-lg);">🎯</span>
                     </button>
                     <div class="label">Icon Small</div>
                 </div>
                 
                 <div class="button-demo">
                     <button class="btn-icon-md bg-surface-primary-default text-neutral-heading">
-                        <span style="font-size: 24px;">🚀</span>
+                        <span style="font-size: var(--font-size-title-md);">🚀</span>
                     </button>
                     <div class="label">Icon Medium</div>
                 </div>
                 
                 <div class="button-demo">
                     <button class="btn-icon-lg bg-surface-primary-default text-neutral-heading">
-                        <span style="font-size: 32px;">⭐</span>
+                        <span style="font-size: var(--font-size-title-xl);">⭐</span>
                     </button>
                     <div class="label">Icon Large</div>
                 </div>
                 
                 <div class="button-demo">
                     <button class="btn-icon-xl bg-surface-primary-default text-neutral-heading">
-                        <span style="font-size: 40px;">🌟</span>
+                        <span style="font-size: var(--font-size-heading-h1);">🌟</span>
                     </button>
                     <div class="label">Icon Extra Large</div>
                 </div>
@@ -461,22 +461,22 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
                 <div style="background: var(--surface-primary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
                     <h4 style="margin: 0 0 10px 0;">Surface Tokens</h4>
-                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">19+</div>
+                    <div style="font-size: var(--font-size-title-md); font-weight: bold; color: var(--text-neutral-heading);">19+</div>
                     <div style="color: var(--text-neutral-body);">Background colors</div>
                 </div>
                 <div style="background: var(--surface-secondary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
                     <h4 style="margin: 0 0 10px 0;">Text Tokens</h4>
-                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">29+</div>
+                    <div style="font-size: var(--font-size-title-md); font-weight: bold; color: var(--text-neutral-heading);">29+</div>
                     <div style="color: var(--text-neutral-body);">Text colors</div>
                 </div>
                 <div style="background: var(--surface-tertiary-a-30); padding: 20px; border-radius: 8px; text-align: center;">
-                    <h4 style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading); margin: 0 0 10px 0;">Icon Tokens</h4>
-                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">28+</div>
+                    <h4 style="font-size: var(--font-size-title-md); font-weight: bold; color: var(--text-neutral-heading); margin: 0 0 10px 0;">Icon Tokens</h4>
+                    <div style="font-size: var(--font-size-title-md); font-weight: bold; color: var(--text-neutral-heading);">28+</div>
                     <div style="color: var(--text-neutral-body);">Icon colors</div>
                 </div>
                 <div style="background: var(--surface-info-a-30); padding: 20px; border-radius: 8px; text-align: center;">
                     <h4 style="margin: 0 0 10px 0;">Border Tokens</h4>
-                    <div style="font-size: 24px; font-weight: bold; color: var(--text-neutral-heading);">27+</div>
+                    <div style="font-size: var(--font-size-title-md); font-weight: bold; color: var(--text-neutral-heading);">27+</div>
                     <div style="color: var(--text-neutral-body);">Border colors</div>
                 </div>
             </div>
@@ -484,10 +484,10 @@
 
         <div style="text-align: center; margin: 60px 0; padding: 40px; background: var(--surface-neutral-card); border-radius: 12px;">
             <h2 style="color: var(--text-neutral-display);">🎉 Design System Ready!</h2>
-            <p style="font-size: 18px; color: var(--text-neutral-body); margin: 20px 0;">
+            <p style="font-size: var(--font-size-title-xs); color: var(--text-neutral-body); margin: 20px 0;">
                 Your enhanced design system is now generating comprehensive button components with:
             </p>
-            <ul style="text-align: left; display: inline-block; color: var(--text-neutral-body); font-size: 16px;">
+            <ul style="text-align: left; display: inline-block; color: var(--text-neutral-body); font-size: var(--font-size-body-lg);">
                 <li>✅ Responsive button sizes (SM, MD, LG, XL)</li>
                 <li>✅ Icon button variants</li>
                 <li>✅ Color system integration</li>

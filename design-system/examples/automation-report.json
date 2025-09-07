@@ -1,0 +1,2190 @@
+{
+  "timestamp": "2025-09-05T15:26:49.716Z",
+  "summary": {
+    "total": 33,
+    "successful": 33,
+    "failed": 0,
+    "safetyViolations": 0
+  },
+  "processed": [
+    {
+      "name": "Button",
+      "figmaNodeId": "478:17131",
+      "files": [
+        "design-system/examples/button-demo.html",
+        "design-system/examples/button.css",
+        "design-system/docs/generated-components/button-docs.md",
+        "test-files/generated-components/button-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "button",
+        "figmaNodeId": "478:17131",
+        "figmaName": "Button",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {
+            "size": "MD",
+            "padding": {
+              "horizontal": "spacing-md",
+              "vertical": "spacing-sm"
+            },
+            "radius": "radius-md",
+            "iconSize": "spacing-md"
+          },
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Avatar",
+      "figmaNodeId": "284:5619",
+      "files": [
+        "design-system/examples/avatar-demo.html",
+        "design-system/examples/avatar.css",
+        "design-system/docs/generated-components/avatar-docs.md",
+        "test-files/generated-components/avatar-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "avatar",
+        "figmaNodeId": "284:5619",
+        "figmaName": "Avatar",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Icon Only Button",
+      "figmaNodeId": "640:891",
+      "files": [
+        "design-system/examples/icon-only-button-demo.html",
+        "design-system/examples/icon-only-button.css",
+        "design-system/docs/generated-components/icon-only-button-docs.md",
+        "test-files/generated-components/icon-only-button-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "button",
+        "figmaNodeId": "640:891",
+        "figmaName": "Icon Only Button",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {
+            "size": "MD",
+            "padding": {
+              "horizontal": "spacing-md",
+              "vertical": "spacing-sm"
+            },
+            "radius": "radius-md",
+            "iconSize": "spacing-md"
+          },
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Page Title",
+      "figmaNodeId": "402:1417",
+      "files": [
+        "design-system/examples/page-title-demo.html",
+        "design-system/examples/page-title.css",
+        "design-system/docs/generated-components/page-title-docs.md",
+        "test-files/generated-components/page-title-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "page-title",
+        "figmaNodeId": "402:1417",
+        "figmaName": "Page Title",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {
+            "typography": {
+              "fontFamily": "font-display",
+              "fontSize": "font-size-display-display",
+              "lineHeight": "line-height-display-display",
+              "fontWeight": "400"
+            },
+            "spacing": {
+              "margin": {
+                "horizontal": "margins-mobile",
+                "vertical": "spacing-lg"
+              },
+              "padding": {
+                "vertical": "spacing-xl"
+              }
+            }
+          },
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Bendy Beth Logo",
+      "figmaNodeId": "284:5606",
+      "files": [
+        "design-system/examples/bendy-beth-logo-demo.html",
+        "design-system/examples/bendy-beth-logo.css",
+        "design-system/docs/generated-components/bendy-beth-logo-docs.md",
+        "test-files/generated-components/bendy-beth-logo-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "logo",
+        "figmaNodeId": "284:5606",
+        "figmaName": "Bendy Beth Logo",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Menu Bar",
+      "figmaNodeId": "89:48965",
+      "files": [
+        "design-system/examples/menu-bar-demo.html",
+        "design-system/examples/menu-bar.css",
+        "design-system/docs/generated-components/menu-bar-docs.md",
+        "test-files/generated-components/menu-bar-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "navigation",
+        "figmaNodeId": "89:48965",
+        "figmaName": "Menu Bar",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Label",
+      "figmaNodeId": "83:47794",
+      "files": [
+        "design-system/examples/label-demo.html",
+        "design-system/examples/label.css",
+        "design-system/docs/generated-components/label-docs.md",
+        "test-files/generated-components/label-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "label",
+        "figmaNodeId": "83:47794",
+        "figmaName": "Label",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Inputs",
+      "figmaNodeId": "89:48327",
+      "files": [
+        "design-system/examples/inputs-demo.html",
+        "design-system/examples/inputs.css",
+        "design-system/docs/generated-components/inputs-docs.md",
+        "test-files/generated-components/inputs-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "input",
+        "figmaNodeId": "89:48327",
+        "figmaName": "Inputs",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Field",
+      "figmaNodeId": "83:47798",
+      "files": [
+        "design-system/examples/field-demo.html",
+        "design-system/examples/field.css",
+        "design-system/docs/generated-components/field-docs.md",
+        "test-files/generated-components/field-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "field",
+        "figmaNodeId": "83:47798",
+        "figmaName": "Field",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Cursor",
+      "figmaNodeId": "1534:1710",
+      "files": [
+        "design-system/examples/cursor-demo.html",
+        "design-system/examples/cursor.css",
+        "design-system/docs/generated-components/cursor-docs.md",
+        "test-files/generated-components/cursor-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "cursor",
+        "figmaNodeId": "1534:1710",
+        "figmaName": "Cursor",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Favicon",
+      "figmaNodeId": "1534:1697",
+      "files": [
+        "design-system/examples/favicon-demo.html",
+        "design-system/examples/favicon.css",
+        "design-system/docs/generated-components/favicon-docs.md",
+        "test-files/generated-components/favicon-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "favicon",
+        "figmaNodeId": "1534:1697",
+        "figmaName": "Favicon",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Slot",
+      "figmaNodeId": "215:865",
+      "files": [
+        "design-system/examples/slot-demo.html",
+        "design-system/examples/slot.css",
+        "design-system/docs/generated-components/slot-docs.md",
+        "test-files/generated-components/slot-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "slot",
+        "figmaNodeId": "215:865",
+        "figmaName": "Slot",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Slot Columns",
+      "figmaNodeId": "215:9765",
+      "files": [
+        "design-system/examples/slot-columns-demo.html",
+        "design-system/examples/slot-columns.css",
+        "design-system/docs/generated-components/slot-columns-docs.md",
+        "test-files/generated-components/slot-columns-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "slot",
+        "figmaNodeId": "215:9765",
+        "figmaName": "Slot Columns",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Slot Rows",
+      "figmaNodeId": "215:896",
+      "files": [
+        "design-system/examples/slot-rows-demo.html",
+        "design-system/examples/slot-rows.css",
+        "design-system/docs/generated-components/slot-rows-docs.md",
+        "test-files/generated-components/slot-rows-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "slot",
+        "figmaNodeId": "215:896",
+        "figmaName": "Slot Rows",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Copy Placeholders",
+      "figmaNodeId": "215:676",
+      "files": [
+        "design-system/examples/copy-placeholders-demo.html",
+        "design-system/examples/copy-placeholders.css",
+        "design-system/docs/generated-components/copy-placeholders-docs.md",
+        "test-files/generated-components/copy-placeholders-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "copy",
+        "figmaNodeId": "215:676",
+        "figmaName": "Copy Placeholders",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Copy Blocks",
+      "figmaNodeId": "215:810",
+      "files": [
+        "design-system/examples/copy-blocks-demo.html",
+        "design-system/examples/copy-blocks.css",
+        "design-system/docs/generated-components/copy-blocks-docs.md",
+        "test-files/generated-components/copy-blocks-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "copy",
+        "figmaNodeId": "215:810",
+        "figmaName": "Copy Blocks",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Image Placeholders",
+      "figmaNodeId": "215:843",
+      "files": [
+        "design-system/examples/image-placeholders-demo.html",
+        "design-system/examples/image-placeholders.css",
+        "design-system/docs/generated-components/image-placeholders-docs.md",
+        "test-files/generated-components/image-placeholders-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "image",
+        "figmaNodeId": "215:843",
+        "figmaName": "Image Placeholders",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Sample Slot Cards",
+      "figmaNodeId": "215:909",
+      "files": [
+        "design-system/examples/sample-slot-cards-demo.html",
+        "design-system/examples/sample-slot-cards.css",
+        "design-system/docs/generated-components/sample-slot-cards-docs.md",
+        "test-files/generated-components/sample-slot-cards-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "card",
+        "figmaNodeId": "215:909",
+        "figmaName": "Sample Slot Cards",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Blog Post Card",
+      "figmaNodeId": "308:6987",
+      "files": [
+        "design-system/examples/blog-post-card-demo.html",
+        "design-system/examples/blog-post-card.css",
+        "design-system/docs/generated-components/blog-post-card-docs.md",
+        "test-files/generated-components/blog-post-card-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "card",
+        "figmaNodeId": "308:6987",
+        "figmaName": "Blog Post Card",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Pagination",
+      "figmaNodeId": "273:1708",
+      "files": [
+        "design-system/examples/pagination-demo.html",
+        "design-system/examples/pagination.css",
+        "design-system/docs/generated-components/pagination-docs.md",
+        "test-files/generated-components/pagination-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "pagination",
+        "figmaNodeId": "273:1708",
+        "figmaName": "Pagination",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Blog Categories",
+      "figmaNodeId": "1534:5831",
+      "files": [
+        "design-system/examples/blog-categories-demo.html",
+        "design-system/examples/blog-categories.css",
+        "design-system/docs/generated-components/blog-categories-docs.md",
+        "test-files/generated-components/blog-categories-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "categories",
+        "figmaNodeId": "1534:5831",
+        "figmaName": "Blog Categories",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "About Me",
+      "figmaNodeId": "623:134487",
+      "files": [
+        "design-system/examples/about-me-demo.html",
+        "design-system/examples/about-me.css",
+        "design-system/docs/generated-components/about-me-docs.md",
+        "test-files/generated-components/about-me-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "about",
+        "figmaNodeId": "623:134487",
+        "figmaName": "About Me",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Chip",
+      "figmaNodeId": "2110:13352",
+      "files": [
+        "design-system/examples/chip-demo.html",
+        "design-system/examples/chip.css",
+        "design-system/docs/generated-components/chip-docs.md",
+        "test-files/generated-components/chip-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "chip",
+        "figmaNodeId": "2110:13352",
+        "figmaName": "Chip",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Footer",
+      "figmaNodeId": "623:134531",
+      "files": [
+        "design-system/examples/footer-demo.html",
+        "design-system/examples/footer.css",
+        "design-system/docs/generated-components/footer-docs.md",
+        "test-files/generated-components/footer-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "footer",
+        "figmaNodeId": "623:134531",
+        "figmaName": "Footer",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Footer Scrolling Text Animation",
+      "figmaNodeId": "804:7463",
+      "files": [
+        "design-system/examples/footer-scrolling-text-animation-demo.html",
+        "design-system/examples/footer-scrolling-text-animation.css",
+        "design-system/docs/generated-components/footer-scrolling-text-animation-docs.md",
+        "test-files/generated-components/footer-scrolling-text-animation-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "animation",
+        "figmaNodeId": "804:7463",
+        "figmaName": "Footer Scrolling Text Animation",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Social Feed Preview",
+      "figmaNodeId": "701:46839",
+      "files": [
+        "design-system/examples/social-feed-preview-demo.html",
+        "design-system/examples/social-feed-preview.css",
+        "design-system/docs/generated-components/social-feed-preview-docs.md",
+        "test-files/generated-components/social-feed-preview-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "social",
+        "figmaNodeId": "701:46839",
+        "figmaName": "Social Feed Preview",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Features",
+      "figmaNodeId": "623:134469",
+      "files": [
+        "design-system/examples/features-demo.html",
+        "design-system/examples/features.css",
+        "design-system/docs/generated-components/features-docs.md",
+        "test-files/generated-components/features-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "features",
+        "figmaNodeId": "623:134469",
+        "figmaName": "Features",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Features Alt",
+      "figmaNodeId": "885:44374",
+      "files": [
+        "design-system/examples/features-alt-demo.html",
+        "design-system/examples/features-alt.css",
+        "design-system/docs/generated-components/features-alt-docs.md",
+        "test-files/generated-components/features-alt-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "features",
+        "figmaNodeId": "885:44374",
+        "figmaName": "Features",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Image Gallery",
+      "figmaNodeId": "129:52365",
+      "files": [
+        "design-system/examples/image-gallery-demo.html",
+        "design-system/examples/image-gallery.css",
+        "design-system/docs/generated-components/image-gallery-docs.md",
+        "test-files/generated-components/image-gallery-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "gallery",
+        "figmaNodeId": "129:52365",
+        "figmaName": "Image Gallery",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Image Gallery Alt",
+      "figmaNodeId": "827:25127",
+      "files": [
+        "design-system/examples/image-gallery-alt-demo.html",
+        "design-system/examples/image-gallery-alt.css",
+        "design-system/docs/generated-components/image-gallery-alt-docs.md",
+        "test-files/generated-components/image-gallery-alt-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "gallery",
+        "figmaNodeId": "827:25127",
+        "figmaName": "Image Gallery",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "CTA",
+      "figmaNodeId": "89:48889",
+      "files": [
+        "design-system/examples/cta-demo.html",
+        "design-system/examples/cta.css",
+        "design-system/docs/generated-components/cta-docs.md",
+        "test-files/generated-components/cta-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "cta",
+        "figmaNodeId": "89:48889",
+        "figmaName": "CTA",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Contact Me Animation",
+      "figmaNodeId": "1534:6101",
+      "files": [
+        "design-system/examples/contact-me-animation-demo.html",
+        "design-system/examples/contact-me-animation.css",
+        "design-system/docs/generated-components/contact-me-animation-docs.md",
+        "test-files/generated-components/contact-me-animation-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "animation",
+        "figmaNodeId": "1534:6101",
+        "figmaName": "Contact Me Animation",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    },
+    {
+      "name": "Hero",
+      "figmaNodeId": "959:45251",
+      "files": [
+        "design-system/examples/hero-demo.html",
+        "design-system/examples/hero.css",
+        "design-system/docs/generated-components/hero-docs.md",
+        "test-files/generated-components/hero-test.html"
+      ],
+      "tokenMapping": {
+        "componentType": "hero",
+        "figmaNodeId": "959:45251",
+        "figmaName": "Hero",
+        "tokens": {
+          "colors": {
+            "background": "var(--surface-primary-default)",
+            "text": "var(--text-neutral-body)",
+            "border": null,
+            "hover": "var(--surface-primary-hover)",
+            "active": "var(--surface-primary-pressed)",
+            "disabled": "surface-primary-disabled"
+          },
+          "typography": {
+            "fontFamily": "font-body",
+            "fontSize": "var(--font-body-sm-mobile)",
+            "fontWeight": "var(--font-weight-medium)",
+            "lineHeight": "1.5",
+            "letterSpacing": null
+          },
+          "spacing": {
+            "padding": {
+              "top": "var(--spacing-sm)",
+              "right": "var(--spacing-md)",
+              "bottom": "var(--spacing-sm)",
+              "left": "var(--spacing-md)"
+            },
+            "margin": {},
+            "gap": "var(--spacing-sm)"
+          },
+          "borders": {
+            "radius": "var(--radius-md)",
+            "width": null,
+            "color": null
+          },
+          "components": {},
+          "responsive": {
+            "mobile": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "tablet": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            },
+            "desktop": {
+              "fontSize": "font-body-sm-mobile",
+              "spacing": "spacing-md"
+            }
+          }
+        },
+        "fallbacks": {},
+        "warnings": []
+      },
+      "status": "success"
+    }
+  ],
+  "failed": [],
+  "safetyViolations": []
+}

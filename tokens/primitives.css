@@ -1,0 +1,42 @@
+/**
+ * PRIMITIVE TOKENS
+ * Generated from Figma responsive collections and primitives
+ */
+
+:root {
+  /* === RESPONSIVE SPACING === */
+  /* Mobile (390px breakpoint) */
+  --margins-mobile: 24px;
+  --spacing-mobile-sm: 8px;
+  --spacing-mobile-md: 12px;
+  --spacing-mobile-lg: 24px;
+  --spacing-mobile-xl: 48px;
+
+  /* Tablet (810px breakpoint) */
+  --margins-tablet: 64px;
+  --spacing-tablet-sm: 8px;
+  --spacing-tablet-md: 12px;
+  --spacing-tablet-lg: 32px;
+  --spacing-tablet-xl: 56px;
+
+  /* Desktop (1440px breakpoint) */
+  --margins-desktop: 96px;
+  --spacing-desktop-sm: 12px;
+  --spacing-desktop-md: 24px;
+  --spacing-desktop-lg: 48px;
+  --spacing-desktop-xl: 64px;
+
+  /* === UI COMPONENT VALUES FROM FIGMA === */
+  /* Menu Item Padding (from Figma responsive files) */
+  --ui-menu-item-h-padding-mobile: 4px;
+  --ui-menu-item-v-padding-mobile: px;
+  --ui-menu-item-h-padding-tablet: 8px;
+  --ui-menu-item-v-padding-tablet: 6px;
+  --ui-menu-item-h-padding-desktop: 16px;
+  --ui-menu-item-v-padding-desktop: 8px;
+
+  /* Menu Bar Border Width (from Figma responsive files) */
+  --ui-menu-bar-border-width-mobile: 1px;
+  --ui-menu-bar-border-width-tablet: 2px;
+  --ui-menu-bar-border-width-desktop: 4px;
+}

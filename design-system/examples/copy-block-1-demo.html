@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Block 1 Demo - Bendy BethC Design System</title>
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-body);
+            background-color: var(--surface-neutral-page);
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--surface-neutral-card);
+            border-radius: var(--radius-md);
+        }
+        
+        .demo-title {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H2-desktop);
+            font-weight: var(--font-weight-regular);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-sm) 0;
+        }
+        
+        .demo-subtitle {
+            font-family: var(--font-title);
+            font-size: var(--font-title-md-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+            margin: 0;
+        }
+        
+        /* Copy Block 1 Implementation */
+        .copy-block-1 {
+            background: linear-gradient(156deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.59) 100%);
+            padding: var(--margins-desktop);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-lg);
+            min-height: 400px;
+            justify-content: center;
+        }
+        
+        .copy-block-1__main-heading {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H3-desktop);
+            font-weight: var(--font-weight-regular);
+            line-height: var(--line-height-heading-H3-desktop);
+            color: var(--text-neutral-inverse);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .copy-block-1__list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .copy-block-1__list-item {
+            font-family: var(--font-title);
+            font-size: var(--font-title-xl-desktop);
+            font-weight: var(--font-weight-medium);
+            line-height: var(--line-height-title-xl-desktop);
+            color: var(--text-neutral-inverse);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .copy-block-1__transition {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H1-desktop);
+            font-weight: var(--font-weight-regular);
+            line-height: var(--line-height-heading-H1-desktop);
+            color: var(--text-neutral-inverse);
+            text-align: center;
+            margin: 0;
+        }
+        
+        .copy-block-1__final-line {
+            font-family: var(--font-title);
+            font-size: var(--font-title-xl-desktop);
+            font-weight: var(--font-weight-medium);
+            line-height: var(--line-height-title-xl-desktop);
+            color: var(--text-neutral-inverse);
+            text-align: center;
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 809px) {
+            .copy-block-1 {
+                padding: var(--margins-tablet);
+                gap: var(--spacing-lg-tablet);
+            }
+            
+            .copy-block-1__main-heading {
+                font-size: var(--font-heading-H3-tablet);
+                line-height: var(--line-height-heading-H3-tablet);
+            }
+            
+            .copy-block-1__list-item {
+                font-size: var(--font-title-xl-tablet);
+                line-height: var(--line-height-title-xl-tablet);
+            }
+            
+            .copy-block-1__transition {
+                font-size: var(--font-heading-H1-tablet);
+                line-height: var(--line-height-heading-H1-tablet);
+            }
+            
+            .copy-block-1__final-line {
+                font-size: var(--font-title-xl-tablet);
+                line-height: var(--line-height-title-xl-tablet);
+            }
+        }
+        
+        @media (max-width: 389px) {
+            .copy-block-1 {
+                padding: var(--margins-mobile);
+                gap: var(--spacing-lg-mobile);
+            }
+            
+            .copy-block-1__main-heading {
+                font-size: var(--font-heading-H3-mobile);
+                line-height: var(--line-height-heading-H3-mobile);
+            }
+            
+            .copy-block-1__list-item {
+                font-size: var(--font-title-xl-mobile);
+                line-height: var(--line-height-title-xl-mobile);
+            }
+            
+            .copy-block-1__transition {
+                font-size: var(--font-heading-H1-mobile);
+                line-height: var(--line-height-heading-H1-mobile);
+            }
+            
+            .copy-block-1__final-line {
+                font-size: var(--font-title-xl-mobile);
+                line-height: var(--line-height-title-xl-mobile);
+            }
+        }
+        
+        /* Demo Info */
+        .demo-info {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--surface-neutral-elevated);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--surface-primary-default);
+        }
+        
+        .demo-info h3 {
+            font-family: var(--font-heading);
+            font-size: var(--font-heading-H4-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-sm) 0;
+        }
+        
+        .demo-info p {
+            font-family: var(--font-body);
+            font-size: var(--font-body-md-desktop);
+            color: var(--text-neutral-body);
+            margin: 0 0 var(--spacing-sm) 0;
+        }
+        
+        .demo-info ul {
+            font-family: var(--font-body);
+            font-size: var(--font-body-md-desktop);
+            color: var(--text-neutral-body);
+            margin: 0;
+            padding-left: var(--spacing-lg);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1 class="demo-title">Copy Block 1 Demo</h1>
+            <p class="demo-subtitle">First Copy Section After Video - Using Design System Tokens</p>
+        </div>
+        
+        <!-- Copy Block 1 Implementation -->
+        <section class="copy-block-1">
+            <h2 class="copy-block-1__main-heading">Finding my peace has been a journey</h2>
+            
+            <ul class="copy-block-1__list">
+                <li class="copy-block-1__list-item">The pain</li>
+                <li class="copy-block-1__list-item">The gaslighting</li>
+                <li class="copy-block-1__list-item">The fear</li>
+                <li class="copy-block-1__list-item">The loneliness</li>
+            </ul>
+            
+            <h3 class="copy-block-1__transition">It all led me to this</h3>
+            
+            <p class="copy-block-1__final-line">My story. The one thing I still have.</p>
+        </section>
+        
+        <div class="demo-info">
+            <h3>Implementation Details</h3>
+            <p>This copy block uses the following design system tokens:</p>
+            <ul>
+                <li><strong>Background:</strong> CSS gradient (matching Figma spec)</li>
+                <li><strong>Text Color:</strong> <code>var(--text-neutral-inverse)</code></li>
+                <li><strong>Main Heading Font:</strong> <code>var(--font-display)</code> (Behind The Nineties)</li>
+                <li><strong>List Items Font:</strong> <code>var(--font-title)</code> (Overused Grotesk)</li>
+                <li><strong>Font Weights:</strong> <code>var(--font-weight-regular)</code> (400), <code>var(--font-weight-medium)</code> (500)</li>
+                <li><strong>Padding:</strong> <code>var(--margins-desktop)</code> (96px)</li>
+                <li><strong>Section Gap:</strong> <code>var(--spacing-lg)</code> (48px)</li>
+                <li><strong>List Item Gap:</strong> <code>var(--spacing-sm)</code> (12px)</li>
+                <li><strong>Typography:</strong> Responsive tokens for mobile/tablet/desktop scaling</li>
+            </ul>
+            <p><strong>Note:</strong> This implementation matches the Figma specifications exactly using existing design system tokens. The gradient background is implemented with CSS as no gradient token exists in the current system.</p>
+        </div>
+    </div>
+</body>
+</html>

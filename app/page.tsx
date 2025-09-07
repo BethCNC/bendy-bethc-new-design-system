@@ -2,8 +2,9 @@ import React from 'react';
 import Hero from './components/ui/Hero';
 import SimpleImageGallery from './components/ui/SimpleImageGallery';
 import FeatureCardGrid from './components/ui/FeatureCardGrid';
-import AnimatedCopyBlock from './components/ui/AnimatedCopyBlock';
 import PageTitle from './components/ui/PageTitle';
+import CopyBlock1 from './components/ui/CopyBlock1';
+import CopyBlock2 from './components/ui/CopyBlock2';
 
 
 /**
@@ -34,29 +35,21 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  const copyBlockLines = [
-    "This isn't content.",
-    "It's proof of what it really takes to get answers.",
-    "What it means to keep going when no one believes you."
-  ];
-
   return (
     <main className="bg-surface-neutral-inverse">
+      {/* Page Title Section */}
+      <PageTitle />
+      
       {/* Hero Section - Video with story text */}
       <section data-hero className="padding-lg">
         <Hero />
       </section>
       
-      {/* Copy Block - Above gallery as per Figma design */}
-      <section data-copy-block className="padding-lg">
-        <AnimatedCopyBlock 
-          lines={copyBlockLines}
-          stagger={0.4}
-          duration={1.5}
-          triggerStart="top 75%"
-          triggerEnd="bottom 25%"
-        />
-      </section>
+      {/* Copy Block 1 - First copy section after video */}
+      <CopyBlock1 />
+      
+      {/* Copy Block 2 - Second copy section */}
+      <CopyBlock2 />
       
       {/* Health Journey Gallery - Visual proof of invisible illness becoming visible */}
       <section data-gallery className="padding-lg">

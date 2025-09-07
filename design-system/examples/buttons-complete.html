@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component - Complete Design System</title>
+    <link rel="stylesheet" href="../css/design-system.css">
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Overused Grotesk', sans-serif;
+            background: var(--surface-neutral-page);
+            color: var(--text-neutral-body);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .demo-section {
+            background: var(--surface-neutral-card);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .size-demo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+        
+        .state-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-start;
+        }
+        
+        h1 { color: var(--text-neutral-display); }
+        h2 { color: var(--text-neutral-heading); }
+        h3 { color: var(--text-neutral-title); }
+        
+        .note {
+            background: var(--surface-info-disabled);
+            color: var(--text-info-on-disabled);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        
+        .variant-label {
+            font-weight: 500;
+            color: var(--text-neutral-title);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Site Header -->
+    <iframe src="includes/site-header.html" 
+            width="100%" 
+            height="280" 
+            frameborder="0" 
+            scrolling="no"
+            style="margin-bottom: 1rem;">
+    </iframe>
+    
+    <div style="padding: 0 2rem;">
+        <h1>Button Component System</h1>
+        <p>Complete implementation following <code>@.cursor/rules/button-rules.mdc</code></p>
+        
+            <div class="note">
+                <strong>Focus Testing:</strong> Use Tab key to navigate and test focus states. You should see a <strong>blue focus ring</strong> (#3a84f2) with 2px solid outline and 2px offset following @.cursor/rules/state-rules.mdc
+            </div>
+        </div>
+
+    <!-- All Variants - All Sizes -->
+    <section class="demo-section">
+        <h2>All Button Variants × All Sizes</h2>
+        
+        <!-- Primary Buttons -->
+        <div>
+            <span class="variant-label">Primary Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-primary btn-sm">
+                    <i data-lucide="star"></i>
+                    SM Primary
+                </button>
+                <button class="btn btn-primary btn-md">
+                    <i data-lucide="star"></i>
+                    MD Primary
+                </button>
+                <button class="btn btn-primary btn-lg">
+                    <i data-lucide="star"></i>
+                    LG Primary
+                </button>
+                <button class="btn btn-primary btn-xl">
+                    <i data-lucide="star"></i>
+                    XL Primary
+                </button>
+            </div>
+        </div>
+
+        <!-- Secondary Buttons -->
+        <div>
+            <span class="variant-label">Secondary Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-secondary btn-sm">SM Secondary</button>
+                <button class="btn btn-secondary btn-md">MD Secondary</button>
+                <button class="btn btn-secondary btn-lg">LG Secondary</button>
+                <button class="btn btn-secondary btn-xl">XL Secondary</button>
+            </div>
+        </div>
+
+        <!-- Neutral Buttons -->
+        <div>
+            <span class="variant-label">Neutral Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-neutral btn-sm">SM Neutral</button>
+                <button class="btn btn-neutral btn-md">MD Neutral</button>
+                <button class="btn btn-neutral btn-lg">LG Neutral</button>
+                <button class="btn btn-neutral btn-xl">XL Neutral</button>
+            </div>
+        </div>
+
+        <!-- Destructive Buttons -->
+        <div>
+            <span class="variant-label">Destructive Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-destructive btn-sm">
+                    <i data-lucide="trash-2"></i>
+                    Delete
+                </button>
+                <button class="btn btn-destructive btn-md">
+                    <i data-lucide="trash-2"></i>
+                    Delete
+                </button>
+                <button class="btn btn-destructive btn-lg">
+                    <i data-lucide="trash-2"></i>
+                    Delete
+                </button>
+                <button class="btn btn-destructive btn-xl">
+                    <i data-lucide="trash-2"></i>
+                    Delete
+                </button>
+            </div>
+        </div>
+
+        <!-- Outline Buttons -->
+        <div>
+            <span class="variant-label">Outline Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-outline btn-sm">SM Outline</button>
+                <button class="btn btn-outline btn-md">MD Outline</button>
+                <button class="btn btn-outline btn-lg">LG Outline</button>
+                <button class="btn btn-outline btn-xl">XL Outline</button>
+            </div>
+        </div>
+
+        <!-- Ghost Buttons -->
+        <div>
+            <span class="variant-label">Ghost Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-ghost btn-sm">SM Ghost</button>
+                <button class="btn btn-ghost btn-md">MD Ghost</button>
+                <button class="btn btn-ghost btn-lg">LG Ghost</button>
+                <button class="btn btn-ghost btn-xl">XL Ghost</button>
+            </div>
+        </div>
+
+        <!-- Link Buttons -->
+        <div>
+            <span class="variant-label">Link Buttons</span>
+            <div class="size-demo">
+                <button class="btn btn-link btn-sm">SM Link</button>
+                <button class="btn btn-link btn-md">MD Link</button>
+                <button class="btn btn-link btn-lg">LG Link</button>
+                <button class="btn btn-link btn-xl">XL Link</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icon-Only Buttons -->
+    <section class="demo-section">
+        <h2>Icon-Only Buttons</h2>
+        <p>All variants with <code>aria-label</code> for accessibility</p>
+        
+        <div class="size-demo">
+            <button class="btn btn-primary btn-icon-sm" aria-label="Add item">
+                <i data-lucide="plus"></i>
+            </button>
+            <button class="btn btn-primary btn-icon-md" aria-label="Add item">
+                <i data-lucide="plus"></i>
+            </button>
+            <button class="btn btn-primary btn-icon-lg" aria-label="Add item">
+                <i data-lucide="plus"></i>
+            </button>
+            <button class="btn btn-primary btn-icon-xl" aria-label="Add item">
+                <i data-lucide="plus"></i>
+            </button>
+        </div>
+
+        <div class="size-demo">
+            <button class="btn btn-destructive btn-icon-sm" aria-label="Delete">
+                <i data-lucide="trash-2"></i>
+            </button>
+            <button class="btn btn-outline btn-icon-md" aria-label="Settings">
+                <i data-lucide="settings"></i>
+            </button>
+            <button class="btn btn-ghost btn-icon-lg" aria-label="More options">
+                <i data-lucide="more-vertical"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- State Demonstrations -->
+    <section class="demo-section">
+        <h2>Button States</h2>
+        <p>Hover, active, focus, and disabled states</p>
+        
+        <div class="button-grid">
+            <!-- Default State -->
+            <div class="state-demo">
+                <span class="variant-label">Default States</span>
+                <button class="btn btn-primary btn-md">Primary</button>
+                <button class="btn btn-outline btn-md">Outline</button>
+                <button class="btn btn-ghost btn-md">Ghost</button>
+            </div>
+
+            <!-- Disabled State -->
+            <div class="state-demo">
+                <span class="variant-label">Disabled States</span>
+                <button class="btn btn-primary btn-md" disabled>Primary Disabled</button>
+                <button class="btn btn-outline btn-md" disabled>Outline Disabled</button>
+                <button class="btn btn-ghost btn-md" disabled>Ghost Disabled</button>
+            </div>
+
+            <!-- With Icons -->
+            <div class="state-demo">
+                <span class="variant-label">With Leading Icons</span>
+                <button class="btn btn-primary btn-md">
+                    <i data-lucide="save"></i>
+                    Save Changes
+                </button>
+                <button class="btn btn-secondary btn-md">
+                    <i data-lucide="plus"></i>
+                    Add Item
+                </button>
+            </div>
+
+            <!-- Link Styles -->
+            <div class="state-demo">
+                <span class="variant-label">Link Buttons</span>
+                <button class="btn btn-link btn-sm">Small Link</button>
+                <button class="btn btn-link btn-md">Medium Link</button>
+                <button class="btn btn-link btn-lg">Large Link</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Examples -->
+    <section class="demo-section">
+        <h2>Common Usage Patterns</h2>
+        
+        <!-- Form Actions -->
+        <div style="margin-bottom: 2rem;">
+            <h3>Form Actions</h3>
+            <div class="size-demo">
+                <button class="btn btn-primary btn-md">Save</button>
+                <button class="btn btn-outline btn-md">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Destructive Actions -->
+        <div style="margin-bottom: 2rem;">
+            <h3>Destructive Actions</h3>
+            <div class="size-demo">
+                <button class="btn btn-destructive btn-md">
+                    <i data-lucide="trash-2"></i>
+                    Delete Account
+                </button>
+                <button class="btn btn-outline btn-md">Keep Account</button>
+            </div>
+        </div>
+
+        <!-- Toolbar Actions -->
+        <div style="margin-bottom: 2rem;">
+            <h3>Toolbar</h3>
+            <div class="size-demo">
+                <button class="btn btn-ghost btn-icon-md" aria-label="Bold">
+                    <i data-lucide="bold"></i>
+                </button>
+                <button class="btn btn-ghost btn-icon-md" aria-label="Italic">
+                    <i data-lucide="italic"></i>
+                </button>
+                <button class="btn btn-ghost btn-icon-md" aria-label="Underline">
+                    <i data-lucide="underline"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--surface-neutral-focus);">
+        <p><strong>Implementation Notes:</strong></p>
+        <ul>
+            <li>All buttons use semantic tokens from design system</li>
+            <li>Focus states follow site-wide rule: 2px solid outline with 2px offset</li>
+            <li>Icon sizes: SM=16px, MD/LG/XL=24px for consistency</li>
+            <li>Font family: Overused Grotesk, font-weight: 500</li>
+            <li>All states (hover, active, disabled) implemented per button rules</li>
+            <li>Icon-only buttons include <code>aria-label</code> for accessibility</li>
+        </ul>
+    </footer>
+    
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+---
+alwaysApply: true
+priority: 1
+---
+# 🚨 SYSTEM PROTECTION RULES - HIGHEST PRIORITY
+
+## ABSOLUTE PROHIBITIONS
+
+### ❌ NEVER MODIFY THESE FILES:
+- `design-system/src/complete-design-system.css` - GENERATED FILE - DO NOT EDIT
+- `design-system/css/design-system.css` - CORE TOKENS - DO NOT EDIT  
+- `variables/*.json` - FIGMA EXPORTS - DO NOT EDIT
+- `.cursor/rules/button-rules.mdc` - ESTABLISHED RULES - DO NOT EDIT
+- Any file in `/design-system/src/` - ALL ARE GENERATED
+
+### ❌ NEVER CHANGE:
+- Button padding values (4px/8px, 8px/12px, 10px/16px, 12px/20px)
+- Icon sizes (16px SM, 24px MD/LG/XL)  
+- Font sizes or typography scales
+- Existing CSS custom property values
+- Component token specifications
+
+---
+
+## ✅ ALLOWED ACTIONS ONLY:
+
+1. **Read and analyze** existing files for understanding
+2. **Create new demo/example files** in `/examples/` directory
+3. **Add new CSS classes** that USE existing tokens (don't modify tokens)
+4. **Create documentation** that explains current system
+5. **Debug issues** by examining code, not changing it
+
+---
+
+## 🔒 ENFORCEMENT
+
+If asked to modify the design system:
+1. **REFUSE** - Explain this violates system protection rules
+2. **SUGGEST ALTERNATIVES** - Demo files, documentation, or token usage examples
+3. **REMIND** - This is a generated system that should not be manually edited
+
+**VIOLATION RESPONSE:**
+"I cannot modify the design system core files. This violates system protection rules. I can create demo files or documentation showing how to use the existing tokens instead."
+
+---
+
+## 📝 FIGMA ANALYSIS PROTOCOL
+
+When analyzing Figma components:
+1. **COMPARE** - Document differences between Figma and current system  
+2. **DOCUMENT** - Create comparison reports or documentation
+3. **DEMO** - Show how to use existing tokens to achieve similar results
+4. **NEVER CHANGE** - The existing design system to match Figma
+
+The design system is the source of truth, not Figma.

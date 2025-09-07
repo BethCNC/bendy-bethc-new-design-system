@@ -1,0 +1,105 @@
+---
+alwaysApply: true
+priority: 0
+description: Mandatory rules review before any action
+---
+
+# 🔄 MANDATORY RULES REVIEW - EVERY INTERACTION
+
+## PURPOSE
+Ensure every AI agent interaction begins with a complete review of all system rules to prevent violations and maintain compliance.
+
+---
+
+## 🚨 MANDATORY PROTOCOL
+
+### BEFORE ANY RESPONSE OR ACTION:
+1. **ALWAYS READ ALL RULES FIRST**
+2. **CONFIRM UNDERSTANDING** 
+3. **VERIFY COMPLIANCE** before proceeding
+
+### REQUIRED RULES TO READ EVERY TIME:
+- `.cursor/rules/system-protection-rules.mdc`
+- `.cursor/rules/file-modification-restrictions.mdc`
+- `.cursor/rules/no-hardcoding.mdc`
+- `.cursor/rules/design-system.mdc`
+- `.cursor/rules/workflow-enforcement.mdc`
+- `.cursor/rules/mandatory-pre-action-check.mdc`
+- `.cursor/rules/workflow-compliance-enforcer.mdc`
+
+---
+
+## 📋 MANDATORY RESPONSE FORMAT
+
+### EVERY RESPONSE MUST START WITH:
+```
+🔍 MANDATORY RULES REVIEW:
+✅ System protection rules reviewed
+✅ File modification restrictions checked
+✅ No-hardcoding rules reviewed
+✅ Design system rules reviewed
+✅ Workflow enforcement rules reviewed
+✅ Pre-action checks reviewed
+✅ Compliance enforcer reviewed
+
+COMPLIANCE STATUS: [READY/VIOLATION DETECTED]
+```
+
+---
+
+## 🚨 VIOLATION PREVENTION
+
+### IF RULES NOT READ:
+- **STOP IMMEDIATELY**
+- **READ ALL RULES FIRST**
+- **THEN PROCEED** with compliant response
+
+### IF VIOLATION DETECTED:
+- **REFUSE ACTION**
+- **EXPLAIN VIOLATION**
+- **SUGGEST COMPLIANT ALTERNATIVE**
+
+---
+
+## 🎯 ENFORCEMENT
+
+### TRIGGER CONDITIONS:
+- Any user request
+- Any file operation
+- Any code modification
+- Any design system interaction
+
+### SUCCESS METRICS:
+- 100% rules review rate
+- 0 protected file modifications
+- 100% token-only implementations
+- 0 workflow violations
+
+---
+
+## 📝 EXAMPLE COMPLIANT RESPONSE:
+
+```
+🔍 MANDATORY RULES REVIEW:
+✅ System protection rules reviewed
+✅ File modification restrictions checked
+✅ No-hardcoding rules reviewed
+✅ Design system rules reviewed
+✅ Workflow enforcement rules reviewed
+✅ Pre-action checks reviewed
+✅ Compliance enforcer reviewed
+
+COMPLIANCE STATUS: READY
+
+[Proceed with compliant implementation...]
+```
+
+---
+
+## 🛡️ ZERO TOLERANCE
+
+**NO EXCEPTIONS** - Every interaction must begin with rules review.
+**NO SHORTCUTS** - All rules must be read and understood.
+**NO BYPASSING** - Compliance is mandatory for every action.
+
+**This rule ensures perfect adherence to all system constraints.**

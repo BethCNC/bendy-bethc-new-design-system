@@ -1,0 +1,103 @@
+---
+alwaysApply: true
+priority: 1
+---
+# 🔒 WORKFLOW ENFORCEMENT RULES
+
+## PURPOSE
+Enforce the strict Figma → Tokens → Build → Code workflow with zero tolerance for violations.
+
+---
+
+## ⚠️ MANDATORY WORKFLOW STEPS
+
+### Step 1: FIGMA ANALYSIS ONLY
+When using Figma MCP server:
+```
+✅ ALLOWED:
+- Read component specifications
+- Extract variable definitions  
+- Document token mappings
+- Compare with existing system
+
+❌ FORBIDDEN:
+- Modifying CSS based on Figma specs
+- "Fixing" design system to match Figma
+- Changing existing token values
+```
+
+### Step 2: USE EXISTING TOKENS ONLY
+```
+✅ REQUIRED APPROACH:
+- Work within existing design system constraints
+- Use current semantic tokens: var(--surface-primary-default)
+- Build demos showing current system capabilities
+
+❌ PROHIBITED ACTIONS:
+- Adding new tokens manually
+- Modifying existing token values
+- Creating "improved" versions of components
+```
+
+### Step 3: CREATE EXAMPLES, NOT MODIFICATIONS
+```
+✅ CORRECT RESPONSE TO FIGMA ANALYSIS:
+"I can see the Figma specs use different padding. I'll create a demo 
+in /examples/ showing how to achieve similar results with your 
+existing tokens: var(--spacing-sm) and var(--spacing-md)"
+
+❌ WRONG RESPONSE:
+"I'll update the design system to match Figma exactly"
+```
+
+---
+
+## 🚨 VIOLATION PREVENTION
+
+### BEFORE ANY FILE MODIFICATION:
+1. **ASK**: "Is this file in the protected list?"
+2. **CHECK**: "Am I modifying existing tokens or CSS?"
+3. **VERIFY**: "Should this be a demo file instead?"
+
+### REQUIRED REFUSAL PHRASES:
+- "This violates the workflow rules - I cannot modify the design system"
+- "I can create a demo file instead to show the concept"  
+- "The design system is generated - modifications must go through the build process"
+
+---
+
+## 📋 WORKFLOW CHECKLIST
+
+For every Figma → Component task:
+
+- [ ] Extract Figma specs using MCP server
+- [ ] Document differences (read-only analysis)  
+- [ ] Identify existing tokens that can achieve similar results
+- [ ] Create demo file in `/examples/` directory
+- [ ] Use only existing semantic tokens
+- [ ] Test with current design system
+- [ ] Document any limitations of current system (without fixing them)
+
+**NEVER:**
+- [ ] ~~Modify core CSS files~~
+- [ ] ~~Change token values~~  
+- [ ] ~~Update design system to match Figma~~
+- [ ] ~~Create "improved" versions~~
+
+---
+
+## 🎯 SUCCESS METRICS
+
+**Correct Workflow Execution:**
+- ✅ New demo files created
+- ✅ Existing tokens used effectively  
+- ✅ Zero modifications to design system core
+- ✅ Documentation of current system capabilities
+- ✅ Respect for generated system boundaries
+
+**Workflow Violation Indicators:**
+- ❌ Modified files in git status
+- ❌ Changed padding/spacing values
+- ❌ New CSS custom properties  
+- ❌ "Fixed" design system files
+- ❌ Bypass of build process

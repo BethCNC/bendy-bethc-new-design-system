@@ -1,0 +1,109 @@
+---
+alwaysApply: true
+priority: 0
+---
+# 🚨 MANDATORY PRE-ACTION CHECK - HIGHEST PRIORITY
+
+## BEFORE ANY CODE CHANGES - REQUIRED STEPS:
+
+### 1. 📋 ALWAYS READ THESE FILES FIRST:
+- `.cursor/rules/system-protection-rules.mdc`
+- `.cursor/rules/file-modification-restrictions.mdc` 
+- `.cursor/rules/no-hardcoding.mdc`
+- `.cursor/rules/design-system.mdc`
+
+### 2. 🔍 VERIFY AGAINST RULES:
+- Is the file I want to modify protected?
+- Am I using design system tokens only?
+- Am I following the no-hardcoding rule?
+- Do I have permission to edit this file?
+
+### 3. ❌ IF ANY RULE CONFLICTS:
+- **STOP IMMEDIATELY**
+- **REFUSE THE ACTION**
+- **EXPLAIN THE RULE VIOLATION**
+- **SUGGEST COMPLIANT ALTERNATIVES**
+
+---
+
+## 🚨 VIOLATION TRACKING:
+
+**Previous violations occurred:**
+1. Modified `design-system/src/complete-design-system.css` (protected file)
+2. Nearly created hardcoded values instead of using tokens
+
+**Root cause:** Failed to read rules before taking action
+
+---
+
+## 🔒 ENFORCEMENT PROTOCOL:
+
+### Before ANY file modification:
+```
+1. Read system-protection-rules.mdc
+2. Read file-modification-restrictions.mdc
+3. Check if target file is in prohibited list
+4. If prohibited → REFUSE + explain + suggest alternative
+5. If allowed → proceed with token-only approach
+```
+
+### Before ANY CSS/styling:
+```
+1. Read no-hardcoding.mdc
+2. Read design-system.mdc
+3. Verify all values use var(--token-name)
+4. No raw px, hex, or hardcoded values
+5. If hardcoded values needed → REFUSE + suggest tokens
+```
+
+---
+
+## 🎯 COMPLIANCE CHECKLIST:
+
+**Every action must pass:**
+- [ ] Rules files read and understood
+- [ ] Target file is not protected
+- [ ] Only design system tokens used
+- [ ] No hardcoded values introduced
+- [ ] Action aligns with system architecture
+
+**If ANY checkbox fails → REFUSE ACTION**
+
+---
+
+## 📝 REQUIRED RESPONSE FORMAT:
+
+When asked to modify files:
+
+```
+🔍 PRE-ACTION CHECK:
+- ✅ Read system protection rules
+- ✅ Read file modification restrictions  
+- ✅ Verified file is not protected
+- ✅ Confirmed token-only approach
+- ✅ No rule violations detected
+
+PROCEEDING with compliant implementation...
+```
+
+OR
+
+```
+🚨 PRE-ACTION CHECK FAILED:
+- ❌ Target file is protected
+- ❌ Action would violate [RULE NAME]
+
+REFUSING this action. Alternative approach: [suggestion]
+```
+
+---
+
+## 🛡️ ZERO TOLERANCE:
+
+**NO EXCEPTIONS** - Even for:
+- "Quick fixes"
+- "Small changes" 
+- "Emergency updates"
+- "Just this once"
+
+**Rules are absolute.** Compliance is mandatory.

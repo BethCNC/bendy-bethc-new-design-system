@@ -1,0 +1,35 @@
+{
+  "typography": {
+    "title/title-xs/regular": {
+      "fontSizeToken": "font-size-title-xs",
+      "lineHeightToken": "line-height-title-xs",
+      "fontWeight": 400,
+      "fontFamily": "font-title"
+    },
+    "title/title-xs/medium": {
+      "fontSizeToken": "font-size-title-xs",
+      "lineHeightToken": "line-height-title-xs",
+      "fontWeight": 500,
+      "fontFamily": "font-title"
+    },
+    "body/body-md/regular": {
+      "fontSizeToken": "font-size-body-md",
+      "lineHeightToken": "line-height-body-md",
+      "fontWeight": 400,
+      "fontFamily": "font-body"
+    }
+  },
+  "colors": {
+    "Surface/Primary/default": "surface-primary-default",
+    "Surface/Neutral/card": "surface-neutral-card",
+    "Text/Neutral/heading": "text-neutral-heading",
+    "Text/Neutral/body": "text-neutral-body"
+  },
+  "spacing": {
+    "4px": "spacing-xs",
+    "8px": "spacing-sm",
+    "16px": "spacing-md",
+    "24px": "spacing-lg",
+    "48px": "spacing-xl"
+  }
+}

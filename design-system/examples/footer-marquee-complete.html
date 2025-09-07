@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Scrolling Marquee - Bendy BethC Design System</title>
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-body);
+            background-color: var(--surface-neutral-page);
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-lg);
+        }
+        
+        .demo-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+            padding: var(--spacing-lg);
+            background-color: var(--surface-neutral-card);
+            border-radius: var(--radius-md);
+        }
+        
+        .demo-title {
+            font-family: var(--font-display);
+            font-size: var(--font-heading-H2-desktop);
+            font-weight: var(--font-weight-regular);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-sm) 0;
+        }
+        
+        .demo-subtitle {
+            font-family: var(--font-title);
+            font-size: var(--font-title-md-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-body);
+            margin: 0;
+        }
+        
+        .demo-specs {
+            background-color: var(--surface-neutral-card);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .demo-specs h3 {
+            font-family: var(--font-title);
+            font-size: var(--font-title-lg-desktop);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-neutral-heading);
+            margin: 0 0 var(--spacing-md) 0;
+        }
+        
+        .demo-specs ul {
+            font-family: var(--font-body);
+            font-size: var(--font-body-md-desktop);
+            color: var(--text-neutral-body);
+            margin: 0;
+            padding-left: var(--spacing-lg);
+        }
+        
+        .demo-specs li {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        /* Footer Marquee Component Styles */
+        .footer-marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: var(--surface-neutral-inverse);
+            padding: var(--spacing-lg) 0;
+            position: relative;
+        }
+        
+        .footer-marquee-content {
+            display: flex;
+            align-items: center;
+            animation: marqueeScroll 60s linear infinite;
+            will-change: transform;
+        }
+        
+        .footer-marquee-text {
+            font-family: var(--font-behind-the-nineties);
+            font-size: 96px;
+            font-weight: 400;
+            line-height: 128px;
+            color: var(--text-neutral-inverse);
+            white-space: nowrap;
+            letter-spacing: 0;
+        }
+        
+        .footer-marquee-heart-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 var(--spacing-xs);
+        }
+        
+        .heart-gif {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+        }
+        
+        @keyframes marqueeScroll {
+            0% {
+                transform: translate3d(100%, 0, 0);
+            }
+            100% {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+        
+        /* Pause animation on hover for accessibility */
+        .footer-marquee-container:hover .footer-marquee-content {
+            animation-play-state: paused;
+        }
+        
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            .footer-marquee-content {
+                animation: none !important;
+                transform: none !important;
+                justify-content: center;
+            }
+            
+            .footer-marquee-container {
+                text-align: center;
+            }
+        }
+
+        /* Responsive text sizes */
+        @media (max-width: 809px) and (min-width: 391px) {
+            .footer-marquee-text {
+                font-size: 64px;
+                line-height: 84px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            .footer-marquee-container {
+                padding: var(--spacing-lg) 0;
+            }
+            
+            .footer-marquee-text {
+                font-size: 48px;
+                line-height: 64px;
+            }
+            
+            .footer-marquee-content {
+                animation-duration: 80s;
+            }
+        }
+        
+        /* Demo spacing */
+        .demo-spacer {
+            height: 400px;
+            background: linear-gradient(45deg, var(--surface-neutral-page), var(--surface-neutral-card));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-title);
+            font-size: var(--font-title-lg-desktop);
+            color: var(--text-neutral-body);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="demo-header">
+            <h1 class="demo-title">Footer Scrolling Marquee</h1>
+            <p class="demo-subtitle">Animated Text with Yellow Heart GIF</p>
+        </div>
+        
+        <div class="demo-specs">
+            <h3>Marquee Specifications</h3>
+            <ul>
+                <li><strong>Animation:</strong> Horizontal scroll from right to left (60s duration)</li>
+                <li><strong>Content:</strong> Two alternating phrases with yellow heart GIF</li>
+                <li><strong>Interaction:</strong> Pauses on hover for accessibility</li>
+                <li><strong>Responsive:</strong> Faster animation on mobile (40s duration)</li>
+                <li><strong>Fallback:</strong> Yellow heart emoji if GIF fails to load</li>
+                <li><strong>Accessibility:</strong> Respects reduced motion preferences</li>
+            </ul>
+        </div>
+        
+        <div class="demo-spacer">
+            ↓ Scroll down to see the footer marquee ↓
+        </div>
+    </div>
+    
+    <!-- Footer Marquee Component -->
+    <div class="footer-marquee-container">
+        <div class="footer-marquee-content">
+            <!-- Repeated content for seamless scrolling -->
+            <span class="footer-marquee-text"> Every view, every listen, every heart </span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            <span class="footer-marquee-text">Thank you for holding space for my story</span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            
+            <!-- Repeat content multiple times for seamless loop -->
+            <span class="footer-marquee-text"> Every view, every listen, every heart </span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            <span class="footer-marquee-text">Thank you for holding space for my story</span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            
+            <span class="footer-marquee-text"> Every view, every listen, every heart </span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            <span class="footer-marquee-text">Thank you for holding space for my story</span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            
+            <span class="footer-marquee-text"> Every view, every listen, every heart </span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            <span class="footer-marquee-text">Thank you for holding space for my story</span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            
+            <span class="footer-marquee-text"> Every view, every listen, every heart </span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+            <span class="footer-marquee-text">Thank you for holding space for my story</span>
+            <span class="footer-marquee-heart-wrapper">
+                <img src="../../public/images/gifs/yellow-heart.gif" alt="Yellow heart" class="heart-gif" onerror="this.style.display='none'; this.nextSibling.style.display='inline-block';">
+                <span style="font-size: 24px; line-height: 1; display: none;">💛</span>
+            </span>
+        </div>
+    </div>
+    
+    <script>
+        // Log when GIFs load successfully
+        const gifs = document.querySelectorAll('.heart-gif');
+        gifs.forEach((gif, index) => {
+            gif.addEventListener('load', () => {
+                console.log(`✅ Yellow heart GIF ${index + 1} loaded successfully!`);
+            });
+            
+            gif.addEventListener('error', () => {
+                console.error(`❌ GIF ${index + 1} failed to load, showing emoji fallback`);
+            });
+        });
+        
+        // Pause animation on focus for keyboard users
+        const marqueeContainer = document.querySelector('.footer-marquee-container');
+        const marqueeContent = document.querySelector('.footer-marquee-content');
+        
+        marqueeContainer.addEventListener('focusin', () => {
+            marqueeContent.style.animationPlayState = 'paused';
+        });
+        
+        marqueeContainer.addEventListener('focusout', () => {
+            marqueeContent.style.animationPlayState = 'running';
+        });
+    </script>
+</body>
+</html>

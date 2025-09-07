@@ -6,50 +6,56 @@ interface PageTitleProps {
   title?: string;
 }
 
-const PageTitle: React.FC<PageTitleProps> = ({ title }) => {
+const PageTitle: React.FC<PageTitleProps> = ({ title = "Hello Bendy Friends!" }) => {
   return (
     <div 
       className="page-title"
       style={{
-        padding: 'var(--margins-desktop)',
-        textAlign: 'center',
+        padding: 'var(--spacing-xl-mobile) var(--margins-mobile)',
+        backgroundColor: 'var(--surface-neutral-inverse)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        width: '100%',
+        boxSizing: 'border-box',
       }}
     >
-      {title && (
-        <h1
-          style={{
-            fontFamily: 'var(--font-display)',
-            fontWeight: 'var(--font-weight-regular)',
-            fontSize: 'var(--font-size-display-display)',
-            lineHeight: 'var(--line-height-display-display)',
-            color: 'var(--text-neutral-heading)',
-            margin: 0,
-          }}
-        >
-          {title}
-        </h1>
-      )}
+      <h1
+        style={{
+          fontFamily: 'var(--font-behind-the-nineties)',
+          fontWeight: 'var(--font-weight-regular)',
+          fontSize: 'var(--font-display-display-mobile)',
+          lineHeight: 'var(--line-display-display-mobile)',
+          color: 'var(--text-neutral-inverse)',
+          margin: 0,
+          flex: '1 1 0',
+          minWidth: '1px',
+          minHeight: '1px',
+        }}
+      >
+        {title}
+      </h1>
 
       <style jsx>{`
-        @media (max-width: 809px) {
+        @media (min-width: 810px) {
           .page-title {
-            padding: var(--margins-tablet) !important;
+            padding: var(--spacing-xl) var(--margins-desktop) !important;
           }
           
           .page-title h1 {
-            font-size: var(--font-size-display-display-tablet) !important;
-            line-height: var(--line-height-display-display-tablet) !important;
+            font-size: var(--font-display-display-desktop) !important;
+            line-height: var(--line-display-display-desktop) !important;
           }
         }
         
-        @media (max-width: 390px) {
+        @media (min-width: 390px) and (max-width: 809px) {
           .page-title {
-            padding: var(--margins-mobile) !important;
+            padding: var(--spacing-xl-tablet) var(--margins-tablet) !important;
           }
           
           .page-title h1 {
-            font-size: var(--font-size-display-display-mobile) !important;
-            line-height: var(--line-height-display-display-mobile) !important;
+            font-size: var(--font-display-display-tablet) !important;
+            line-height: var(--line-display-display-tablet) !important;
           }
         }
       `}</style>

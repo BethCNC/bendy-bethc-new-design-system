@@ -1,0 +1,81 @@
+{
+  "timestamp": "2025-09-05T22:16:22.132Z",
+  "summary": {
+    "totalFiles": 12,
+    "filesWithIssues": 3,
+    "issuesFixedCount": 0,
+    "validationErrors": 0
+  },
+  "filesAudited": [
+    {
+      "file": "design-system/examples/buttons-complete.html",
+      "issues": [
+        {
+          "type": "figma-validation-errors",
+          "count": 1,
+          "examples": [
+            {
+              "type": "figma-spec-mismatch",
+              "message": "Uses title-xs sizing but not responsive token",
+              "suggestion": "Use var(--font-size-title-xs) and var(--line-height-title-xs)"
+            }
+          ]
+        }
+      ],
+      "hasChanges": false
+    },
+    {
+      "file": "design-system/examples/menu-item-complete.html",
+      "issues": [
+        {
+          "type": "figma-validation-errors",
+          "count": 1,
+          "examples": [
+            {
+              "type": "figma-spec-mismatch",
+              "message": "Uses title-xs sizing but not responsive token",
+              "suggestion": "Use var(--font-size-title-xs) and var(--line-height-title-xs)"
+            }
+          ]
+        }
+      ],
+      "hasChanges": false
+    },
+    {
+      "file": "design-system/examples/test-cards.html",
+      "issues": [
+        {
+          "type": "figma-validation-errors",
+          "count": 1,
+          "examples": [
+            {
+              "type": "figma-spec-mismatch",
+              "message": "Uses title-xs sizing but not responsive token",
+              "suggestion": "Use var(--font-size-title-xs) and var(--line-height-title-xs)"
+            }
+          ]
+        }
+      ],
+      "hasChanges": false
+    }
+  ],
+  "fixesApplied": [],
+  "validationErrors": [],
+  "recommendations": [
+    {
+      "type": "workflow-improvement",
+      "priority": "high",
+      "message": "Update component generation workflow to use responsive tokens by default"
+    },
+    {
+      "type": "css-class-generation",
+      "priority": "high",
+      "message": "Fix CSS class generation to use var(--token-name) instead of hardcoded values"
+    },
+    {
+      "type": "validation-enhancement",
+      "priority": "medium",
+      "message": "Add pre-commit hooks to validate typography token usage"
+    }
+  ]
+}

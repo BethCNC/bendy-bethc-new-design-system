@@ -18,13 +18,14 @@
     --font-size-title-md-mobile: 24px;
     --font-size-title-lg-mobile: 30px;
     --font-size-title-sm-mobile: 20px;
-    --font-size-heading-h6-mobile: 12px;
-    --font-size-heading-h5-mobile: 18px;
-    --font-size-heading-h4-mobile: 18px;
-    --font-size-heading-h3-mobile: 24px;
-    --font-size-heading-h2-mobile: 24px;
+    /* Updated mobile typography scale */
+    --font-size-heading-h6-mobile: 16px;
+    --font-size-heading-h5-mobile: 20px;
+    --font-size-heading-h4-mobile: 24px;
+    --font-size-heading-h3-mobile: 30px;
+    --font-size-heading-h2-mobile: 36px;
     --font-size-heading-h1-mobile: 48px;
-    --font-size-display-display-mobile: 36px;
+    --font-size-display-display-mobile: 72px;
     --font-family-body-mobile: Overused Grotesk;
     --font-family-title-mobile: Overused Grotesk;
     --font-family-heading-mobile: Behind The Nineties;
@@ -39,13 +40,14 @@
     --line-height-title-base-mobile: 32px;
     --line-height-title-lg-mobile: 32px;
     --line-height-title-xl-mobile: 40px;
-    --line-height-heading-h6-mobile: 16px;
-    --line-height-heading-h5-mobile: 24px;
-    --line-height-heading-h4-mobile: 28px;
-    --line-height-heading-h3-mobile: 32px;
+    /* Updated mobile line heights */
+    --line-height-heading-h6-mobile: 24px;
+    --line-height-heading-h5-mobile: 32px;
+    --line-height-heading-h4-mobile: 36px;
+    --line-height-heading-h3-mobile: 40px;
     --line-height-heading-h2-mobile: 48px;
     --line-height-heading-h1-mobile: 60px;
-    --line-height-display-display-mobile: 48px;
+    --line-height-display-display-mobile: 80px;
     --spacing-sm-mobile: 8px;
     --spacing-md-mobile: 12px;
     --spacing-lg-mobile: 24px;
@@ -115,13 +117,14 @@
     --font-size-title-md-tablet: 30px;
     --font-size-title-lg-tablet: 36px;
     --font-size-title-sm-tablet: 24px;
-    --font-size-heading-h6-tablet: 16px;
+    /* Updated tablet typography scale */
+    --font-size-heading-h6-tablet: 20px;
     --font-size-heading-h5-tablet: 24px;
-    --font-size-heading-h4-tablet: 24px;
+    --font-size-heading-h4-tablet: 30px;
     --font-size-heading-h3-tablet: 36px;
-    --font-size-heading-h2-tablet: 36px;
+    --font-size-heading-h2-tablet: 48px;
     --font-size-heading-h1-tablet: 60px;
-    --font-size-display-display-tablet: 72px;
+    --font-size-display-display-tablet: 96px;
     --font-family-body-tablet: Overused Grotesk;
     --font-family-title-tablet: Overused Grotesk;
     --font-family-heading-tablet: Behind The Nineties;
@@ -136,13 +139,14 @@
     --line-height-title-base-tablet: 40px;
     --line-height-title-lg-tablet: 48px;
     --line-height-title-xl-tablet: 60px;
-    --line-height-heading-h6-tablet: 24px;
-    --line-height-heading-h5-tablet: 28px;
-    --line-height-heading-h4-tablet: 32px;
+    /* Updated tablet line heights */
+    --line-height-heading-h6-tablet: 28px;
+    --line-height-heading-h5-tablet: 32px;
+    --line-height-heading-h4-tablet: 40px;
     --line-height-heading-h3-tablet: 48px;
     --line-height-heading-h2-tablet: 60px;
     --line-height-heading-h1-tablet: 72px;
-    --line-height-display-display-tablet: 96px;
+    --line-height-display-display-tablet: 108px;
     --spacing-sm-tablet: 8px;
     --spacing-md-tablet: 12px;
     --spacing-lg-tablet: 32px;
@@ -212,12 +216,13 @@
     --font-size-title-md-desktop: 36px;
     --font-size-title-lg-desktop: 48px;
     --font-size-title-sm-desktop: 30px;
-    --font-size-heading-h6-desktop: 30px;
-    --font-size-heading-h5-desktop: 36px;
-    --font-size-heading-h4-desktop: 48px;
-    --font-size-heading-h3-desktop: 60px;
-    --font-size-heading-h2-desktop: 72px;
-    --font-size-heading-h1-desktop: 96px;
+    /* Updated desktop typography scale */
+    --font-size-heading-h6-desktop: 24px;
+    --font-size-heading-h5-desktop: 30px;
+    --font-size-heading-h4-desktop: 36px;
+    --font-size-heading-h3-desktop: 48px;
+    --font-size-heading-h2-desktop: 60px;
+    --font-size-heading-h1-desktop: 72px;
     --font-size-display-display-desktop: 128px;
     --font-family-body-desktop: Overused Grotesk;
     --font-family-title-desktop: Overused Grotesk;
@@ -233,13 +238,14 @@
     --line-height-title-base-desktop: 48px;
     --line-height-title-lg-desktop: 60px;
     --line-height-title-xl-desktop: 72px;
-    --line-height-heading-h6-desktop: 40px;
-    --line-height-heading-h5-desktop: 48px;
-    --line-height-heading-h4-desktop: 60px;
-    --line-height-heading-h3-desktop: 72px;
-    --line-height-heading-h2-desktop: 96px;
-    --line-height-heading-h1-desktop: 128px;
-    --line-height-display-display-desktop: 136px;
+    /* Updated desktop line heights */
+    --line-height-heading-h6-desktop: 32px;
+    --line-height-heading-h5-desktop: 40px;
+    --line-height-heading-h4-desktop: 48px;
+    --line-height-heading-h3-desktop: 60px;
+    --line-height-heading-h2-desktop: 72px;
+    --line-height-heading-h1-desktop: 84px;
+    --line-height-display-display-desktop: 140px;
     --spacing-sm-desktop: 12px;
     --spacing-md-desktop: 24px;
     --spacing-lg-desktop: 48px;

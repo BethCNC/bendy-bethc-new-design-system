@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-09-05T15:25:44.815Z",
+  "error": "Mapped tokens not found in design system: page-title",
+  "stack": "Error: Mapped tokens not found in design system: page-title\n    at DesignSystemMatcher.validateMappedTokens (/Users/bethcartrette/REPOS/bendy-bethc-new-design-system/scripts/modules/design-system-matcher.js:530:19)\n    at DesignSystemMatcher.matchTokens (/Users/bethcartrette/REPOS/bendy-bethc-new-design-system/scripts/modules/design-system-matcher.js:185:14)\n    at FigmaComponentAutomation.processComponent (/Users/bethcartrette/REPOS/bendy-bethc-new-design-system/scripts/figma-component-automation.js:136:65)\n    at async FigmaComponentAutomation.run (/Users/bethcartrette/REPOS/bendy-bethc-new-design-system/scripts/figma-component-automation.js:59:17)",
+  "processedComponents": 3,
+  "failedComponents": 1,
+  "refusalPhrase": "I cannot modify existing token values. I can create a demo showing how to use the existing tokens to achieve similar results."
+}

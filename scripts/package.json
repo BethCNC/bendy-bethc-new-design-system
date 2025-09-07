@@ -1,0 +1,35 @@
+{
+  "name": "figma-component-automation",
+  "version": "1.0.0",
+  "description": "Automated Figma component extraction and design system integration",
+  "main": "figma-component-automation.js",
+  "scripts": {
+    "start": "node figma-component-automation.js",
+    "test": "node test/test-runner.js",
+    "validate": "node scripts/validate-config.js",
+    "demo": "node scripts/demo-runner.js",
+    "lint:design-system": "node enforce-design-system.js ../design-system",
+    "fix:design-system": "node auto-fix-tokens.js",
+    "check:compliance": "node enforce-design-system.js ../design-system && echo '✅ All files are design system compliant!'",
+    "precommit": "npm run check:compliance"
+  },
+  "keywords": [
+    "figma",
+    "design-system",
+    "automation",
+    "components",
+    "tokens"
+  ],
+  "author": "Beth Cartrette",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "glob": "^10.3.10"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

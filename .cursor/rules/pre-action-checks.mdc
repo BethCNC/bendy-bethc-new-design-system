@@ -1,0 +1,112 @@
+---
+alwaysApply: true
+priority: 0
+---
+# 🔍 PRE-ACTION CHECKS
+
+## PURPOSE
+Mandatory checks that must be performed BEFORE any file modification or workflow action.
+
+---
+
+## 🚨 BEFORE EVERY FILE EDIT - ASK THESE QUESTIONS:
+
+### 1. FILE PROTECTION CHECK
+```
+❓ "Is this file in the protected list?"
+
+PROTECTED FILES:
+- design-system/src/complete-design-system.css ❌
+- design-system/css/design-system.css ❌
+- .cursor/rules/*.mdc ❌ 
+- variables/*.json ❌
+- tokens/index.css ❌
+
+IF YES → REFUSE AND SUGGEST DEMO FILE ALTERNATIVE
+IF NO → PROCEED TO NEXT CHECK
+```
+
+### 2. WORKFLOW COMPLIANCE CHECK
+```
+❓ "Does this modification follow the proper workflow?"
+
+PROPER WORKFLOW:
+Figma → Export Tokens → Build Process → Generated CSS
+
+IMPROPER WORKFLOW:
+Figma → Manual CSS Changes (❌ FORBIDDEN)
+
+IF IMPROPER → REFUSE AND EXPLAIN BUILD PROCESS
+IF PROPER → PROCEED TO NEXT CHECK  
+```
+
+### 3. TOKEN USAGE CHECK
+```
+❓ "Am I using existing tokens or creating/modifying them?"
+
+✅ ALLOWED: Using existing tokens like var(--surface-primary-default)
+❌ FORBIDDEN: Modifying token values or creating new ones manually
+
+IF MODIFYING TOKENS → REFUSE AND USE EXISTING TOKENS
+IF USING EXISTING → PROCEED
+```
+
+### 4. DEMO VS SYSTEM CHECK
+```
+❓ "Should this be a demo file instead of modifying the system?"
+
+DEMO FILE INDICATORS:
+- Showing how to use components
+- Testing functionality
+- Examples for users
+- Proof of concepts
+
+SYSTEM MODIFICATION INDICATORS:
+- Changing core CSS
+- Updating token values
+- "Fixing" or "improving" existing system
+
+IF DEMO NEEDED → CREATE IN /examples/ DIRECTORY
+IF SYSTEM MODIFICATION → REFUSE
+```
+
+---
+
+## 🎯 MANDATORY REFUSAL RESPONSES
+
+When checks fail, use these exact phrases:
+
+### Protected File Response:
+```
+"I cannot modify [filename] as it's a protected design system file. 
+I can create a demo file in /design-system/examples/ to show 
+the desired functionality instead."
+```
+
+### Workflow Violation Response:
+```
+"This would bypass the proper Figma → Tokens → Build workflow. 
+Token changes need to go through 'npx style-dictionary build' 
+after updating the source token files."
+```
+
+### Token Modification Response:
+```
+"I cannot modify existing token values. I can create a demo 
+showing how to use the existing tokens: [list specific tokens] 
+to achieve similar results."
+```
+
+---
+
+## ✅ APPROVED ACTION CHECKLIST
+
+Only proceed if ALL checks pass:
+
+- [ ] File is NOT in protected list
+- [ ] Action follows proper workflow (Figma → Build → Code)
+- [ ] Using existing tokens, not modifying them
+- [ ] Creating demo/example, not modifying system
+- [ ] Working within existing design constraints
+
+**If ANY check fails → REFUSE with explanation and alternative**

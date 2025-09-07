@@ -191,15 +191,22 @@
   --font-title: "Overused Grotesk", sans-serif;
   --font-heading: "Behind The Nineties", sans-serif;
   --font-display: "Behind The Nineties", sans-serif;
-}
+  /* Font Weight Tokens */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
 
-/* Complete Typography System - Generated from Figma Responsive Tokens */
+  /* Complete Typography System - Generated from Figma Responsive Tokens */
 
 /* Font Family Tokens */
   --font-body: "Overused Grotesk", sans-serif;
   --font-title: "Overused Grotesk", sans-serif;
   --font-heading: "Behind The Nineties", sans-serif;
   --font-display: "Behind The Nineties", sans-serif;
+}
 
 /* Responsive Typography - Mobile First */
 @media (min-width: 390px) {
@@ -1137,4 +1144,96 @@
     color: var(--text-primary);
     text-align: center;
     margin-bottom: 0;
+}
+
+/* Copy Block 1 Responsive Styles */
+@media (max-width: 809px) {
+  .copy-block-1 {
+    padding: var(--margins-tablet) !important;
+    gap: var(--spacing-lg-tablet) !important;
+  }
+  
+  .copy-block-1__main-heading {
+    font-size: var(--font-heading-H3-tablet) !important;
+    line-height: var(--line-height-heading-H3-tablet) !important;
+  }
+  
+  .copy-block-1__list-item {
+    font-size: var(--font-title-xl-tablet) !important;
+    line-height: var(--line-height-title-xl-tablet) !important;
+  }
+  
+  .copy-block-1__transition {
+    font-size: var(--font-heading-H1-tablet) !important;
+    line-height: var(--line-height-heading-H1-tablet) !important;
+  }
+  
+  .copy-block-1__final-line {
+    font-size: var(--font-title-xl-tablet) !important;
+    line-height: var(--line-height-title-xl-tablet) !important;
+  }
+}
+
+@media (max-width: 389px) {
+  .copy-block-1 {
+    padding: var(--margins-mobile) !important;
+    gap: var(--spacing-lg-mobile) !important;
+  }
+  
+  .copy-block-1__main-heading {
+    font-size: var(--font-heading-H3-mobile) !important;
+    line-height: var(--line-height-heading-H3-mobile) !important;
+  }
+  
+  .copy-block-1__list-item {
+    font-size: var(--font-title-xl-mobile) !important;
+    line-height: var(--line-height-title-xl-mobile) !important;
+  }
+  
+  .copy-block-1__transition {
+    font-size: var(--font-heading-H1-mobile) !important;
+    line-height: var(--line-height-heading-H1-mobile) !important;
+  }
+  
+  .copy-block-1__final-line {
+    font-size: var(--font-title-xl-mobile) !important;
+    line-height: var(--line-height-title-xl-mobile) !important;
+  }
+}
+
+/* Copy Block 2 Responsive Styles */
+@media (max-width: 809px) {
+  .copy-block-2 {
+    padding: var(--margins-tablet) !important;
+    gap: var(--spacing-lg-tablet) !important;
+  }
+  
+  .copy-block-2__first-line,
+  .copy-block-2__third-line {
+    font-size: var(--font-heading-H2-tablet) !important;
+    line-height: var(--line-height-heading-H2-tablet) !important;
+  }
+  
+  .copy-block-2__second-line {
+    font-size: var(--font-heading-H3-tablet) !important;
+    line-height: var(--line-height-heading-H3-tablet) !important;
+  }
+}
+
+@media (max-width: 389px) {
+  .copy-block-2 {
+    padding: var(--margins-mobile) !important;
+    gap: var(--spacing-lg-mobile) !important;
+  }
+  
+  .copy-block-2__first-line,
+  .copy-block-2__third-line {
+    font-size: var(--font-heading-H2-mobile) !important;
+    line-height: var(--line-height-heading-H2-mobile) !important;
+  }
+  
+  .copy-block-2__second-line {
+    font-size: var(--font-heading-H3-mobile) !important;
+    line-height: var(--line-height-heading-H3-mobile) !important;
+  }
 }

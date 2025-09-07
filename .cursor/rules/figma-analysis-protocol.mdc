@@ -1,0 +1,111 @@
+---
+alwaysApply: true
+priority: 2
+---
+# 🔍 FIGMA ANALYSIS PROTOCOL
+
+## PURPOSE
+Define exactly how to handle Figma MCP server data without violating design system integrity.
+
+---
+
+## 📋 FIGMA ANALYSIS CHECKLIST
+
+### ✅ ALLOWED ANALYSIS ACTIONS:
+1. **Extract Component Data**
+   ```
+   - Use mcp__figma-dev-mode-mcp-server__get_variable_defs
+   - Get padding, typography, color specifications  
+   - Document bound variables and token mappings
+   ```
+
+2. **Compare with Existing System**
+   ```
+   - List Figma specs vs current design system values
+   - Identify matching tokens already available
+   - Document gaps (without fixing them)
+   ```
+
+3. **Create Compatibility Reports**
+   ```
+   - Show which existing tokens can achieve similar results
+   - Document limitations of current system
+   - Suggest demo approaches using current tokens
+   ```
+
+### ❌ FORBIDDEN ANALYSIS OUTCOMES:
+- Making design system "match" Figma exactly
+- Modifying existing CSS based on Figma findings  
+- Creating "corrected" versions of components
+- Bypassing the build process with manual changes
+
+---
+
+## 📝 REQUIRED RESPONSE TEMPLATE
+
+When analyzing Figma components, ALWAYS use this format:
+
+```markdown
+## 🔍 Figma Analysis Results
+
+### Component: [Component Name]
+**Figma Specifications:**
+- Padding: [values from Figma]
+- Typography: [font/size from Figma]  
+- Colors: [color tokens from Figma]
+
+### Current Design System:
+- Available tokens: var(--spacing-md), var(--font-body-lg)
+- Current implementation: [how system currently handles this]
+
+### Compatibility Assessment:
+✅ **Works with current system:** [what works]
+⚠️ **Limitations:** [what doesn't match - without fixing]
+
+### Demo Approach:
+"I can create a demo in /examples/ showing how to use existing tokens 
+[specific tokens] to achieve a similar design pattern."
+```
+
+---
+
+## 🚨 VIOLATION DETECTION
+
+### RED FLAGS - STOP IMMEDIATELY:
+- "I'll fix the design system to match Figma"
+- "Let me update the padding values"
+- "The current system is wrong, I'll correct it"
+- "I'll make the typography match exactly"
+
+### CORRECT RESPONSES:
+- "I can document the differences for reference"
+- "I'll create a demo using existing tokens"
+- "The current design system works differently, I can show how"
+- "I'll work within the existing constraints"
+
+---
+
+## 🎯 ANALYSIS OUTCOMES
+
+### ACCEPTABLE DELIVERABLES:
+- Comparison documentation (read-only)
+- Demo files using existing tokens
+- Token usage examples
+- System capability reports
+
+### PROHIBITED DELIVERABLES:
+- Modified design system files
+- "Corrected" CSS values
+- New token definitions
+- Bypassed build process changes
+
+---
+
+## 📚 DOCUMENTATION STANDARDS
+
+When documenting Figma analysis:
+
+**File Location:** `/docs/figma-analysis/`
+**File Format:** Markdown (.md)
+**Content:** Comparison data, not implementation changes
+**Purpose:** Reference, not modification instructions

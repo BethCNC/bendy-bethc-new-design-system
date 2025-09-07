@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Item Component - Complete Design System</title>
+    <link rel="stylesheet" href="../src/complete-design-system.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Overused Grotesk', sans-serif;
+            background: var(--surface-neutral-page);
+            color: var(--text-neutral-body);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .demo-section {
+            background: var(--surface-neutral-card);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+        
+        .menu-demo {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .state-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        
+        h1 { color: var(--text-neutral-display); }
+        h2 { color: var(--text-neutral-heading); }
+        h3 { color: var(--text-neutral-title); }
+        
+        .note {
+            background: var(--surface-info-disabled);
+            color: var(--text-info-on-disabled);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+        
+        .variant-label {
+            font-weight: 500;
+            color: var(--text-neutral-title);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .code-example {
+            background: var(--surface-neutral-elevated);
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: var(--font-size-body-md);
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        
+        /* Interactive demo styles */
+        .interactive-menu {
+            border: 1px solid var(--surface-neutral-focus);
+            border-radius: 6px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .menu-item-demo {
+            padding: 8px 16px;
+            border-right: 2px solid var(--border-neutral-dark);
+            font-family: 'Overused Grotesk', sans-serif;
+            font-weight: 500;
+            font-size: var(--font-size-title-md);
+            line-height: var(--line-height-title-md);
+            text-align: center;
+            white-space: nowrap;
+            color: var(--text-neutral-display);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: var(--surface-neutral-card);
+            border: none;
+            display: block;
+            width: 100%;
+        }
+        
+        .menu-item-demo:hover {
+            background: var(--surface-primary-default);
+        }
+        
+        .menu-item-demo.selected {
+            background: var(--surface-secondary-default);
+        }
+        
+        .menu-item-demo:focus-visible {
+            outline: 2px solid var(--border-focus);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Site Header -->
+    <iframe src="includes/site-header.html" 
+            width="100%" 
+            height="280" 
+            frameborder="0" 
+            scrolling="no"
+            style="margin-bottom: 1rem;">
+    </iframe>
+    
+    <div style="padding: 0 2rem;">
+        <h1>Menu Item Component System</h1>
+        <p>Implementation from Figma design: <strong>Bendy_BethC Website → [NAV]--menuitem</strong></p>
+        
+            <div class="note">
+                <strong>Design Token Mapping:</strong> This component uses exact values from Figma including H-Padding: 16px, V-Padding: 8px, Typography: Overused Grotesk Medium 24px/32px, and semantic color tokens.
+            </div>
+        </div>
+
+    <!-- Component Overview -->
+    <section class="demo-section">
+        <h2>Component Specifications</h2>
+        <p>Direct implementation of Figma component with these exact specifications:</p>
+        
+        <div class="code-example">
+• Padding: 8px vertical, 16px horizontal
+• Typography: Overused Grotesk Medium, 24px, 32px line-height  
+• Border: 2px solid right border (#252626)
+• States: Default (#f1f2f2), Hover (#f0f081), Selected (#f0aaf0)
+• Text Color: #0c0d0d (Text/Neutral/display)
+        </div>
+        
+        <!-- Single Menu Items - All States -->
+        <h3>Individual States</h3>
+        <div class="state-demo">
+            <span class="variant-label">Default State</span>
+            <div class="menu-item menu-item-default">Home</div>
+            
+            <span class="variant-label">Hover State</span>
+            <div class="menu-item menu-item-hover">Home</div>
+            
+            <span class="variant-label">Selected State</span>
+            <div class="menu-item menu-item-selected">Home</div>
+        </div>
+    </section>
+
+    <!-- Vertical Navigation Menu -->
+    <section class="demo-section">
+        <h2>Vertical Navigation Menu</h2>
+        <p>Complete navigation menu as vertical stack</p>
+        
+        <div class="menu-demo">
+            <div>
+                <span class="variant-label">Static States Demo</span>
+                <div class="nav-menu">
+                    <div class="menu-item menu-item-selected">Home</div>
+                    <div class="menu-item menu-item-default">About</div>
+                    <div class="menu-item menu-item-default">Services</div>
+                    <div class="menu-item menu-item-hover">Portfolio</div>
+                    <div class="menu-item menu-item-default">Contact</div>
+                </div>
+            </div>
+            
+            <div>
+                <span class="variant-label">Interactive Demo</span>
+                <div class="interactive-menu">
+                    <button class="menu-item-demo selected" onclick="selectMenuItem(this)">Home</button>
+                    <button class="menu-item-demo" onclick="selectMenuItem(this)">About</button>
+                    <button class="menu-item-demo" onclick="selectMenuItem(this)">Services</button>
+                    <button class="menu-item-demo" onclick="selectMenuItem(this)">Portfolio</button>
+                    <button class="menu-item-demo" onclick="selectMenuItem(this)">Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horizontal Navigation Menu -->
+    <section class="demo-section">
+        <h2>Horizontal Navigation Menu</h2>
+        <p>Menu items arranged horizontally</p>
+        
+        <div>
+            <span class="variant-label">Horizontal Layout</span>
+            <div class="nav-menu nav-menu-horizontal">
+                <div class="menu-item menu-item-selected">Home</div>
+                <div class="menu-item menu-item-default">About</div>
+                <div class="menu-item menu-item-default">Services</div>
+                <div class="menu-item menu-item-default">Portfolio</div>
+                <div class="menu-item menu-item-default">Contact</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Examples -->
+    <section class="demo-section">
+        <h2>Usage Examples</h2>
+        
+        <!-- Basic HTML -->
+        <div>
+            <h3>Basic HTML Implementation</h3>
+            <div class="code-example">
+&lt;!-- Individual menu item --&gt;
+&lt;div class="menu-item menu-item-default"&gt;Home&lt;/div&gt;
+&lt;div class="menu-item menu-item-selected"&gt;About&lt;/div&gt;
+
+&lt;!-- Complete vertical menu --&gt;
+&lt;nav class="nav-menu"&gt;
+    &lt;a href="/" class="menu-item menu-item-selected"&gt;Home&lt;/a&gt;
+    &lt;a href="/about" class="menu-item menu-item-default"&gt;About&lt;/a&gt;
+    &lt;a href="/services" class="menu-item menu-item-default"&gt;Services&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;!-- Horizontal menu --&gt;
+&lt;nav class="nav-menu nav-menu-horizontal"&gt;
+    &lt;a href="/" class="menu-item menu-item-selected"&gt;Home&lt;/a&gt;
+    &lt;a href="/about" class="menu-item menu-item-default"&gt;About&lt;/a&gt;
+&lt;/nav&gt;
+            </div>
+        </div>
+
+        <!-- With Icons -->
+        <div>
+            <h3>With Icons</h3>
+            <div class="nav-menu">
+                <div class="menu-item menu-item-selected">
+                    <i data-lucide="home" style="width: 24px; height: 24px; margin-right: 8px;"></i>
+                    Home
+                </div>
+                <div class="menu-item menu-item-default">
+                    <i data-lucide="user" style="width: 24px; height: 24px; margin-right: 8px;"></i>
+                    About
+                </div>
+                <div class="menu-item menu-item-default">
+                    <i data-lucide="briefcase" style="width: 24px; height: 24px; margin-right: 8px;"></i>
+                    Services
+                </div>
+                <div class="menu-item menu-item-default">
+                    <i data-lucide="folder" style="width: 24px; height: 24px; margin-right: 8px;"></i>
+                    Portfolio
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility & States -->
+    <section class="demo-section">
+        <h2>Accessibility & Interaction</h2>
+        <p>Focus states and keyboard navigation</p>
+        
+        <div class="note">
+            <strong>Keyboard Navigation:</strong> Use Tab key to navigate through menu items. Focus states are visible with a blue outline following the site-wide focus rule.
+        </div>
+        
+        <nav class="nav-menu" role="navigation" aria-label="Main navigation">
+            <a href="#" class="menu-item menu-item-selected" role="menuitem" aria-current="page">Home</a>
+            <a href="#" class="menu-item menu-item-default" role="menuitem">About Us</a>
+            <a href="#" class="menu-item menu-item-default" role="menuitem">Our Services</a>
+            <a href="#" class="menu-item menu-item-default" role="menuitem">Portfolio</a>
+            <a href="#" class="menu-item menu-item-default" role="menuitem">Contact</a>
+        </nav>
+    </section>
+
+    <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--surface-neutral-focus);">
+        <p><strong>Implementation Notes:</strong></p>
+        <ul>
+            <li>Exact Figma specifications: 8px/16px padding, 24px/32px typography</li>
+            <li>Uses semantic design tokens for colors and spacing</li>
+            <li>Three states: default, hover, selected with proper color mapping</li>
+            <li>Focus states follow site-wide rule: 2px solid outline with 2px offset</li>
+            <li>Font: Overused Grotesk Medium (500), matches your design system</li>
+            <li>Supports both vertical and horizontal layouts</li>
+            <li>Fully accessible with ARIA attributes and keyboard navigation</li>
+        </ul>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Interactive menu demo
+        function selectMenuItem(clickedItem) {
+            // Remove selected class from all siblings
+            const siblings = clickedItem.parentNode.querySelectorAll('.menu-item-demo');
+            siblings.forEach(item => item.classList.remove('selected'));
+            
+            // Add selected class to clicked item
+            clickedItem.classList.add('selected');
+        }
+    </script>
+</body>
+</html>

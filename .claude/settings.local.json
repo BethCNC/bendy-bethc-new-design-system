@@ -9,7 +9,22 @@
       "Bash(find:*)",
       "Bash(grep:*)",
       "Bash(npm run lint)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "mcp__figma-dev-mode-mcp-server__get_code",
+      "mcp__figma-dev-mode-mcp-server__get_image",
+      "Bash(node:*)",
+      "Bash(chmod:*)",
+      "mcp__figma-dev-mode-mcp-server__get_metadata",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run dev:*)",
+      "Read(//tmp/original_website/app/blog/**)",
+      "Read(//tmp/original_website/app/about/**)",
+      "Read(//tmp/original_website/app/contact/**)",
+      "Read(//tmp/original_website/app/resources/**)",
+      "Read(//private/tmp/original_website/app/components/ui/**)",
+      "Read(//private/tmp/original_website/**)",
+      "Read(//tmp/original_website/app/components/ui/**)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,193 @@
+/* Hero Component Styles */
+/* Generated using design system tokens only */
+
+.hero {
+    /* Base styles using design system tokens */
+    font-family: font-body;
+    font-size: var(--font-body-sm-mobile);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    
+    /* Spacing using design system tokens */
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) var(--spacing-md);
+    margin: 0;
+    
+    /* Colors using design system tokens */
+    background: var(--surface-primary-default);
+    color: var(--text-neutral-body);
+    
+    /* Borders using design system tokens */
+    border: none;
+    border-radius: var(--radius-md);
+    
+    /* Layout */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    
+    /* Transitions */
+    transition: all 0.2s ease;
+    
+    /* Cursor */
+    cursor: pointer;
+    
+    /* Text decoration */
+    text-decoration: none;
+}
+
+/* Hover state */
+.hero:hover {
+    background: var(--surface-primary-hover);
+}
+
+/* Focus state - ACCESSIBILITY REQUIREMENT */
+.hero:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+/* Active state */
+.hero:active {
+    background: var(--surface-primary-pressed);
+}
+
+/* Disabled state */
+.hero:disabled {
+    background: surface-primary-disabled;
+    color: var(--text-neutral-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Prevent hover/focus on disabled */
+.hero:disabled:hover,
+.hero:disabled:focus {
+    background: surface-primary-disabled;
+    outline: none;
+}
+
+
+/* default variant */
+.hero--default {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.hero--default:hover {
+    background: var(--surface-primary-hover);
+}
+
+.hero--default:active {
+    background: var(--surface-primary-pressed);
+}
+
+.hero--default:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.hero--default:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* large variant */
+.hero--large {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.hero--large:hover {
+    background: var(--surface-primary-hover);
+}
+
+.hero--large:active {
+    background: var(--surface-primary-pressed);
+}
+
+.hero--large:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.hero--large:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* small variant */
+.hero--small {
+    background: var(--surface-primary-default);
+    color: var(--text-on-primary);
+}
+
+.hero--small:hover {
+    background: var(--surface-primary-hover);
+}
+
+.hero--small:active {
+    background: var(--surface-primary-pressed);
+}
+
+.hero--small:focus-visible {
+    outline: var(--border-width-medium) solid var(--border-focus);
+    outline-offset: var(--spacing-xs);
+}
+
+.hero--small:disabled {
+    background: var(--surface-primary-disabled);
+    color: var(--text-neutral-disabled);
+}
+
+/* SM size - using component tokens from Components-SM.json */
+.hero--sm {
+    padding: var(--button-sm-padding-y) var(--button-sm-padding-x);
+    font-size: var(--button-sm-font-size);
+    border-radius: var(--button-sm-radius);
+    gap: var(--button-sm-gap);
+}
+
+.hero--sm .icon {
+    width: var(--button-sm-icon-size);
+    height: var(--button-sm-icon-size);
+}
+
+/* MD size - using component tokens from Components-MD.json */
+.hero--md {
+    padding: var(--button-md-padding-y) var(--button-md-padding-x);
+    font-size: var(--button-md-font-size);
+    border-radius: var(--button-md-radius);
+    gap: var(--button-md-gap);
+}
+
+.hero--md .icon {
+    width: var(--button-md-icon-size);
+    height: var(--button-md-icon-size);
+}
+
+/* LG size - using component tokens from Components-LG.json */
+.hero--lg {
+    padding: var(--button-lg-padding-y) var(--button-lg-padding-x);
+    font-size: var(--button-lg-font-size);
+    border-radius: var(--button-lg-radius);
+    gap: var(--button-lg-gap);
+}
+
+.hero--lg .icon {
+    width: var(--button-lg-icon-size);
+    height: var(--button-lg-icon-size);
+}
+
+/* XL size - using component tokens from Components-XL.json */
+.hero--xl {
+    padding: var(--button-xl-padding-y) var(--button-xl-padding-x);
+    font-size: var(--button-xl-font-size);
+    border-radius: var(--button-xl-radius);
+    gap: var(--button-xl-gap);
+}
+
+.hero--xl .icon {
+    width: var(--button-xl-icon-size);
+    height: var(--button-xl-icon-size);
+}
