@@ -53,7 +53,7 @@ export default function ComingSoonMessage() {
             margin: 0
           }}
         >
-          But trust me, it'll be worth the wait.
+          But trust me, it&apos;ll be worth the wait.
         </p>
       </div>
     </div>

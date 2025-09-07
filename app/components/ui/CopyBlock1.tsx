@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 interface CopyBlock1Props {
@@ -21,7 +23,7 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
       className={`copy-block-1 ${className}`}
       style={{
         backgroundColor: 'var(--surface-neutral-inverse)',
-        padding: 'var(--margins-desktop)',
+        padding: 'var(--margins-mobile)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -33,10 +35,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
       <h2 
         className="copy-block-1__main-heading"
         style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'var(--font-heading-H3-desktop)',
+          fontFamily: 'var(--font-family-display-mobile)',
+          fontSize: 'var(--font-size-heading-h3-mobile)',
           fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-H3-desktop)',
+          lineHeight: 'var(--line-height-heading-h3-mobile)',
           color: 'var(--text-neutral-inverse)',
           textAlign: 'center',
           margin: 0,
@@ -60,10 +62,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
         <li 
           className="copy-block-1__list-item"
           style={{
-            fontFamily: 'var(--font-title)',
-            fontSize: 'var(--font-title-xl-desktop)',
+            fontFamily: 'var(--font-family-title-mobile)',
+            fontSize: 'var(--font-size-title-xl-mobile)',
             fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-desktop)',
+            lineHeight: 'var(--line-height-title-xl-mobile)',
             color: 'var(--text-neutral-inverse)',
             textAlign: 'center',
             margin: 0,
@@ -74,10 +76,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
         <li 
           className="copy-block-1__list-item"
           style={{
-            fontFamily: 'var(--font-title)',
-            fontSize: 'var(--font-title-xl-desktop)',
+            fontFamily: 'var(--font-family-title-mobile)',
+            fontSize: 'var(--font-size-title-xl-mobile)',
             fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-desktop)',
+            lineHeight: 'var(--line-height-title-xl-mobile)',
             color: 'var(--text-neutral-inverse)',
             textAlign: 'center',
             margin: 0,
@@ -88,10 +90,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
         <li 
           className="copy-block-1__list-item"
           style={{
-            fontFamily: 'var(--font-title)',
-            fontSize: 'var(--font-title-xl-desktop)',
+            fontFamily: 'var(--font-family-title-mobile)',
+            fontSize: 'var(--font-size-title-xl-mobile)',
             fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-desktop)',
+            lineHeight: 'var(--line-height-title-xl-mobile)',
             color: 'var(--text-neutral-inverse)',
             textAlign: 'center',
             margin: 0,
@@ -102,10 +104,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
         <li 
           className="copy-block-1__list-item"
           style={{
-            fontFamily: 'var(--font-title)',
-            fontSize: 'var(--font-title-xl-desktop)',
+            fontFamily: 'var(--font-family-title-mobile)',
+            fontSize: 'var(--font-size-title-xl-mobile)',
             fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-desktop)',
+            lineHeight: 'var(--line-height-title-xl-mobile)',
             color: 'var(--text-neutral-inverse)',
             textAlign: 'center',
             margin: 0,
@@ -118,10 +120,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
       <h3 
         className="copy-block-1__transition"
         style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'var(--font-heading-H1-desktop)',
+          fontFamily: 'var(--font-family-display-mobile)',
+          fontSize: 'var(--font-size-heading-h1-mobile)',
           fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-H1-desktop)',
+          lineHeight: 'var(--line-height-heading-h1-mobile)',
           color: 'var(--text-neutral-inverse)',
           textAlign: 'center',
           margin: 0,
@@ -133,10 +135,10 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
       <p 
         className="copy-block-1__final-line"
         style={{
-          fontFamily: 'var(--font-title)',
-          fontSize: 'var(--font-title-xl-desktop)',
+          fontFamily: 'var(--font-family-title-mobile)',
+          fontSize: 'var(--font-size-title-xl-mobile)',
           fontWeight: 'var(--font-weight-medium)',
-          lineHeight: 'var(--line-height-title-xl-desktop)',
+          lineHeight: 'var(--line-height-title-xl-mobile)',
           color: 'var(--text-neutral-inverse)',
           textAlign: 'center',
           margin: 0,
@@ -144,6 +146,60 @@ const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
       >
         My story. The one thing I still have.
       </p>
+      
+      <style jsx>{`
+        @media (min-width: 810px) {
+          .copy-block-1 {
+            padding: var(--margins-tablet) !important;
+          }
+          .copy-block-1__main-heading {
+            font-family: var(--font-family-display-tablet) !important;
+            font-size: var(--font-size-heading-h3-tablet) !important;
+            line-height: var(--line-height-heading-h3-tablet) !important;
+          }
+          .copy-block-1__list-item {
+            font-family: var(--font-family-title-tablet) !important;
+            font-size: var(--font-size-title-xl-tablet) !important;
+            line-height: var(--line-height-title-xl-tablet) !important;
+          }
+          .copy-block-1__transition {
+            font-family: var(--font-family-display-tablet) !important;
+            font-size: var(--font-size-heading-h1-tablet) !important;
+            line-height: var(--line-height-heading-h1-tablet) !important;
+          }
+          .copy-block-1__final-line {
+            font-family: var(--font-family-title-tablet) !important;
+            font-size: var(--font-size-title-xl-tablet) !important;
+            line-height: var(--line-height-title-xl-tablet) !important;
+          }
+        }
+
+        @media (min-width: 1440px) {
+          .copy-block-1 {
+            padding: var(--margins-desktop) !important;
+          }
+          .copy-block-1__main-heading {
+            font-family: var(--font-family-display-desktop) !important;
+            font-size: var(--font-size-heading-h3-desktop) !important;
+            line-height: var(--line-height-heading-h3-desktop) !important;
+          }
+          .copy-block-1__list-item {
+            font-family: var(--font-family-title-desktop) !important;
+            font-size: var(--font-size-title-xl-desktop) !important;
+            line-height: var(--line-height-title-xl-desktop) !important;
+          }
+          .copy-block-1__transition {
+            font-family: var(--font-family-display-desktop) !important;
+            font-size: var(--font-size-heading-h1-desktop) !important;
+            line-height: var(--line-height-heading-h1-desktop) !important;
+          }
+          .copy-block-1__final-line {
+            font-family: var(--font-family-title-desktop) !important;
+            font-size: var(--font-size-title-xl-desktop) !important;
+            line-height: var(--line-height-title-xl-desktop) !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };

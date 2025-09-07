@@ -5,6 +5,7 @@ import FeatureCardGrid from './components/ui/FeatureCardGrid';
 import PageTitle from './components/ui/PageTitle';
 import CopyBlock1 from './components/ui/CopyBlock1';
 import CopyBlock2 from './components/ui/CopyBlock2';
+import SocialPreview from './components/ui/SocialPreview';
 
 
 /**
@@ -62,6 +63,9 @@ export default function HomePage() {
       <section data-feature-cards className="padding-lg">
         <FeatureCardGrid />
       </section>
+      
+      {/* Social Preview - Instagram feed and quote */}
+      <SocialPreview />
     </main>
   );
 }

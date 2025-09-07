@@ -1,6 +1,7 @@
 import React from 'react';
 import PageTitle from '../components/ui/PageTitle';
-import ComingSoonMessage from '../components/ui/ComingSoonMessage';
+import ComingSoonCopyBlock from '../components/ui/ComingSoonCopyBlock';
+import SocialPreview from '../components/ui/SocialPreview';
 import ComingSoonVideo from '../components/ui/ComingSoonVideo';
 
 export const metadata = {
@@ -18,7 +19,8 @@ export default function LinksPage() {
           posterSrc="/videos/daisies_poster.jpg"
           altText="Daisies - Links background video"
         />
-        <ComingSoonMessage />
+        <ComingSoonCopyBlock />
+        <SocialPreview />
       </section>
     </main>
   );

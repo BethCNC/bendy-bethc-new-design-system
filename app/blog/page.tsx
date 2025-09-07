@@ -1,5 +1,6 @@
 import React from 'react';
 import PageTitle from '../components/ui/PageTitle';
+import SocialPreview from '../components/ui/SocialPreview';
 
 export const metadata = {
   title: 'Blog - Bendy BethC',
@@ -15,6 +16,9 @@ export default function BlogPage() {
           <p>Blog content coming soon...</p>
         </div>
       </section>
+      
+      {/* Social Preview - Instagram feed and quote */}
+      <SocialPreview />
     </main>
   );
 }

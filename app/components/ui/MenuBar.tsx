@@ -27,8 +27,9 @@ const MenuBar: FunctionComponent = () => {
         borderBottom: 'var(--border-width-lg) solid var(--border-neutral-dark)',
         margin: 0,
         padding: 0,
-        position: 'relative',
-        zIndex: 1,
+        position: 'sticky',
+        top: 'var(--header-height, 148px)',
+        zIndex: 99,
       }}
       role="navigation" 
       aria-label="Main navigation"
@@ -56,7 +57,7 @@ const MenuBar: FunctionComponent = () => {
             style={{
               color: 'var(--text-neutral-heading)',
               textDecoration: 'none',
-              padding: 'var(--ui-menu-item-v-padding-desktop) var(--ui-menu-item-h-padding-desktop)',
+              padding: 'var(--ui-menu-item-v-padding-mobile) var(--ui-menu-item-h-padding-mobile)',
               margin: 0,
               display: 'flex',
               alignItems: 'center',
@@ -147,6 +148,13 @@ const MenuBar: FunctionComponent = () => {
 
           .nav-menuitem a {
             padding: var(--ui-menu-item-v-padding-mobile) var(--ui-menu-item-h-padding-mobile) !important;
+          }
+        }
+
+        /* Desktop: 6x1 grid layout (810px and above) */
+        @media (min-width: 810px) {
+          .nav-menuitem a {
+            padding: var(--ui-menu-item-v-padding-desktop) var(--ui-menu-item-h-padding-desktop) !important;
           }
         }
       `}</style>

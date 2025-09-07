@@ -20,7 +20,8 @@ export default function ComingSoonVideo({
         position: 'relative' as const,
         width: '100%',
         height: '100vh',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        marginBottom: 'var(--spacing-lg, 24px)'
       }}
     >
       <video
@@ -41,7 +42,7 @@ export default function ComingSoonVideo({
           width: 'auto',
           height: 'auto',
           objectFit: 'cover' as const,
-          zIndex: -1
+          zIndex: 0
         }}
       >
         <source src={videoSrc} type="video/mp4" />

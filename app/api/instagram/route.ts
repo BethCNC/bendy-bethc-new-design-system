@@ -17,7 +17,7 @@ export async function GET() {
 
   try {
     // Use Instagram Graph API with thumbnail URLs for videos
-    const url = `https://graph.instagram.com/me/media?fields=id,media_url,thumbnail_url,permalink,media_type,timestamp,caption&limit=6&access_token=${accessToken}`;
+    const url = `https://graph.instagram.com/me/media?fields=id,media_url,thumbnail_url,permalink,media_type,timestamp,caption&limit=9&access_token=${accessToken}`;
     console.log('Fetching from Instagram Graph API:', url);
     
     const mediaResponse = await fetch(url, {

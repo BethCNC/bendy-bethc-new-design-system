@@ -53,7 +53,7 @@ export default function SimpleImageGallery({ className = '' }: SimpleImageGaller
     <section 
       className={`simple-image-gallery ${className}`}
       style={{
-        padding: 'var(--spacing-xl) var(--margins-desktop)',
+        padding: 'var(--spacing-xl) var(--margins-mobile)',
         backgroundColor: 'var(--surface-neutral-inverse)',
       }}
     >
@@ -122,8 +122,8 @@ export default function SimpleImageGallery({ className = '' }: SimpleImageGaller
                 color: 'var(--text-neutral-inverse)',
                 padding: 'var(--spacing-xs) var(--spacing-sm)',
                 borderRadius: 'var(--radius-sm)',
-                fontFamily: 'var(--font-body)',
-                fontSize: 'var(--font-body-sm-desktop)',
+                fontFamily: 'var(--font-family-body)',
+                fontSize: 'var(--font-size-body-sm)',
                 fontWeight: 'var(--font-weight-medium)',
                 opacity: activeImageId === image.id ? 1 : 0.8,
                 transition: 'opacity 0.3s ease',
@@ -181,6 +181,12 @@ export default function SimpleImageGallery({ className = '' }: SimpleImageGaller
           .gallery-image-container {
             width: 160px !important;
             height: 160px !important;
+          }
+        }
+
+        @media (min-width: 810px) {
+          .simple-image-gallery {
+            padding: var(--spacing-xl) var(--margins-desktop) !important;
           }
         }
       `}</style>

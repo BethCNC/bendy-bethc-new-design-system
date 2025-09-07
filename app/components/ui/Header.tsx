@@ -9,14 +9,16 @@ const Header: FunctionComponent = () => {
       className="header-section"
       style={{
         background: 'var(--surface-neutral-card)', // #f1f2f2
-        padding: 'var(--spacing-lg) var(--margins-desktop)', // 48px 96px 
+        padding: 'var(--spacing-lg) var(--margins-mobile)', // mobile-first padding 
         textAlign: 'center' as const,
         margin: 0,
         display: 'flex',
         flexDirection: 'column' as const,
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative' as const,
+        position: 'sticky' as const,
+        top: 0,
+        zIndex: 100,
         overflow: 'hidden',
         cursor: 'pointer',
         transition: 'all 0.3s ease',
@@ -106,6 +108,10 @@ const Header: FunctionComponent = () => {
       </div>
 
       <style jsx>{`
+        :global(:root) {
+          --header-height: 148px;
+        }
+        
         .header-section:hover .header-video {
           opacity: 1;
         }
@@ -120,6 +126,12 @@ const Header: FunctionComponent = () => {
         @media (max-width: 390px) {
           .header-section {
             padding: var(--spacing-lg) var(--margins-mobile) !important;
+          }
+        }
+
+        @media (min-width: 810px) {
+          .header-section {
+            padding: var(--spacing-lg) var(--margins-desktop) !important;
           }
         }
       `}</style>

@@ -11,7 +11,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ title = "Hello Bendy Friends!" })
     <div 
       className="page-title"
       style={{
-        padding: 'var(--spacing-xl-mobile) var(--margins-mobile)',
+        padding: 'var(--spacing-xl) var(--margins-mobile)',
         backgroundColor: 'var(--surface-neutral-inverse)',
         display: 'flex',
         alignItems: 'center',
@@ -24,8 +24,8 @@ const PageTitle: React.FC<PageTitleProps> = ({ title = "Hello Bendy Friends!" })
         style={{
           fontFamily: 'var(--font-behind-the-nineties)',
           fontWeight: 'var(--font-weight-regular)',
-          fontSize: 'var(--font-display-display-mobile)',
-          lineHeight: 'var(--line-display-display-mobile)',
+          fontSize: 'var(--font-size-display-display-mobile)',
+          lineHeight: 'var(--line-height-display-display-mobile)',
           color: 'var(--text-neutral-inverse)',
           margin: 0,
           flex: '1 1 0',
@@ -39,23 +39,21 @@ const PageTitle: React.FC<PageTitleProps> = ({ title = "Hello Bendy Friends!" })
       <style jsx>{`
         @media (min-width: 810px) {
           .page-title {
-            padding: var(--spacing-xl) var(--margins-desktop) !important;
+            padding: var(--spacing-xl) var(--margins-tablet) !important;
           }
-          
-          .page-title h1 {
-            font-size: var(--font-display-display-desktop) !important;
-            line-height: var(--line-display-display-desktop) !important;
+          h1 {
+            font-size: var(--font-size-display-display-tablet) !important;
+            line-height: var(--line-height-display-display-tablet) !important;
           }
         }
-        
-        @media (min-width: 390px) and (max-width: 809px) {
+
+        @media (min-width: 1440px) {
           .page-title {
-            padding: var(--spacing-xl-tablet) var(--margins-tablet) !important;
+            padding: var(--spacing-xl) var(--margins-desktop) !important;
           }
-          
-          .page-title h1 {
-            font-size: var(--font-display-display-tablet) !important;
-            line-height: var(--line-display-display-tablet) !important;
+          h1 {
+            font-size: var(--font-size-display-display-desktop) !important;
+            line-height: var(--line-height-display-display-desktop) !important;
           }
         }
       `}</style>

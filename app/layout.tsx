@@ -6,6 +6,9 @@ import StyledComponentsRegistry from './lib/registry';
 import { overusedGrotesk, behindTheNineties } from './lib/fonts';
 // Import design system styles (CSS custom properties approach)
 import '../design-system/css/fonts.css';
+import '../design-system/src/primitives.css';
+import '../design-system/src/semantic.css';
+import '../design-system/src/utilities.css';
 import '../design-system/css/responsive.css';  
 import '../design-system/src/complete-design-system.css';
 import '../design-system/css/globals.css';
