@@ -3,6 +3,7 @@ import Hero from './components/ui/Hero';
 import SimpleImageGallery from './components/ui/SimpleImageGallery';
 import FeatureCardGrid from './components/ui/FeatureCardGrid';
 import PageTitle from './components/ui/PageTitle';
+import ZebraVideo from './components/ui/ZebraVideo';
 import CopyBlock1 from './components/ui/CopyBlock1';
 import CopyBlock2 from './components/ui/CopyBlock2';
 import SocialPreview from './components/ui/SocialPreview';
@@ -40,6 +41,9 @@ export default function HomePage() {
     <main className="bg-surface-neutral-inverse">
       {/* Page Title Section */}
       <PageTitle />
+      
+      {/* Zebra Video - Between title and copy */}
+      <ZebraVideo />
       
       {/* Hero Section - Video with story text */}
       <section data-hero className="padding-lg">
