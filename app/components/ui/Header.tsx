@@ -78,12 +78,12 @@ const Header: FunctionComponent = () => {
         <source src="/videos/clouds_halfsize.mp4" type="video/mp4" />
       </video>
       
-      {/* Logo container - matches Figma: 622px × 200px logo, 100px container height */}
+      {/* Logo container - matches actual logo: 472px × 100px */}
       <div 
         className="logo-container"
         style={{
           height: '100px',
-          width: '622px',
+          width: '472px',
           maxWidth: '100%',
           display: 'flex',
           alignItems: 'center',
@@ -93,15 +93,15 @@ const Header: FunctionComponent = () => {
         }}
       >
         <Image 
-          src="/fdd75c00d314eee00315c50a66efcb877bf5bdb1.svg"
+          src="/logos/bendy-beth-logo-horizontal.svg"
           alt="bendy beth logo"
-          width={622}
-          height={200}
+          width={472}
+          height={100}
           priority
           style={{
             height: 'auto',
             width: '100%',
-            maxWidth: '622px',
+            maxWidth: '472px',
             display: 'block',
           }}
         />
