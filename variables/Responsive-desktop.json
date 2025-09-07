@@ -67,23 +67,18 @@
     "sm": "12",
     "md": "24",
     "lg": "48",
-    "xl": "64"
+    "xl": "64",
+    "2xl": "96"
   },
   "ui": {
     "menu item": {
       "h-padding": "16",
       "v-padding": "8",
       "spacing": "",
-      "border width": "4"
+      "border width": "2"
     },
     "menu": {
-      "border width": "4",
-      "menu item": {
-        "h-padding": "8",
-        "v-padding": "12",
-        "spacing": "4",
-        "radius": "8"
-      }
+      "border width": "4"
     }
   }
 }

@@ -231,20 +231,20 @@
     --line-title-lg-mobile: 32px;
     --font-title-sm-mobile: 20px;
     --line-title-sm-mobile: 30px;
-    --font-heading-H6-mobile: 12px;
-    --line-heading-H6-mobile: 16px;
-    --font-heading-H5-mobile: 18px;
-    --line-heading-H5-mobile: 24px;
-    --font-heading-H4-mobile: 18px;
-    --line-heading-H4-mobile: 28px;
-    --font-heading-H3-mobile: 24px;
-    --line-heading-H3-mobile: 32px;
-    --font-heading-H2-mobile: 24px;
-    --line-heading-H2-mobile: 48px;
-    --font-heading-H1-mobile: 48px;
-    --line-heading-H1-mobile: 60px;
+    --font-heading-H6-mobile: 18px;
+    --line-heading-H6-mobile: 20px;
+    --font-heading-H5-mobile: 24px;
+    --line-heading-H5-mobile: 28px;
+    --font-heading-H4-mobile: 24px;
+    --line-heading-H4-mobile: 30px;
+    --font-heading-H3-mobile: 36px;
+    --line-heading-H3-mobile: 40px;
+    --font-heading-H2-mobile: 48px;
+    --line-heading-H2-mobile: 60px;
+    --font-heading-H1-mobile: 60px;
+    --line-heading-H1-mobile: 72px;
     --font-display-display-mobile: 48px;
-    --line-display-display-mobile: 48px;
+    --line-display-display-mobile: 60px;
   }
 }
 
@@ -270,17 +270,17 @@
     --line-title-lg-tablet: 48px;
     --font-title-sm-tablet: 24px;
     --line-title-sm-tablet: 32px;
-    --font-heading-H6-tablet: 16px;
+    --font-heading-H6-tablet: 20px;
     --line-heading-H6-tablet: 24px;
-    --font-heading-H5-tablet: 24px;
+    --font-heading-H5-tablet: 30px;
     --line-heading-H5-tablet: 28px;
-    --font-heading-H4-tablet: 24px;
+    --font-heading-H4-tablet: 30px;
     --line-heading-H4-tablet: 32px;
-    --font-heading-H3-tablet: 36px;
+    --font-heading-H3-tablet: 48px;
     --line-heading-H3-tablet: 48px;
-    --font-heading-H2-tablet: 36px;
+    --font-heading-H2-tablet: 60px;
     --line-heading-H2-tablet: 60px;
-    --font-heading-H1-tablet: 60px;
+    --font-heading-H1-tablet: 72px;
     --line-heading-H1-tablet: 72px;
     --font-display-display-tablet: 72px;
     --line-display-display-tablet: 96px;

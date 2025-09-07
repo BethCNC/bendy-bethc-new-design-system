@@ -1,0 +1,16 @@
+/**
+ * DARK MODE TOKENS
+ * Generated from Primitives-Dark.json
+ */
+
+[data-theme="dark"] {
+  /* === DARK MODE OVERRIDES === */
+  /* Surface tokens would be generated here from dark primitives */
+}
+
+/* === AUTOMATIC DARK MODE === */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark mode overrides would go here */
+  }
+}

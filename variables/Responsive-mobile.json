@@ -1,7 +1,7 @@
 {
   "breakpoint": "390",
   "columns": "4",
-  "margins": "24",
+  "margins": "32",
   "gutter": "24",
   "fontsize": {
     "body": {
@@ -19,15 +19,15 @@
       "sm": "20"
     },
     "heading": {
-      "H6": "12",
-      "H5": "16",
-      "H4": "18",
-      "H3": "24",
-      "H2": "24",
-      "H1": "48"
+      "H6": "18",
+      "H5": "24",
+      "H4": "24",
+      "H3": "36",
+      "H2": "48",
+      "H1": "60"
     },
     "display": {
-      "display": "36"
+      "display": "48"
     }
   },
   "font family": {
@@ -52,38 +52,33 @@
       "xl": "40"
     },
     "heading": {
-      "H6": "16",
-      "H5": "24",
-      "H4": "28",
-      "H3": "32",
-      "H2": "48",
-      "H1": "60"
+      "H6": "20",
+      "H5": "28",
+      "H4": "30",
+      "H3": "40",
+      "H2": "60",
+      "H1": "72"
     },
     "display": {
-      "display": "48"
+      "display": "60"
     }
   },
   "spacing": {
     "sm": "8",
     "md": "12",
     "lg": "24",
-    "xl": "48"
+    "xl": "48",
+    "2xl": "64"
   },
   "ui": {
     "menu item": {
       "h-padding": "4",
-      "v-padding": "",
+      "v-padding": "4",
       "spacing": "4",
       "border width": "1"
     },
     "menu": {
-      "border width": "1",
-      "menu item": {
-        "h-padding": "4",
-        "v-padding": "8",
-        "spacing": "4",
-        "radius": "6"
-      }
+      "border width": "1"
     }
   }
 }
