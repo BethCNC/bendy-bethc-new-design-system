@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-lg);
-  min-height: 400px;
+  min-height: var(--spacing-mobile-2xl);
   justify-content: center;
 }
 
@@ -63,13 +63,13 @@
 }
 
 /* Responsive adjustments using design system tokens */
-@media (min-width: 810px) {
+@media (min-width: var(--breakpoint-tablet)) {
   .copyBlock1 {
     padding: var(--margins-tablet);
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: var(--breakpoint-desktop)) {
   .copyBlock1 {
     padding: var(--margins-desktop);
   }

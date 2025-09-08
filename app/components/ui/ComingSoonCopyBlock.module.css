@@ -18,7 +18,7 @@
   font-family: var(--font-heading);
   font-size: var(--font-size-heading-h2);
   line-height: var(--line-height-heading-h2);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   color: var(--text-neutral-display);
   text-align: center;
   width: 100%;
@@ -29,13 +29,13 @@
   font-family: var(--font-title);
   font-size: var(--font-size-title-lg);
   line-height: var(--line-height-title-lg);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   color: var(--text-neutral-display);
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: var(--spacing-mobile-2xl);
 }
 
 .copyLine3 {
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }

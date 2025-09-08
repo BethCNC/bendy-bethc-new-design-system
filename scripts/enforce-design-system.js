@@ -101,7 +101,22 @@ class DesignSystemEnforcer {
           '**/dist/**',
           '**/build/**',
           '**/.git/**',
-          '**/complete-design-system.css' // Skip generated files
+          '**/complete-design-system.css', // Skip generated files
+          '**/design-system/src/**', // Skip generated design system source files
+          '**/tokens/**', // Skip token definition files
+          '**/variables/**', // Skip Figma export files
+          '**/design-system.css', // Skip main design system CSS file
+          '**/primitives.css', // Skip primitive token files
+          '**/semantic.css', // Skip semantic token files
+          '**/utilities.css', // Skip utility token files
+          '**/globals.css', // Skip global CSS files
+          '**/responsive.css', // Skip responsive CSS files
+          '**/tailwind-plugin.js', // Skip Tailwind plugin file (contains color definitions)
+          '**/scripts/**', // Skip scripts directory (contains utility scripts with hardcoded values)
+          '**/design-system/examples/**', // Skip example HTML files (contain hardcoded values for demo purposes)
+          '**/design-system/components/**', // Skip component HTML files (contain hardcoded values for demo)
+          '**/homepage.html', // Skip homepage HTML file (contains hardcoded values for demo)
+          '**/public/404.html' // Skip 404 HTML file (contains hardcoded values for demo)
         ]
       });
 

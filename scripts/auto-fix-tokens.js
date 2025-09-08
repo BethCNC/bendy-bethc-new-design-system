@@ -70,7 +70,7 @@ const COMMON_FIXES = {
   "border-top: 2px solid": "border-top: var(--border-width-md) solid",
   "border-bottom: 2px solid": "border-bottom: var(--border-width-md) solid",
   "border-left: 2px solid": "border-left: var(--border-width-md) solid",
-  "border-right: 2px solid": "border-right: var(--border-width-md) solid"
+  "border-right: 2px solid": "border-right: var(--border-width-md) solid",
   
   // Border radius
   "border-radius: 6px;": "border-radius: var(--radius-sm);",
