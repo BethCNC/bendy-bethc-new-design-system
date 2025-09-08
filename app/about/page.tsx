@@ -14,12 +14,12 @@ export default function AboutPage() {
     <main className="bg-surface-neutral-inverse">
       <section className="padding-lg">
         <PageTitle title="About Me" />
+        <ComingSoonCopyBlock />
         <ComingSoonVideo 
           videoSrc="/videos/about/bethandgeorge.mp4"
           posterSrc="/videos/about/bethandgeorge_poster.jpg"
           altText="Beth and George - About Me background video"
         />
-        <ComingSoonCopyBlock />
         <SocialPreview />
       </section>
     </main>

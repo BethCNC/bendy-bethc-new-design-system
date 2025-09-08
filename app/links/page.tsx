@@ -14,12 +14,12 @@ export default function LinksPage() {
     <main className="bg-surface-neutral-inverse">
       <section className="padding-lg">
         <PageTitle title="Links" />
+        <ComingSoonCopyBlock />
         <ComingSoonVideo 
           videoSrc="/videos/daisies.mp4"
           posterSrc="/videos/daisies_poster.jpg"
           altText="Daisies - Links background video"
         />
-        <ComingSoonCopyBlock />
         <SocialPreview />
       </section>
     </main>

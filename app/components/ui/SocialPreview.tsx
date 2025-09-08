@@ -103,7 +103,7 @@ const SocialPreview: React.FC<SocialPreviewProps> = ({ className = '' }) => {
           display: 'flex',
           flexDirection: 'column',
           width: '100%',
-          height: '238px',
+          height: '427px',
           overflowX: 'auto',
           overflowY: 'hidden',
         }}
@@ -153,7 +153,7 @@ const SocialPreview: React.FC<SocialPreviewProps> = ({ className = '' }) => {
                 style={{
                   display: 'block',
                   width: '240px',
-                  height: '240px',
+                  height: '427px',
                   flexShrink: 0,
                   position: 'relative',
                   overflow: 'hidden',
@@ -208,7 +208,7 @@ const SocialPreview: React.FC<SocialPreviewProps> = ({ className = '' }) => {
                 className="instagram-post-placeholder"
                 style={{
                   width: '240px',
-                  height: '240px',
+                  height: '427px',
                   flexShrink: 0,
                   backgroundColor: 'var(--surface-neutral-subtle, #f8f9fa)',
                   border: '1px solid var(--border-neutral-subtle, #e9ecef)',

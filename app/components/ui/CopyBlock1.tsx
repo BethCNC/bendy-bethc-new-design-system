@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import styles from './CopyBlock1.module.css';
 
 interface CopyBlock1Props {
   className?: string;
@@ -19,187 +20,33 @@ interface CopyBlock1Props {
  */
 const CopyBlock1: React.FC<CopyBlock1Props> = ({ className = '' }) => {
   return (
-    <section 
-      className={`copy-block-1 ${className}`}
-      style={{
-        backgroundColor: 'var(--surface-neutral-inverse)',
-        padding: 'var(--margins-mobile)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: 'var(--spacing-lg)',
-        minHeight: '400px',
-        justifyContent: 'center',
-      }}
-    >
-      <h2 
-        className="copy-block-1__main-heading"
-        style={{
-          fontFamily: 'var(--font-family-display-mobile)',
-          fontSize: 'var(--font-size-heading-h3-mobile)',
-          fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-h3-mobile)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
+    <section className={`${styles.copyBlock1} ${className}`}>
+      <h2 className={styles.mainHeading}>
         Finding my peace has been a journey
       </h2>
       
-      <ul 
-        className="copy-block-1__list"
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 'var(--spacing-sm)',
-          alignItems: 'center',
-          margin: 0,
-          padding: 0,
-          listStyle: 'none',
-        }}
-      >
-        <li 
-          className="copy-block-1__list-item"
-          style={{
-            fontFamily: 'var(--font-family-title-mobile)',
-            fontSize: 'var(--font-size-title-xl-mobile)',
-            fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-mobile)',
-            color: 'var(--text-neutral-inverse)',
-            textAlign: 'center',
-            margin: 0,
-          }}
-        >
+      <ul className={styles.list}>
+        <li className={styles.listItem}>
           The pain
         </li>
-        <li 
-          className="copy-block-1__list-item"
-          style={{
-            fontFamily: 'var(--font-family-title-mobile)',
-            fontSize: 'var(--font-size-title-xl-mobile)',
-            fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-mobile)',
-            color: 'var(--text-neutral-inverse)',
-            textAlign: 'center',
-            margin: 0,
-          }}
-        >
+        <li className={styles.listItem}>
           The gaslighting
         </li>
-        <li 
-          className="copy-block-1__list-item"
-          style={{
-            fontFamily: 'var(--font-family-title-mobile)',
-            fontSize: 'var(--font-size-title-xl-mobile)',
-            fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-mobile)',
-            color: 'var(--text-neutral-inverse)',
-            textAlign: 'center',
-            margin: 0,
-          }}
-        >
+        <li className={styles.listItem}>
           The fear
         </li>
-        <li 
-          className="copy-block-1__list-item"
-          style={{
-            fontFamily: 'var(--font-family-title-mobile)',
-            fontSize: 'var(--font-size-title-xl-mobile)',
-            fontWeight: 'var(--font-weight-medium)',
-            lineHeight: 'var(--line-height-title-xl-mobile)',
-            color: 'var(--text-neutral-inverse)',
-            textAlign: 'center',
-            margin: 0,
-          }}
-        >
+        <li className={styles.listItem}>
           The loneliness
         </li>
       </ul>
       
-      <h3 
-        className="copy-block-1__transition"
-        style={{
-          fontFamily: 'var(--font-family-display-mobile)',
-          fontSize: 'var(--font-size-heading-h1-mobile)',
-          fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-h1-mobile)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
+      <h3 className={styles.transition}>
         It all led me to this
       </h3>
       
-      <p 
-        className="copy-block-1__final-line"
-        style={{
-          fontFamily: 'var(--font-family-title-mobile)',
-          fontSize: 'var(--font-size-title-xl-mobile)',
-          fontWeight: 'var(--font-weight-medium)',
-          lineHeight: 'var(--line-height-title-xl-mobile)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
-        My story. The one thing I still have.
+      <p className={styles.finalLine}>
+        My story
       </p>
-      
-      <style jsx>{`
-        @media (min-width: 810px) {
-          .copy-block-1 {
-            padding: var(--margins-tablet) !important;
-          }
-          .copy-block-1__main-heading {
-            font-family: var(--font-family-display-tablet) !important;
-            font-size: var(--font-size-heading-h3-tablet) !important;
-            line-height: var(--line-height-heading-h3-tablet) !important;
-          }
-          .copy-block-1__list-item {
-            font-family: var(--font-family-title-tablet) !important;
-            font-size: var(--font-size-title-xl-tablet) !important;
-            line-height: var(--line-height-title-xl-tablet) !important;
-          }
-          .copy-block-1__transition {
-            font-family: var(--font-family-display-tablet) !important;
-            font-size: var(--font-size-heading-h1-tablet) !important;
-            line-height: var(--line-height-heading-h1-tablet) !important;
-          }
-          .copy-block-1__final-line {
-            font-family: var(--font-family-title-tablet) !important;
-            font-size: var(--font-size-title-xl-tablet) !important;
-            line-height: var(--line-height-title-xl-tablet) !important;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          .copy-block-1 {
-            padding: var(--margins-desktop) !important;
-          }
-          .copy-block-1__main-heading {
-            font-family: var(--font-family-display-desktop) !important;
-            font-size: var(--font-size-heading-h3-desktop) !important;
-            line-height: var(--line-height-heading-h3-desktop) !important;
-          }
-          .copy-block-1__list-item {
-            font-family: var(--font-family-title-desktop) !important;
-            font-size: var(--font-size-title-xl-desktop) !important;
-            line-height: var(--line-height-title-xl-desktop) !important;
-          }
-          .copy-block-1__transition {
-            font-family: var(--font-family-display-desktop) !important;
-            font-size: var(--font-size-heading-h1-desktop) !important;
-            line-height: var(--line-height-heading-h1-desktop) !important;
-          }
-          .copy-block-1__final-line {
-            font-family: var(--font-family-title-desktop) !important;
-            font-size: var(--font-size-title-xl-desktop) !important;
-            line-height: var(--line-height-title-xl-desktop) !important;
-          }
-        }
-      `}</style>
     </section>
   );
 };

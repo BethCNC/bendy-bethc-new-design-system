@@ -14,12 +14,12 @@ export default function ResourcesPage() {
     <main className="bg-surface-neutral-inverse">
       <section className="padding-lg">
         <PageTitle title="Resources" />
+        <ComingSoonCopyBlock />
         <ComingSoonVideo 
           videoSrc="/videos/blooming-red.mp4"
           posterSrc="/videos/blooming-red_poster.jpg"
           altText="Blooming Red Flowers - Resources background video"
         />
-        <ComingSoonCopyBlock />
         <SocialPreview />
       </section>
     </main>
