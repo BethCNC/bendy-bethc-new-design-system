@@ -15,6 +15,57 @@ module.exports = plugin(
       ".list-none": {
             "listStyleType": "none"
       },
+      ".z-10": {
+            "zIndex": "10"
+      },
+      ".z-20": {
+            "zIndex": "20"
+      },
+      ".z-100": {
+            "zIndex": "100"
+      },
+      ".w-full": {
+            "width": "100%"
+      },
+      ".h-full": {
+            "height": "100%"
+      },
+      ".max-w-full": {
+            "maxWidth": "100%"
+      },
+      ".top-0": {
+            "top": "0px"
+      },
+      ".left-0": {
+            "left": "0px"
+      },
+      ".w-118": {
+            "width": "118px"
+      },
+      ".h-25": {
+            "height": "25px"
+      },
+      ".max-w-118": {
+            "maxWidth": "118px"
+      },
+      ".max-w-1440": {
+            "maxWidth": "1440px"
+      },
+      ".min-w-60": {
+            "minWidth": "60px"
+      },
+      ".min-w-auto": {
+            "minWidth": "auto"
+      },
+      ".p-1.5": {
+            "padding": "6px"
+      },
+      ".p-2": {
+            "padding": "8px"
+      },
+      ".p-2.5": {
+            "padding": "10px"
+      },
       ".text-display": {
             "fontSize": "var(--font-size-display-display)",
             "lineHeight": "var(--line-height-display-display)"
