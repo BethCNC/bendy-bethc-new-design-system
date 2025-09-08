@@ -10,11 +10,11 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
-      sm: "390px",   // mobile
-      md: "810px",   // tablet
-      lg: "1024px",  // small desktop
-      xl: "1280px",  // desktop
-      "2xl": "1440px", // Figma base
+      sm: "var(--breakpoint-mobile)px",   // mobile
+      md: "var(--breakpoint-tablet)px",   // tablet
+      lg: "1024px",  // small desktop - no token defined
+      xl: "1280px",  // desktop - no token defined
+      "2xl": "var(--breakpoint-desktop)px", // Figma base
     },
 
     // ✅ Colors: semantic tokens only
@@ -73,6 +73,7 @@ module.exports = {
 
     // ✅ Spacing
     spacing: {
+      0: "0px",
       sm: "var(--spacing-mobile-sm)",
       md: "var(--spacing-mobile-md)",
       lg: "var(--spacing-mobile-lg)",
@@ -100,7 +101,7 @@ module.exports = {
 
     extend: {
       boxShadow: {
-        card: "0 4px 16px var(--shadow-card)", // Using CSS variable only
+        card: "0 var(--spacing-mobile-sm) var(--spacing-mobile-lg) var(--border-neutral-dark)", // Using spacing tokens
       },
     },
   },

@@ -6,6 +6,15 @@ module.exports = plugin(
       ".border-border-focus-ring": {
             "borderColor": "var(--border-focus-ring)"
       },
+      ".m-0": {
+            "margin": "0px"
+      },
+      ".p-0": {
+            "padding": "0px"
+      },
+      ".list-none": {
+            "listStyleType": "none"
+      },
       ".text-display": {
             "fontSize": "var(--font-size-display-display)",
             "lineHeight": "var(--line-height-display-display)"
@@ -219,28 +228,28 @@ module.exports = plugin(
     theme: {
       extend: {
         colors: {
-        "color-red-50": "#ffe7ec",
-        "color-red-100": "#ffd7df",
-        "color-red-200": "#ffc3cf",
-        "color-red-300": "#ffafbf",
-        "color-red-400": "#ff9baf",
-        "color-red-500": "#ff879f",
-        "color-red-600": "#e57a8f",
-        "color-red-700": "#b86172",
-        "color-red-800": "#8f4c59",
-        "color-red-900": "#6e3a44",
-        "color-red-950": "#4d2930",
-        "color-orange-50": "#ffeee2",
-        "color-orange-100": "#ffe2cf",
-        "color-orange-200": "#ffd4b7",
-        "color-orange-300": "#ffc6a0",
-        "color-orange-400": "#ffb788",
-        "color-orange-500": "#ffa970",
-        "color-orange-600": "#d48d5d",
-        "color-orange-700": "#aa714b",
-        "color-orange-800": "#805538",
-        "color-orange-900": "#553825",
-        "color-orange-950": "#332216",
+        "color-red-50": "var(--surface-error-subtle)",
+        "color-red-100": "var(--surface-error-subtle)",
+        "color-red-200": "var(--surface-error-subtle)",
+        "color-red-300": "var(--surface-error-subtle)",
+        "color-red-400": "var(--surface-error-subtle)",
+        "color-red-500": "var(--surface-error-default)",
+        "color-red-600": "var(--surface-error-hover)",
+        "color-red-700": "var(--surface-error-pressed)",
+        "color-red-800": "var(--surface-error-pressed)",
+        "color-red-900": "var(--surface-error-pressed)",
+        "color-red-950": "var(--surface-error-pressed)",
+        "color-orange-50": "var(--surface-warning-disabled)",
+        "color-orange-100": "var(--surface-warning-disabled)",
+        "color-orange-200": "var(--surface-warning-disabled)",
+        "color-orange-300": "var(--surface-warning-disabled)",
+        "color-orange-400": "var(--surface-warning-disabled)",
+        "color-orange-500": "var(--surface-warning-default)",
+        "color-orange-600": "var(--surface-warning-hover)",
+        "color-orange-700": "var(--surface-warning-hover)",
+        "color-orange-800": "var(--surface-warning-hover)",
+        "color-orange-900": "var(--surface-warning-hover)",
+        "color-orange-950": "var(--surface-warning-hover)",
         "color-yellow-50": "#fcfce6",
         "color-yellow-100": "#fafad5",
         "color-yellow-200": "#f7f7c0",
