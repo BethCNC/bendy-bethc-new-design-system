@@ -6,23 +6,7 @@ import Image from 'next/image';
 const Header: FunctionComponent = () => {
   return (
     <header 
-      className="header-section"
-      style={{
-        background: 'var(--surface-neutral-card)', // #f1f2f2
-        padding: 'var(--spacing-lg) var(--margins-mobile)', // mobile-first padding 
-        textAlign: 'center' as const,
-        margin: 0,
-        display: 'flex',
-        flexDirection: 'column' as const,
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'sticky' as const,
-        top: 0,
-        zIndex: 100,
-        overflow: 'hidden',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-      }}
+      className="bg-neutral-card p-lg p-mobile text-center m-0 flex flex-col items-center justify-center sticky top-0 z-100 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out md:p-tablet lg:p-desktop"
       onMouseEnter={(e) => {
         const video = e.currentTarget.querySelector('.header-video') as HTMLVideoElement;
         if (video) {
@@ -58,39 +42,17 @@ const Header: FunctionComponent = () => {
     >
       {/* Background clouds video for hover effect */}
       <video 
-        className="header-video"
+        className="header-video absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-300 ease-in-out z-10"
         muted 
         loop 
         preload="metadata"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          opacity: 0,
-          transition: 'opacity 0.3s ease',
-          zIndex: 1,
-        }}
       >
         <source src="/videos/clouds.mp4" type="video/mp4" />
         <source src="/videos/clouds_halfsize.mp4" type="video/mp4" />
       </video>
       
       {/* Logo container - matches horizontal dark logo: 472px × 100px */}
-      <div 
-        className="logo-container"
-        style={{
-          height: '100px',
-          width: '472px',
-          maxWidth: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          position: 'relative',
-          zIndex: 10,
-        }}
+      <div className="logo-container h-25 w-118 max-w-full flex items-center justify-center relative z-20"
       >
         <Image 
           src="/logos/bendy-beth-logo-horizontal.svg"
@@ -98,44 +60,9 @@ const Header: FunctionComponent = () => {
           width={472}
           height={100}
           priority
-          style={{
-            height: 'auto',
-            width: '100%',
-            maxWidth: '472px',
-            display: 'block',
-            color: 'var(--surface-neutral-inverse)',
-          }}
+          className="h-auto w-full max-w-118 block text-neutral-inverse"
         />
       </div>
-
-      <style jsx>{`
-        :global(:root) {
-          --header-height: 148px;
-        }
-        
-        .header-section:hover .header-video {
-          opacity: 1;
-        }
-        
-        /* Responsive padding using design system tokens */
-        @media (max-width: 809px) {
-          .header-section {
-            padding: var(--spacing-lg) var(--margins-tablet) !important;
-          }
-        }
-        
-        @media (max-width: 390px) {
-          .header-section {
-            padding: var(--spacing-lg) var(--margins-mobile) !important;
-          }
-        }
-
-        @media (min-width: 810px) {
-          .header-section {
-            padding: var(--spacing-lg) var(--margins-desktop) !important;
-          }
-        }
-      `}</style>
     </header>
   );
 };

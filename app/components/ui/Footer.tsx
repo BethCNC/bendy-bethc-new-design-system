@@ -57,18 +57,16 @@ export const Footer: React.FC<FooterProps> = ({
 
   return (
     <footer 
-      className={`footer-section ${className}`}
+      className={`bg-neutral-inverse border-t border-t-lg border-neutral-dark m-0 p-0 ${className}`}
     >
-      <div 
-        className="footer-inner-container"
-      >
+      <div className="p-2xl pb-lg text-center max-w-1440 mx-auto md:p-lg sm:p-md">
         {/* Marquee Section */}
         <FooterTextMarquee />
 
         {/* CTA Container - Match Figma Layout */}
-        <div className="footer-cta-container">
+        <div className="flex flex-col gap-lg items-center my-xl md:gap-md sm:gap-sm">
           {/* Social Icons Container */}
-          <div className="social-icon-container">
+          <div className="flex justify-center items-center gap-lg md:gap-md sm:gap-sm sm:flex-wrap">
             <Image src="/logos/social/facebook.svg" alt="Facebook" width={32} height={32} />
             <Image src="/logos/social/twitter.svg" alt="Twitter" width={32} height={32} />
             <Image src="/logos/social/instagram.svg" alt="Instagram" width={32} height={32} />
@@ -78,25 +76,25 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
 
           {/* Copy Text Container - Three separate lines */}
-          <div className="footer-copy-container">
-            <p className="font-title-xs-medium footer-copy-text">
+          <div className="flex flex-col items-center text-center gap-sm">
+            <p className="text-title-xs font-medium text-neutral-inverse m-0">
               Bend the Rules
             </p>
-            <p className="font-title-xs-medium footer-copy-text">
+            <p className="text-title-xs font-medium text-neutral-inverse m-0">
               Break the Silence
             </p>
-            <p className="font-title-xs-medium footer-copy-text">
+            <p className="text-title-xs font-medium text-neutral-inverse m-0">
               Join my Journey
             </p>
           </div>
 
           {/* CTA Group - Input and Button */}
-          <div className="footer-cta-group">
+          <div className="flex gap-sm items-center sm:flex-col sm:gap-sm sm:w-full">
             <form 
-              className="footer-form"
+              className="flex gap-sm items-center sm:flex-col sm:gap-sm sm:w-full"
               onSubmit={handleEmailSubmit}
             >
-              <div className="footer-input-wrapper">
+              <div className="min-w-60 sm:w-full sm:min-w-auto">
                 <Field
                   type="email"
                   value={email}
@@ -107,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({
                   error={emailError}
                   success={submitSuccess ? 'Thanks for joining!' : undefined}
                   size="md"
-                  className="footer-email-field"
+                  className="bg-neutral-card border-neutral-default text-neutral-body focus:border-border-focus-ring"
                 />
               </div>
               <Button
@@ -117,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({
                 iconPosition="right"
                 type="submit"
                 disabled={isSubmitting}
-                className="footer-submit-button"
+                className="whitespace-nowrap sm:w-full"
                 aria-label={isSubmitting ? "Submitting newsletter signup" : "Submit newsletter signup"}
               >
                 {isSubmitting ? '...' : "I'm In"}
@@ -127,163 +125,19 @@ export const Footer: React.FC<FooterProps> = ({
         </div>
 
         {/* Bottom Section - Logo Left, Copyright Right */}
-        <div className="footer-bottom-section">
+        <div className="mt-xl flex justify-between items-center w-full px-lg md:flex-col md:gap-sm md:text-center">
           <Image
             src="/logos/horizontal.svg"
             alt="Bendy BethC Logo"
             width={236}
             height={50}
-            className="footer-logo"
+            className="brightness-0 invert"
           />
-          <p className="font-body-sm-regular footer-copyright">
+          <p className="text-body-sm font-normal text-neutral-inverse m-0">
             Copyright © 2025. All rights reserved
           </p>
         </div>
       </div>
-
-      <style jsx global>{`
-        /* Simple approach - just target the footer specifically */
-        .footer-section {
-          background: var(--surface-neutral-inverse);
-          border-top: var(--border-width-lg) solid var(--border-neutral-dark);
-          margin: 0;
-          padding: 0;
-        }
-        
-        .footer-inner-container {
-          padding: var(--spacing-2xl) 0 var(--spacing-lg) 0;
-          text-align: center;
-          max-width: 1440px;
-          margin: 0 auto;
-        }
-        
-        .footer-cta-container {
-          display: flex;
-          flex-direction: column;
-          gap: var(--spacing-lg);
-          align-items: center;
-          margin: var(--spacing-xl) 0;
-        }
-        
-        .social-icon-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: var(--spacing-lg);
-        }
-        
-        .footer-copy-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          gap: var(--spacing-sm);
-        }
-        
-        .footer-copy-text {
-          color: var(--text-neutral-inverse);
-          margin: 0;
-        }
-        
-        .footer-cta-group {
-          display: flex;
-          gap: var(--spacing-sm);
-          align-items: center;
-        }
-        
-        .footer-form {
-          display: flex;
-          gap: var(--spacing-sm);
-          align-items: center;
-        }
-        
-        .footer-input-wrapper {
-          min-width: 240px;
-        }
-        
-        .footer-submit-button {
-          white-space: nowrap;
-        }
-        
-        .footer-bottom-section {
-          margin-top: var(--spacing-xl);
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 100%;
-          padding: 0 var(--spacing-lg);
-        }
-        
-        .footer-logo {
-          filter: brightness(0) invert(1);
-        }
-        
-        .footer-copyright {
-          color: var(--text-neutral-inverse);
-          margin: 0;
-        }
-        
-        /* Form Styling */
-        .footer-email-field input {
-          background-color: var(--surface-neutral-card) !important;
-          border-color: var(--border-neutral-default) !important;
-          color: var(--text-neutral-body) !important;
-        }
-        
-        .footer-email-field input:focus {
-          border-color: var(--border-focus-ring) !important;
-        }
-        
-        /* Responsive - Design System Tokens Only */
-        @media (max-width: 809px) {
-          .footer-inner-container {
-            padding: var(--spacing-lg);
-          }
-          
-          .social-icon-container {
-            gap: var(--spacing-md);
-          }
-          
-          .footer-bottom-section {
-            flex-direction: column;
-            gap: var(--spacing-sm);
-            text-align: center;
-          }
-        }
-        
-        /* Mobile Responsive */
-        @media (max-width: 390px) {
-          .footer-inner-container {
-            padding: var(--spacing-md);
-          }
-          
-          .social-icon-container {
-            gap: var(--spacing-sm);
-            flex-wrap: wrap;
-          }
-          
-          .footer-cta-group {
-            flex-direction: column;
-            gap: var(--spacing-sm);
-            width: 100%;
-          }
-          
-          .footer-form {
-            flex-direction: column;
-            gap: var(--spacing-sm);
-            width: 100%;
-          }
-          
-          .footer-input-wrapper {
-            width: 100%;
-            min-width: auto;
-          }
-          
-          .footer-submit-button {
-            width: 100%;
-          }
-        }
-      `}</style>
     </footer>
   );
 };

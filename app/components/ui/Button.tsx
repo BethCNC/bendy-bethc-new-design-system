@@ -35,138 +35,70 @@ const Button: React.FC<ButtonProps> = ({
     let sizeClass = '';
     switch (size) {
       case 'sm':
-        sizeClass = isIconOnly ? 'btn-icon-sm' : 'btn-sm';
+        sizeClass = isIconOnly ? 'button-sm button-sm-radius' : 'button-sm button-sm-radius';
         break;
       case 'md':
-        sizeClass = isIconOnly ? 'btn-icon-md' : 'btn-md';
+        sizeClass = isIconOnly ? 'button-md button-md-radius' : 'button-md button-md-radius';
         break;
       case 'lg':
-        sizeClass = isIconOnly ? 'btn-icon-lg' : 'btn-lg';
+        sizeClass = isIconOnly ? 'button-lg button-lg-radius' : 'button-lg button-lg-radius';
         break;
       case 'xl':
-        sizeClass = isIconOnly ? 'btn-icon-xl' : 'btn-xl';
+        sizeClass = isIconOnly ? 'button-xl button-xl-radius' : 'button-xl button-xl-radius';
         break;
     }
     
-    // Just use the design system button classes
     return sizeClass;
   };
 
+  const getVariantClasses = (variant: string) => {
+    switch (variant) {
+      case 'primary':
+        return 'bg-primary text-neutral-display hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'secondary':
+        return 'bg-secondary text-neutral-display hover:bg-secondary-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'tertiary':
+        return 'bg-tertiary text-neutral-display hover:bg-tertiary-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'destructive':
+        return 'bg-error text-neutral-display hover:bg-error-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'outline':
+        return 'bg-transparent text-neutral-body border border-neutral-default hover:border-neutral-dark hover:bg-neutral-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'ghost':
+        return 'bg-transparent text-neutral-body hover:bg-neutral-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      case 'link':
+        return 'bg-transparent text-primary-default underline hover:text-primary-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+      default:
+        return 'bg-primary text-neutral-display hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-border-focus-ring focus-visible:outline-offset-2';
+    }
+  };
+
   return (
-    <>
-      <button
-        type={type}
-        onClick={onClick}
-        disabled={disabled}
-        className={`${getButtonStyles()} btn-variant-${variant} ${className}`.trim()}
-        aria-label={ariaLabel || (isIconOnly && typeof children === 'string' ? children : undefined)}
-        {...props}
-      >
-        {icon && iconPosition === 'left' && (
-          <Icon 
-            icon={icon} 
-            size={size}
-            variant="button"
-            aria-hidden={true}
-          />
-        )}
-        {children}
-        {icon && iconPosition === 'right' && (
-          <Icon 
-            icon={icon} 
-            size={size}
-            variant="button"
-            aria-hidden={true}
-          />
-        )}
-      </button>
-      
-      <style jsx>{`
-        .btn-variant-primary {
-          background: var(--surface-primary-default);
-          color: var(--text-neutral-display);
-          border: none;
-        }
-        
-        .btn-variant-primary:hover:not(:disabled) {
-          background: var(--surface-primary-hover);
-        }
-        
-        .btn-variant-secondary {
-          background: var(--surface-secondary-default);
-          color: var(--text-neutral-display);
-          border: none;
-        }
-        
-        .btn-variant-secondary:hover:not(:disabled) {
-          background: var(--surface-secondary-hover);
-        }
-        
-        .btn-variant-tertiary {
-          background: var(--surface-tertiary-default);
-          color: var(--text-neutral-display);
-          border: none;
-        }
-        
-        .btn-variant-tertiary:hover:not(:disabled) {
-          background: var(--surface-tertiary-hover);
-        }
-        
-        .btn-variant-destructive {
-          background: var(--surface-error-default);
-          color: var(--text-neutral-inverse);
-          border: none;
-        }
-        
-        .btn-variant-destructive:hover:not(:disabled) {
-          background: var(--surface-error-hover);
-        }
-        
-        .btn-variant-outline {
-          background: transparent;
-          color: var(--text-neutral-body);
-          border: 1px solid var(--border-neutral-default);
-        }
-        
-        .btn-variant-outline:hover:not(:disabled) {
-          border-color: var(--border-neutral-dark);
-          background: var(--surface-neutral-hover);
-        }
-        
-        .btn-variant-ghost {
-          background: transparent;
-          color: var(--text-neutral-body);
-          border: none;
-        }
-        
-        .btn-variant-ghost:hover:not(:disabled) {
-          background: var(--surface-neutral-hover);
-        }
-        
-        .btn-variant-link {
-          background: transparent;
-          color: var(--text-primary-default);
-          border: none;
-          text-decoration: underline;
-        }
-        
-        .btn-variant-link:hover:not(:disabled) {
-          color: var(--text-primary-hover);
-        }
-        
-        button:disabled {
-          background: var(--surface-neutral-disabled) !important;
-          color: var(--text-neutral-disabled) !important;
-          border-color: var(--border-neutral-disabled) !important;
-          cursor: not-allowed;
-        }
-        
-        button:focus-visible {
-          outline: 2px solid var(--border-focus-ring);
-          outline-offset: 2px;
-        }
-      `}</style>
-    </>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`${getButtonStyles()} ${getVariantClasses(variant)} text-body-md font-medium ${disabled ? 'bg-neutral-disabled text-neutral-disabled cursor-not-allowed' : ''} ${className}`.trim()}
+      aria-label={ariaLabel || (isIconOnly && typeof children === 'string' ? children : undefined)}
+      {...props}
+    >
+      {icon && iconPosition === 'left' && (
+        <Icon 
+          icon={icon} 
+          size={size}
+          variant="button"
+          aria-hidden={true}
+        />
+      )}
+      {children}
+      {icon && iconPosition === 'right' && (
+        <Icon 
+          icon={icon} 
+          size={size}
+          variant="button"
+          aria-hidden={true}
+        />
+      )}
+    </button>
   );
 };
 

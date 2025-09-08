@@ -27,103 +27,44 @@ const Input: React.FC<InputProps> = ({
   variant = 'default',
   ...ariaProps
 }) => {
-  const sizeClasses = {
-    sm: 'input-sm',
-    md: 'input-md', 
-    lg: 'input-lg'
+  const getSizeClasses = (size: string) => {
+    switch (size) {
+      case 'sm':
+        return 'p-1.5 text-body-sm';
+      case 'md':
+        return 'p-2 text-body-md';
+      case 'lg':
+        return 'p-2.5 text-body-lg';
+      default:
+        return 'p-2 text-body-md';
+    }
   };
 
-  const variantClasses = {
-    default: 'input-default',
-    error: 'input-error',
-    warning: 'input-warning',
-    success: 'input-success'
+  const getVariantClasses = (variant: string) => {
+    switch (variant) {
+      case 'error':
+        return 'border-error-default focus:border-error-default';
+      case 'warning':
+        return 'border-warning-default focus:border-warning-default';
+      case 'success':
+        return 'border-success-default focus:border-success-default';
+      default:
+        return 'border-neutral-dark hover:border-primary-default focus:border-border-focus-ring';
+    }
   };
-
-  const baseClasses = 'input-base';
-  const disabledClasses = disabled ? 'input-disabled' : '';
 
   return (
-    <>
-      <input
-        id={id}
-        type={type}
-        value={value}
-        onChange={(e) => onChange?.(e.target.value)}
-        placeholder={placeholder}
-        required={required}
-        disabled={disabled}
-        className={`${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${disabledClasses} ${className}`.trim()}
-        {...ariaProps}
-      />
-      
-      <style jsx>{`
-        .input-base {
-          width: 100%;
-          background: var(--surface-neutral-page);
-          border: 1px solid var(--border-neutral-dark);
-          border-radius: 4px;
-          font-family: 'Overused Grotesk', sans-serif;
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 400;
-          color: var(--text-neutral-heading);
-          transition: border-color 0.2s ease;
-          box-sizing: border-box;
-        }
-        
-        .input-base::placeholder {
-          color: var(--text-neutral-disabled);
-        }
-        
-        .input-md {
-          padding: 8px;
-          gap: 8px;
-        }
-        
-        .input-sm {
-          padding: 6px;
-          gap: 6px;
-          font-size: 16px;
-          line-height: 22px;
-        }
-        
-        .input-lg {
-          padding: 10px;
-          gap: 10px;
-          font-size: 20px;
-          line-height: 26px;
-        }
-        
-        .input-default:hover:not(:disabled) {
-          border-color: var(--border-primary-default);
-        }
-        
-        .input-default:focus {
-          border-color: var(--border-focus-ring);
-          outline: none;
-        }
-        
-        .input-error {
-          border-color: var(--border-error-default);
-        }
-        
-        .input-warning {
-          border-color: var(--border-warning-default);
-        }
-        
-        .input-success {
-          border-color: var(--border-success-default);
-        }
-        
-        .input-disabled {
-          background: var(--surface-neutral-disabled);
-          color: var(--text-neutral-disabled);
-          border-color: var(--border-neutral-disabled);
-          cursor: not-allowed;
-        }
-      `}</style>
-    </>
+    <input
+      id={id}
+      type={type}
+      value={value}
+      onChange={(e) => onChange?.(e.target.value)}
+      placeholder={placeholder}
+      required={required}
+      disabled={disabled}
+      className={`w-full bg-neutral-page border rounded-md font-body text-neutral-heading transition-colors duration-200 focus:outline-none ${getSizeClasses(size)} ${getVariantClasses(variant)} ${disabled ? 'bg-neutral-disabled text-neutral-disabled border-neutral-disabled cursor-not-allowed' : ''} ${className}`.trim()}
+      {...ariaProps}
+    />
   );
 };
 

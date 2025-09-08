@@ -19,77 +19,18 @@ interface CopyBlock2Props {
  */
 const CopyBlock2: React.FC<CopyBlock2Props> = ({ className = '' }) => {
   return (
-    <section 
-      className={`copy-block-2 ${className}`}
-      style={{
-        backgroundColor: 'var(--surface-neutral-inverse)',
-        padding: 'var(--margins-mobile)',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: 'var(--spacing-lg)',
-        minHeight: '400px',
-        justifyContent: 'center',
-      }}
-    >
-      <h2 
-        className="copy-block-2__first-line"
-        style={{
-          fontFamily: 'var(--font-family-display)',
-          fontSize: 'var(--font-size-heading-h2)',
-          fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-h2)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
+    <section className={`bg-neutral-inverse p-mobile flex flex-col items-center gap-lg min-h-mobile-2xl justify-center md:p-tablet lg:p-desktop ${className}`}>
+      <h2 className="font-display text-heading-h2 font-normal text-neutral-inverse text-center m-0">
         This isn&apos;t content
       </h2>
       
-      <h3 
-        className="copy-block-2__second-line"
-        style={{
-          fontFamily: 'var(--font-family-display)',
-          fontSize: 'var(--font-size-heading-h3)',
-          fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-h3)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
+      <h3 className="font-display text-heading-h3 font-normal text-neutral-inverse text-center m-0">
         It&apos;s proof of what it really takes to get answers
       </h3>
       
-      <h2 
-        className="copy-block-2__third-line"
-        style={{
-          fontFamily: 'var(--font-family-display)',
-          fontSize: 'var(--font-size-heading-h2)',
-          fontWeight: 'var(--font-weight-regular)',
-          lineHeight: 'var(--line-height-heading-h2)',
-          color: 'var(--text-neutral-inverse)',
-          textAlign: 'center',
-          margin: 0,
-        }}
-      >
+      <h2 className="font-display text-heading-h2 font-normal text-neutral-inverse text-center m-0">
         What it means to keep going<br />when no one believes you.
       </h2>
-
-      <style jsx>{`
-        @media (min-width: 810px) {
-          .copy-block-2 {
-            padding: var(--margins-tablet) !important;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          .copy-block-2 {
-            padding: var(--margins-desktop) !important;
-          }
-        }
-      `}</style>
     </section>
   );
 };
